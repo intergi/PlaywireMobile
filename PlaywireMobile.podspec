@@ -5,14 +5,14 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://www.playwire.com'
   s.license          = { :type => 'Custom', :file => 'LICENSE' }
   s.author           = { 'ios.team' => 'mobile.team@playwire.com' }
-  s.source           = { :git => 'https://github.com/intergi/playwire-ios-pods.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/intergi/PlaywireMobile.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '12.4'
   s.swift_version = '5.0'
   s.cocoapods_version = '>= 1.12.1'
   s.requires_arc = true
 
-  s.default_subspecs = "VAST"
+  s.default_subspecs = "Core"
   
   s.subspec "Core" do |ss|
     ss.vendored_frameworks = 'PlaywireMobile.xcframework'
