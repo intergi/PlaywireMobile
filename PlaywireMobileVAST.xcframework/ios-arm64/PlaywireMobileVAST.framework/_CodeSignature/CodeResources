@@ -4,22 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Frameworks/PlaywireMobile.framework/Assets.car</key>
-		<data>
-		IpTaKdGRdsAOhRBEcRdzYyR3kAg=
-		</data>
-		<key>Frameworks/PlaywireMobile.framework/Info.plist</key>
-		<data>
-		UPQxoYqei+0L2iPjwKzv0GBfEXc=
-		</data>
-		<key>Frameworks/PlaywireMobile.framework/PlaywireMobile</key>
-		<data>
-		WBNZ8Npzsb2xbibdDHGqJO8zpfE=
-		</data>
-		<key>Frameworks/PlaywireMobile.framework/_CodeSignature/CodeResources</key>
-		<data>
-		u5riY9DPdbgWwd2DJ8bbCgZPFxU=
-		</data>
 		<key>Headers/PlaywireMobileVAST-Swift.h</key>
 		<data>
 		tzWwyLQFDU+7O5cB8+n1LxXfQxk=
@@ -59,34 +43,6 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Frameworks/PlaywireMobile.framework/Assets.car</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			rA/Ekuhxbb8c5DKjFXBLM0al9HrCD7qt7GSxpRuGpRk=
-			</data>
-		</dict>
-		<key>Frameworks/PlaywireMobile.framework/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			0/7gPlJbUlXKgqnGq7xUzBbpPsHvEUPSqBSfBlcgAdU=
-			</data>
-		</dict>
-		<key>Frameworks/PlaywireMobile.framework/PlaywireMobile</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			sr8zdkMnqYztOgvHft1tk+ToXVw7pKs2D7HqD5Qlc4k=
-			</data>
-		</dict>
-		<key>Frameworks/PlaywireMobile.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			jXzS6sfUTlt9unQkGL2CyJuymdFghqiec1pGAwnSDEA=
-			</data>
-		</dict>
 		<key>Headers/PlaywireMobileVAST-Swift.h</key>
 		<dict>
 			<key>hash2</key>
