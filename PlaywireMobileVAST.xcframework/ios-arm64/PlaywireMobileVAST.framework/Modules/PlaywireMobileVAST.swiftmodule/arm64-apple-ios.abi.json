@@ -1,0 +1,920 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PlaywireMobileVAST",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "PlaywireMobile",
+        "printedName": "PlaywireMobile",
+        "declKind": "Import",
+        "moduleName": "PlaywireMobileVAST"
+      },
+      {
+        "kind": "Import",
+        "name": "GoogleInteractiveMediaAds",
+        "printedName": "GoogleInteractiveMediaAds",
+        "declKind": "Import",
+        "moduleName": "PlaywireMobileVAST"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PlaywireMobileVAST",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PlaywireMobileVAST"
+      },
+      {
+        "kind": "Import",
+        "name": "PlaywireMobile",
+        "printedName": "PlaywireMobile",
+        "declKind": "Import",
+        "moduleName": "PlaywireMobileVAST"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PlaywireMobileVAST",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PlaywireMobileVAST",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PlaywireMobileVAST"
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "PlaywireMobileVAST"
+      },
+      {
+        "kind": "Import",
+        "name": "PlaywireMobile",
+        "printedName": "PlaywireMobile",
+        "declKind": "Import",
+        "moduleName": "PlaywireMobileVAST"
+      },
+      {
+        "kind": "Import",
+        "name": "GoogleInteractiveMediaAds",
+        "printedName": "GoogleInteractiveMediaAds",
+        "declKind": "Import",
+        "moduleName": "PlaywireMobileVAST"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PlaywireMobileVAST",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "PlaywireMobile",
+        "printedName": "PlaywireMobile",
+        "declKind": "Import",
+        "moduleName": "PlaywireMobileVAST"
+      },
+      {
+        "kind": "Import",
+        "name": "GoogleInteractiveMediaAds",
+        "printedName": "GoogleInteractiveMediaAds",
+        "declKind": "Import",
+        "moduleName": "PlaywireMobileVAST"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PMVastNetworkAdapterBase",
+        "printedName": "PMVastNetworkAdapterBase",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PMVastNetworkAdapterBase",
+                "printedName": "PlaywireMobileVAST.PMVastNetworkAdapterBase",
+                "usr": "s:18PlaywireMobileVAST24PMVastNetworkAdapterBaseC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18PlaywireMobileVAST24PMVastNetworkAdapterBaseCACycfc",
+            "mangledName": "$s18PlaywireMobileVAST24PMVastNetworkAdapterBaseCACycfc",
+            "moduleName": "PlaywireMobileVAST",
+            "declAttributes": [
+              "AccessControl",
+              "Required"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "initialized",
+            "printedName": "initialized",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18PlaywireMobileVAST24PMVastNetworkAdapterBaseC11initializedSbvp",
+            "mangledName": "$s18PlaywireMobileVAST24PMVastNetworkAdapterBaseC11initializedSbvp",
+            "moduleName": "PlaywireMobileVAST",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18PlaywireMobileVAST24PMVastNetworkAdapterBaseC11initializedSbvg",
+                "mangledName": "$s18PlaywireMobileVAST24PMVastNetworkAdapterBaseC11initializedSbvg",
+                "moduleName": "PlaywireMobileVAST",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "initialize",
+            "printedName": "initialize(config:onComplete:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PMConfigNetwork",
+                "printedName": "PlaywireMobile.PMConfigNetwork",
+                "usr": "s:14PlaywireMobile15PMConfigNetworkV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Any?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Any?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Any?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18PlaywireMobileVAST24PMVastNetworkAdapterBaseC10initialize6config10onCompletey0aB008PMConfigE0V_yypSgcSgtF",
+            "mangledName": "$s18PlaywireMobileVAST24PMVastNetworkAdapterBaseC10initialize6config10onCompletey0aB008PMConfigE0V_yypSgcSgtF",
+            "moduleName": "PlaywireMobileVAST",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "create",
+            "printedName": "create()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PMNetwork",
+                "printedName": "PlaywireMobile.PMNetwork",
+                "usr": "s:14PlaywireMobile9PMNetworkP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18PlaywireMobileVAST24PMVastNetworkAdapterBaseC6create0aB09PMNetwork_pyF",
+            "mangledName": "$s18PlaywireMobileVAST24PMVastNetworkAdapterBaseC6create0aB09PMNetwork_pyF",
+            "moduleName": "PlaywireMobileVAST",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:18PlaywireMobileVAST24PMVastNetworkAdapterBaseC",
+        "mangledName": "$s18PlaywireMobileVAST24PMVastNetworkAdapterBaseC",
+        "moduleName": "PlaywireMobileVAST",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "PMNetworkAdapter",
+            "printedName": "PMNetworkAdapter",
+            "usr": "s:14PlaywireMobile16PMNetworkAdapterP",
+            "mangledName": "$s14PlaywireMobile16PMNetworkAdapterP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PMVastNetworkBase",
+        "printedName": "PMVastNetworkBase",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PMVastNetworkBase",
+                "printedName": "PlaywireMobileVAST.PMVastNetworkBase",
+                "usr": "s:18PlaywireMobileVAST17PMVastNetworkBaseC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18PlaywireMobileVAST17PMVastNetworkBaseCACycfc",
+            "mangledName": "$s18PlaywireMobileVAST17PMVastNetworkBaseCACycfc",
+            "moduleName": "PlaywireMobileVAST",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "supportsMode",
+            "printedName": "supportsMode(mode:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PMConfigUnitMode",
+                "printedName": "PlaywireMobile.PMConfigUnitMode",
+                "usr": "s:14PlaywireMobile16PMConfigUnitModeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18PlaywireMobileVAST17PMVastNetworkBaseC12supportsMode4modeSb0aB0012PMConfigUnitH0O_tF",
+            "mangledName": "$s18PlaywireMobileVAST17PMVastNetworkBaseC12supportsMode4modeSb0aB0012PMConfigUnitH0O_tF",
+            "moduleName": "PlaywireMobileVAST",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "load",
+            "printedName": "load(config:configUnit:configUnitNetwork:loaderConfiguration:onComplete:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PMConfig",
+                "printedName": "PlaywireMobile.PMConfig",
+                "usr": "s:14PlaywireMobile8PMConfigV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PMConfigUnit",
+                "printedName": "PlaywireMobile.PMConfigUnit",
+                "usr": "s:14PlaywireMobile12PMConfigUnitV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PMConfigUnitNetwork",
+                "printedName": "PlaywireMobile.PMConfigUnitNetwork",
+                "usr": "s:14PlaywireMobile19PMConfigUnitNetworkV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PlaywireMobile.PMAdLoaderConfiguration?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PMAdLoaderConfiguration",
+                    "printedName": "PlaywireMobile.PMAdLoaderConfiguration",
+                    "usr": "c:@M@PlaywireMobile@objc(cs)PMAdLoaderConfiguration"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18PlaywireMobileVAST17PMVastNetworkBaseC4load6config0H4Unit0hiE019loaderConfiguration10onCompletey0aB08PMConfigV_AJ0nI0VAJ0niE0VAJ010PMAdLoaderK0CSgyyctF",
+            "mangledName": "$s18PlaywireMobileVAST17PMVastNetworkBaseC4load6config0H4Unit0hiE019loaderConfiguration10onCompletey0aB08PMConfigV_AJ0nI0VAJ0niE0VAJ010PMAdLoaderK0CSgyyctF",
+            "moduleName": "PlaywireMobileVAST",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adsLoader",
+            "printedName": "adsLoader(_:adsLoadedWith:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IMAAdsLoader",
+                "printedName": "GoogleInteractiveMediaAds.IMAAdsLoader",
+                "usr": "c:objc(cs)IMAAdsLoader"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IMAAdsLoadedData",
+                "printedName": "GoogleInteractiveMediaAds.IMAAdsLoadedData",
+                "usr": "c:objc(cs)IMAAdsLoadedData"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18PlaywireMobileVAST17PMVastNetworkBaseC9adsLoader_0G10LoadedWithySo06IMAAdsH0C_So0kI4DataCtF",
+            "mangledName": "$s18PlaywireMobileVAST17PMVastNetworkBaseC9adsLoader_0G10LoadedWithySo06IMAAdsH0C_So0kI4DataCtF",
+            "moduleName": "PlaywireMobileVAST",
+            "objc_name": "adsLoader:adsLoadedWithData:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "adsLoader",
+            "printedName": "adsLoader(_:failedWith:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IMAAdsLoader",
+                "printedName": "GoogleInteractiveMediaAds.IMAAdsLoader",
+                "usr": "c:objc(cs)IMAAdsLoader"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "IMAAdLoadingErrorData",
+                "printedName": "GoogleInteractiveMediaAds.IMAAdLoadingErrorData",
+                "usr": "c:objc(cs)IMAAdLoadingErrorData"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18PlaywireMobileVAST17PMVastNetworkBaseC9adsLoader_10failedWithySo06IMAAdsH0C_So21IMAAdLoadingErrorDataCtF",
+            "mangledName": "$s18PlaywireMobileVAST17PMVastNetworkBaseC9adsLoader_10failedWithySo06IMAAdsH0C_So21IMAAdLoadingErrorDataCtF",
+            "moduleName": "PlaywireMobileVAST",
+            "objc_name": "adsLoader:failedWithErrorData:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isSuccess",
+            "printedName": "isSuccess()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18PlaywireMobileVAST17PMVastNetworkBaseC9isSuccessSbyF",
+            "mangledName": "$s18PlaywireMobileVAST17PMVastNetworkBaseC9isSuccessSbyF",
+            "moduleName": "PlaywireMobileVAST",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "asInterstitial",
+            "printedName": "asInterstitial(loader:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PlaywireMobile.PMInterstitialAd?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PMInterstitialAd",
+                    "printedName": "PlaywireMobile.PMInterstitialAd",
+                    "usr": "s:14PlaywireMobile16PMInterstitialAdP"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PMAdLoader",
+                "printedName": "PlaywireMobile.PMAdLoader",
+                "usr": "s:14PlaywireMobile10PMAdLoaderC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18PlaywireMobileVAST17PMVastNetworkBaseC14asInterstitial6loader0aB016PMInterstitialAd_pSgAF10PMAdLoaderC_tF",
+            "mangledName": "$s18PlaywireMobileVAST17PMVastNetworkBaseC14asInterstitial6loader0aB016PMInterstitialAd_pSgAF10PMAdLoaderC_tF",
+            "moduleName": "PlaywireMobileVAST",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:18PlaywireMobileVAST17PMVastNetworkBaseC",
+        "mangledName": "$s18PlaywireMobileVAST17PMVastNetworkBaseC",
+        "moduleName": "PlaywireMobileVAST",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "PMNetwork",
+            "printedName": "PMNetwork",
+            "usr": "s:14PlaywireMobile9PMNetworkP",
+            "mangledName": "$s14PlaywireMobile9PMNetworkP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PlaywireMobileVAST",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "PlaywireMobile",
+        "printedName": "PlaywireMobile",
+        "declKind": "Import",
+        "moduleName": "PlaywireMobileVAST"
+      },
+      {
+        "kind": "Import",
+        "name": "GoogleInteractiveMediaAds",
+        "printedName": "GoogleInteractiveMediaAds",
+        "declKind": "Import",
+        "moduleName": "PlaywireMobileVAST"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 686,
+      "length": 7,
+      "value": "\"https\""
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 724,
+      "length": 26,
+      "value": "\"pubads.g.doubleclick.net\""
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 781,
+      "length": 13,
+      "value": "\"\/gampad\/ads\""
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 868,
+      "length": 4,
+      "value": "\"iu\""
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 950,
+      "length": 5,
+      "value": "\"url\""
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 1027,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 1067,
+      "length": 17,
+      "value": "\"description_url\""
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 1152,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 1192,
+      "length": 5,
+      "value": "\"env\""
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 1206,
+      "length": 4,
+      "value": "\"vp\""
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 1248,
+      "length": 10,
+      "value": "\"gdfp_req\""
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 1267,
+      "length": 3,
+      "value": "\"1\""
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 1308,
+      "length": 8,
+      "value": "\"output\""
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 1325,
+      "length": 11,
+      "value": "\"xml_vast4\""
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 1374,
+      "length": 4,
+      "value": "\"sz\""
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 1387,
+      "length": 9,
+      "value": "\"640x480\""
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 1434,
+      "length": 25,
+      "value": "\"unviewed_position_start\""
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 1468,
+      "length": 3,
+      "value": "\"1\""
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 1509,
+      "length": 6,
+      "value": "\"impl\""
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 1524,
+      "length": 3,
+      "value": "\"s\""
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 1565,
+      "length": 6,
+      "value": "\"nofb\""
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 1580,
+      "length": 3,
+      "value": "\"1\""
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 1715,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastInterstitialBase.swift",
+      "kind": "BooleanLiteral",
+      "offset": 768,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobileVAST\/misc\/String+URLEncoding.swift",
+      "kind": "StringLiteral",
+      "offset": 361,
+      "length": 7,
+      "value": "\":?=\/&\""
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastFullScreenAdViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 545,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastFullScreenAdViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 564,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastFullScreenAdViewController.swift",
+      "kind": "FloatLiteral",
+      "offset": 636,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastFullScreenAdViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1394,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastFullScreenAdViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1502,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastFullScreenAdViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1600,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastFullScreenAdViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1704,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastFullScreenAdViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1775,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastFullScreenAdViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 2331,
+      "length": 6,
+      "value": "\"vast\""
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastFullScreenAdViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 2355,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastFullScreenAdViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2854,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastFullScreenAdViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2858,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastFullScreenAdViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 247,
+      "length": 32,
+      "value": "\"PlaywireMobileVAST.PMVastFullScreenAdViewController\""
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastNetworkBase.swift",
+      "kind": "BooleanLiteral",
+      "offset": 445,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastNetworkBase.swift",
+      "kind": "BooleanLiteral",
+      "offset": 573,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastNetworkBase.swift",
+      "kind": "StringLiteral",
+      "offset": 684,
+      "length": 27,
+      "value": "\"Subclasses must implement\""
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastNetworkBase.swift",
+      "kind": "StringLiteral",
+      "offset": 1485,
+      "length": 27,
+      "value": "\"Subclasses must implement\""
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastNetworkBase.swift",
+      "kind": "StringLiteral",
+      "offset": 3464,
+      "length": 6,
+      "value": "\"vast\""
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastNetworkBase.swift",
+      "kind": "StringLiteral",
+      "offset": 3480,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastNetworkBase.swift",
+      "kind": "StringLiteral",
+      "offset": 3829,
+      "length": 6,
+      "value": "\"vast\""
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastNetworkBase.swift",
+      "kind": "StringLiteral",
+      "offset": 3845,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 629,
+      "length": 2,
+      "value": "\"\""
+    }
+  ]
+}
