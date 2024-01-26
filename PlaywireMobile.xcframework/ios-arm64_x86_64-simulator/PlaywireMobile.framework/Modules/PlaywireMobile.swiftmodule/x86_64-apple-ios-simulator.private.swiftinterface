@@ -55,12 +55,12 @@ public typealias PMNAction = (_ event: PlaywireMobile.PMNEvent, _ data: Playwire
   }
   @objc deinit
 }
-public protocol PMAdDelegate : AnyObject {
+@objc public protocol PMAdDelegate {
 }
-public protocol PMAd {
-  var adLoader: PlaywireMobile.PMAdLoader { get }
-  var network: any PlaywireMobile.PMNetwork { get }
-  var delegate: (any PlaywireMobile.PMAdDelegate)? { get set }
+@objc public protocol PMAd {
+  @objc var adLoader: PlaywireMobile.PMAdLoader { get }
+  @objc var network: any PlaywireMobile.PMNetwork { get }
+  @objc var delegate: (any PlaywireMobile.PMAdDelegate)? { get set }
 }
 public enum PMNSeverity : Swift.Int {
   case Information
@@ -81,39 +81,44 @@ public enum PMNSeverity : Swift.Int {
   public func matches(_ event: PlaywireMobile.PMNEvent?) -> Swift.Bool
   @objc deinit
 }
-public protocol PMFullScreenAdDelegate : PlaywireMobile.PMAdDelegate {
-  func fullScreenAdClosed(fullScreen: any PlaywireMobile.PMFullScreenAd)
+@objc public protocol PMFullScreenAdDelegate : PlaywireMobile.PMAdDelegate {
+  @objc func fullScreenAdClosed(fullScreen: any PlaywireMobile.PMFullScreenAd)
 }
-public protocol PMFullScreenAd : PlaywireMobile.PMAd {
-  func show(from vc: UIKit.UIViewController)
+@objc public protocol PMFullScreenAd : PlaywireMobile.PMAd {
+  @objc func show(from vc: UIKit.UIViewController)
 }
-public struct PMConfigUnit : Swift.Decodable {
-  public let name: Swift.String
-  public let mode: PlaywireMobile.PMConfigUnitMode
-  public let timeToClose: Swift.Int?
-  public let networks: [PlaywireMobile.PMConfigUnitNetwork]?
+@objc @objcMembers final public class PMConfigUnit : ObjectiveC.NSObject, Swift.Decodable {
+  @objc final public let name: Swift.String
+  @objc final public let mode: PlaywireMobile.PMConfigUnitMode
+  final public let timeToClose: Swift.Int?
+  @objc final public let networks: [PlaywireMobile.PMConfigUnitNetwork]?
+  @objc deinit
   public init(from decoder: any Swift.Decoder) throws
 }
-public enum PMConfigUnitMode : Swift.String, Swift.Decodable {
+@objc public enum PMConfigUnitMode : Swift.Int, Swift.Decodable {
   case Interstitial
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
+  public init(from decoder: any Swift.Decoder) throws
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
     get
   }
 }
-public struct PMConfigUnitNetwork : Swift.Decodable {
-  public let name: Swift.String
-  public let vast: PlaywireMobile.PMConfigUnitNetworkVast?
-  public let vastGam: PlaywireMobile.PMConfigUnitNetworkVastGam?
+@objc @objcMembers final public class PMConfigUnitNetwork : ObjectiveC.NSObject, Swift.Decodable {
+  @objc final public let name: Swift.String
+  @objc final public let vast: PlaywireMobile.PMConfigUnitNetworkVast?
+  @objc final public let vastGam: PlaywireMobile.PMConfigUnitNetworkVastGam?
+  @objc deinit
   public init(from decoder: any Swift.Decoder) throws
 }
-public struct PMConfigUnitNetworkVast : Swift.Decodable {
-  public let url: Swift.String
+@objc @objcMembers final public class PMConfigUnitNetworkVast : ObjectiveC.NSObject, Swift.Decodable {
+  @objc final public let url: Swift.String
+  @objc deinit
   public init(from decoder: any Swift.Decoder) throws
 }
-public struct PMConfigUnitNetworkVastGam : Swift.Decodable {
-  public let code: Swift.String
+@objc @objcMembers final public class PMConfigUnitNetworkVastGam : ObjectiveC.NSObject, Swift.Decodable {
+  @objc final public let code: Swift.String
+  @objc deinit
   public init(from decoder: any Swift.Decoder) throws
 }
 public protocol PMNetworkAdapter {
@@ -140,32 +145,32 @@ public protocol PMNetworkAdapter {
   @objc override dynamic public init()
   @objc deinit
 }
-public class PMAdLoader {
+@objc public class PMAdLoader : ObjectiveC.NSObject {
   final public let adUnitName: Swift.String
   final public let config: PlaywireMobile.PMConfig?
   final public let configUnit: PlaywireMobile.PMConfigUnit?
   public var isLaunched: Swift.Bool {
     get
   }
-  public init(_ adUnitName: Swift.String)
-  convenience public init(_ adUnitName: Swift.String, _ configuration: PlaywireMobile.PMAdLoaderConfiguration)
+  @objc(initWithAdUnitName:) public init(_ adUnitName: Swift.String)
+  @objc(initWithAdUnitName:configuration:) convenience public init(_ adUnitName: Swift.String, _ configuration: PlaywireMobile.PMAdLoaderConfiguration)
   @objc deinit
 }
-@_inheritsConvenienceInitializers final public class PMInterstitialAdLoader : PlaywireMobile.PMAdLoader {
-  final public func load(onComplete: @escaping (_ interstitial: (any PlaywireMobile.PMInterstitialAd)?) -> Swift.Void)
-  override public init(_ adUnitName: Swift.String)
+@objc @_inheritsConvenienceInitializers @objcMembers final public class PMInterstitialAdLoader : PlaywireMobile.PMAdLoader {
+  @objc final public func load(onComplete: @escaping (_ interstitial: (any PlaywireMobile.PMInterstitialAd)?) -> Swift.Void)
+  @objc override public init(_ adUnitName: Swift.String)
   @objc deinit
 }
-public protocol PMInterstitialAdDelegate : PlaywireMobile.PMFullScreenAdDelegate {
-  func fullScreenAdClosed(fullScreen: any PlaywireMobile.PMFullScreenAd)
+@objc public protocol PMInterstitialAdDelegate : PlaywireMobile.PMFullScreenAdDelegate {
+  @objc func fullScreenAdClosed(fullScreen: any PlaywireMobile.PMFullScreenAd)
 }
-public protocol PMInterstitialAd : PlaywireMobile.PMFullScreenAd {
+@objc public protocol PMInterstitialAd : PlaywireMobile.PMFullScreenAd {
 }
-public protocol PMNetwork {
-  func supportsMode(mode: PlaywireMobile.PMConfigUnitMode) -> Swift.Bool
-  func load(config: PlaywireMobile.PMConfig, configUnit: PlaywireMobile.PMConfigUnit, configUnitNetwork: PlaywireMobile.PMConfigUnitNetwork, loaderConfiguration: PlaywireMobile.PMAdLoaderConfiguration?, onComplete: @escaping () -> Swift.Void)
-  func isSuccess() -> Swift.Bool
-  func asInterstitial(loader: PlaywireMobile.PMAdLoader) -> (any PlaywireMobile.PMInterstitialAd)?
+@objc public protocol PMNetwork {
+  @objc func supportsMode(mode: PlaywireMobile.PMConfigUnitMode) -> Swift.Bool
+  @objc func load(config: PlaywireMobile.PMConfig, configUnit: PlaywireMobile.PMConfigUnit, configUnitNetwork: PlaywireMobile.PMConfigUnitNetwork, loaderConfiguration: PlaywireMobile.PMAdLoaderConfiguration?, onComplete: @escaping () -> Swift.Void)
+  @objc func isSuccess() -> Swift.Bool
+  @objc func asInterstitial(loader: PlaywireMobile.PMAdLoader) -> (any PlaywireMobile.PMInterstitialAd)?
 }
 public enum PMConfigNetworkType : Swift.String, Swift.Decodable {
   case Mock
@@ -177,20 +182,23 @@ public enum PMConfigNetworkType : Swift.String, Swift.Decodable {
     get
   }
 }
-public struct PMConfigNetwork : Swift.Decodable {
-  public let type: PlaywireMobile.PMConfigNetworkType
+@objc @objcMembers final public class PMConfigNetwork : ObjectiveC.NSObject, Swift.Decodable {
+  final public let type: PlaywireMobile.PMConfigNetworkType
+  @objc deinit
   public init(from decoder: any Swift.Decoder) throws
 }
-public struct PMConfig : Swift.Decodable {
-  public let app: PlaywireMobile.PMConfigApp?
-  public let networks: [Swift.String : PlaywireMobile.PMConfigNetwork]?
-  public let units: [PlaywireMobile.PMConfigUnit]?
+@objc @objcMembers final public class PMConfig : ObjectiveC.NSObject, Swift.Decodable {
+  @objc final public let app: PlaywireMobile.PMConfigApp?
+  @objc final public let networks: [Swift.String : PlaywireMobile.PMConfigNetwork]?
+  @objc final public let units: [PlaywireMobile.PMConfigUnit]?
+  @objc deinit
   public init(from decoder: any Swift.Decoder) throws
 }
-public struct PMConfigApp : Swift.Decodable {
-  public let storeUrl: Swift.String?
-  public let childProtection: Swift.Bool?
-  public let publisherUrl: Swift.String?
+@objc @objcMembers final public class PMConfigApp : ObjectiveC.NSObject, Swift.Decodable {
+  @objc final public let storeUrl: Swift.String?
+  final public let childProtection: Swift.Bool?
+  @objc final public let publisherUrl: Swift.String?
+  @objc deinit
   public init(from decoder: any Swift.Decoder) throws
 }
 public enum PMNEventType : Swift.Int {
