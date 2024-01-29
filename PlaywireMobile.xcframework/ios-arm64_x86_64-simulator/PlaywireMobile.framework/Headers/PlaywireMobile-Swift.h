@@ -278,6 +278,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import CoreFoundation;
+@import Foundation;
 @import ObjectiveC;
 @import UIKit;
 #endif
@@ -300,6 +301,33 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
+@class PMAdLoader;
+@protocol PMNetwork;
+@protocol PMAdDelegate;
+
+SWIFT_PROTOCOL("_TtP14PlaywireMobile4PMAd_")
+@protocol PMAd
+@property (nonatomic, readonly, strong) PMAdLoader * _Nonnull adLoader;
+@property (nonatomic, readonly, strong) id <PMNetwork> _Nonnull network;
+@property (nonatomic, strong) id <PMAdDelegate> _Nullable delegate;
+@end
+
+
+SWIFT_PROTOCOL("_TtP14PlaywireMobile12PMAdDelegate_")
+@protocol PMAdDelegate
+@end
+
+@class NSString;
+@class PMAdLoaderConfiguration;
+
+SWIFT_CLASS("_TtC14PlaywireMobile10PMAdLoader")
+@interface PMAdLoader : NSObject
+- (nonnull instancetype)initWithAdUnitName:(NSString * _Nonnull)adUnitName OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithAdUnitName:(NSString * _Nonnull)adUnitName configuration:(PMAdLoaderConfiguration * _Nonnull)configuration;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 @class UIViewController;
 
 SWIFT_CLASS("_TtC14PlaywireMobile23PMAdLoaderConfiguration")
@@ -318,9 +346,122 @@ SWIFT_CLASS("_TtC14PlaywireMobile18PMAdsConfiguration")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class PMConfigApp;
+@class PMConfigNetwork;
+@class PMConfigUnit;
+
+/// PMConfig is the root data representation of the SDK configuration
+/// <ul>
+///   <li>
+///     <em>app</em>: app specific information just like the store url
+///   </li>
+///   <li>
+///     <em>networks</em>: data used to initialize all required networks
+///   </li>
+///   <li>
+///     <em>units</em>: data used to initialize and request ads using networks
+///   </li>
+/// </ul>
+SWIFT_CLASS("_TtC14PlaywireMobile8PMConfig")
+@interface PMConfig : NSObject
+@property (nonatomic, readonly, strong) PMConfigApp * _Nullable app;
+@property (nonatomic, readonly, copy) NSDictionary<NSString *, PMConfigNetwork *> * _Nullable networks;
+@property (nonatomic, readonly, copy) NSArray<PMConfigUnit *> * _Nullable units;
+@end
+
+
+/// App’s specific data
+/// <ul>
+///   <li>
+///     <em>storeUrl</em>: the google or apple store identification
+///   </li>
+///   <li>
+///     <em>childProtection</em>: used to determine if COPPA restriction must be applied
+///   </li>
+///   <li>
+///     <em>publisherUr</em>l: the publisher’s website URL
+///   </li>
+/// </ul>
+SWIFT_CLASS("_TtC14PlaywireMobile11PMConfigApp")
+@interface PMConfigApp : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nullable storeUrl;
+@property (nonatomic, readonly, copy) NSString * _Nullable publisherUrl;
+@end
+
+
+/// The config network definition
+/// <ul>
+///   <li>
+///     <em>name</em>: used to identify a network
+///   </li>
+///   <li>
+///     <em>type</em>: configuration network type, see <code>PMConfigNetworkType</code> to get the list of available networks.
+///   </li>
+/// </ul>
+SWIFT_CLASS("_TtC14PlaywireMobile15PMConfigNetwork")
+@interface PMConfigNetwork : NSObject
+@end
+
+enum PMConfigUnitMode : NSInteger;
+@class PMConfigUnitNetwork;
+
+/// The adunit definition
+/// <ul>
+///   <li>
+///     <em>mode</em>: only interstitial supported by now. In the future: banners, rewarded, etc
+///   </li>
+///   <li>
+///     <em>networks</em>: set of networks that can be used to request this adunit
+///   </li>
+/// </ul>
+SWIFT_CLASS("_TtC14PlaywireMobile12PMConfigUnit")
+@interface PMConfigUnit : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull name;
+@property (nonatomic, readonly) enum PMConfigUnitMode mode;
+@property (nonatomic, readonly, copy) NSArray<PMConfigUnitNetwork *> * _Nullable networks;
+@end
+
+typedef SWIFT_ENUM(NSInteger, PMConfigUnitMode, open) {
+  PMConfigUnitModeInterstitial = 0,
+};
+
+@class PMConfigUnitNetworkVast;
+@class PMConfigUnitNetworkVastGam;
+
+/// The adunit network definition
+SWIFT_CLASS("_TtC14PlaywireMobile19PMConfigUnitNetwork")
+@interface PMConfigUnitNetwork : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull name;
+@property (nonatomic, readonly, strong) PMConfigUnitNetworkVast * _Nullable vast;
+@property (nonatomic, readonly, strong) PMConfigUnitNetworkVastGam * _Nullable vastGam;
+@end
+
+
+SWIFT_CLASS("_TtC14PlaywireMobile23PMConfigUnitNetworkVast")
+@interface PMConfigUnitNetworkVast : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull url;
+@end
+
+
+SWIFT_CLASS("_TtC14PlaywireMobile26PMConfigUnitNetworkVastGam")
+@interface PMConfigUnitNetworkVastGam : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull code;
+@end
+
+
+SWIFT_PROTOCOL("_TtP14PlaywireMobile14PMFullScreenAd_")
+@protocol PMFullScreenAd <PMAd>
+- (void)showFrom:(UIViewController * _Nonnull)vc;
+@end
+
+
+SWIFT_PROTOCOL("_TtP14PlaywireMobile22PMFullScreenAdDelegate_")
+@protocol PMFullScreenAdDelegate <PMAdDelegate>
+- (void)fullScreenAdClosedWithFullScreen:(id <PMFullScreenAd> _Nonnull)fullScreen;
+@end
+
 @class NSCoder;
 @protocol UIViewControllerTransitionCoordinator;
-@class NSString;
 @class NSBundle;
 
 SWIFT_CLASS("_TtC14PlaywireMobile28PMFullScreenAdViewController")
@@ -335,11 +476,39 @@ SWIFT_CLASS("_TtC14PlaywireMobile28PMFullScreenAdViewController")
 @end
 
 
+SWIFT_PROTOCOL("_TtP14PlaywireMobile16PMInterstitialAd_")
+@protocol PMInterstitialAd <PMFullScreenAd>
+@end
+
+
+SWIFT_PROTOCOL("_TtP14PlaywireMobile24PMInterstitialAdDelegate_")
+@protocol PMInterstitialAdDelegate <PMFullScreenAdDelegate>
+- (void)fullScreenAdClosedWithFullScreen:(id <PMFullScreenAd> _Nonnull)fullScreen;
+@end
+
+
+SWIFT_CLASS("_TtC14PlaywireMobile22PMInterstitialAdLoader")
+@interface PMInterstitialAdLoader : PMAdLoader
+- (void)loadOnComplete:(void (^ _Nonnull)(id <PMInterstitialAd> _Nullable))onComplete;
+- (nonnull instancetype)initWithAdUnitName:(NSString * _Nonnull)adUnitName OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC14PlaywireMobile16PMNListenerToken")
 @interface PMNListenerToken : NSObject
 - (void)cancel;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+/// Interface definition for network configuration on SDK initialization, ad requests loading, etc.
+SWIFT_PROTOCOL("_TtP14PlaywireMobile9PMNetwork_")
+@protocol PMNetwork
+- (BOOL)supportsModeWithMode:(enum PMConfigUnitMode)mode SWIFT_WARN_UNUSED_RESULT;
+- (void)loadWithConfig:(PMConfig * _Nonnull)config configUnit:(PMConfigUnit * _Nonnull)configUnit configUnitNetwork:(PMConfigUnitNetwork * _Nonnull)configUnitNetwork loaderConfiguration:(PMAdLoaderConfiguration * _Nullable)loaderConfiguration onComplete:(void (^ _Nonnull)(void))onComplete;
+- (BOOL)isSuccess SWIFT_WARN_UNUSED_RESULT;
+- (id <PMInterstitialAd> _Nullable)asInterstitialWithLoader:(PMAdLoader * _Nonnull)loader SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -660,6 +829,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import CoreFoundation;
+@import Foundation;
 @import ObjectiveC;
 @import UIKit;
 #endif
@@ -682,6 +852,33 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
+@class PMAdLoader;
+@protocol PMNetwork;
+@protocol PMAdDelegate;
+
+SWIFT_PROTOCOL("_TtP14PlaywireMobile4PMAd_")
+@protocol PMAd
+@property (nonatomic, readonly, strong) PMAdLoader * _Nonnull adLoader;
+@property (nonatomic, readonly, strong) id <PMNetwork> _Nonnull network;
+@property (nonatomic, strong) id <PMAdDelegate> _Nullable delegate;
+@end
+
+
+SWIFT_PROTOCOL("_TtP14PlaywireMobile12PMAdDelegate_")
+@protocol PMAdDelegate
+@end
+
+@class NSString;
+@class PMAdLoaderConfiguration;
+
+SWIFT_CLASS("_TtC14PlaywireMobile10PMAdLoader")
+@interface PMAdLoader : NSObject
+- (nonnull instancetype)initWithAdUnitName:(NSString * _Nonnull)adUnitName OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithAdUnitName:(NSString * _Nonnull)adUnitName configuration:(PMAdLoaderConfiguration * _Nonnull)configuration;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 @class UIViewController;
 
 SWIFT_CLASS("_TtC14PlaywireMobile23PMAdLoaderConfiguration")
@@ -700,9 +897,122 @@ SWIFT_CLASS("_TtC14PlaywireMobile18PMAdsConfiguration")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class PMConfigApp;
+@class PMConfigNetwork;
+@class PMConfigUnit;
+
+/// PMConfig is the root data representation of the SDK configuration
+/// <ul>
+///   <li>
+///     <em>app</em>: app specific information just like the store url
+///   </li>
+///   <li>
+///     <em>networks</em>: data used to initialize all required networks
+///   </li>
+///   <li>
+///     <em>units</em>: data used to initialize and request ads using networks
+///   </li>
+/// </ul>
+SWIFT_CLASS("_TtC14PlaywireMobile8PMConfig")
+@interface PMConfig : NSObject
+@property (nonatomic, readonly, strong) PMConfigApp * _Nullable app;
+@property (nonatomic, readonly, copy) NSDictionary<NSString *, PMConfigNetwork *> * _Nullable networks;
+@property (nonatomic, readonly, copy) NSArray<PMConfigUnit *> * _Nullable units;
+@end
+
+
+/// App’s specific data
+/// <ul>
+///   <li>
+///     <em>storeUrl</em>: the google or apple store identification
+///   </li>
+///   <li>
+///     <em>childProtection</em>: used to determine if COPPA restriction must be applied
+///   </li>
+///   <li>
+///     <em>publisherUr</em>l: the publisher’s website URL
+///   </li>
+/// </ul>
+SWIFT_CLASS("_TtC14PlaywireMobile11PMConfigApp")
+@interface PMConfigApp : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nullable storeUrl;
+@property (nonatomic, readonly, copy) NSString * _Nullable publisherUrl;
+@end
+
+
+/// The config network definition
+/// <ul>
+///   <li>
+///     <em>name</em>: used to identify a network
+///   </li>
+///   <li>
+///     <em>type</em>: configuration network type, see <code>PMConfigNetworkType</code> to get the list of available networks.
+///   </li>
+/// </ul>
+SWIFT_CLASS("_TtC14PlaywireMobile15PMConfigNetwork")
+@interface PMConfigNetwork : NSObject
+@end
+
+enum PMConfigUnitMode : NSInteger;
+@class PMConfigUnitNetwork;
+
+/// The adunit definition
+/// <ul>
+///   <li>
+///     <em>mode</em>: only interstitial supported by now. In the future: banners, rewarded, etc
+///   </li>
+///   <li>
+///     <em>networks</em>: set of networks that can be used to request this adunit
+///   </li>
+/// </ul>
+SWIFT_CLASS("_TtC14PlaywireMobile12PMConfigUnit")
+@interface PMConfigUnit : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull name;
+@property (nonatomic, readonly) enum PMConfigUnitMode mode;
+@property (nonatomic, readonly, copy) NSArray<PMConfigUnitNetwork *> * _Nullable networks;
+@end
+
+typedef SWIFT_ENUM(NSInteger, PMConfigUnitMode, open) {
+  PMConfigUnitModeInterstitial = 0,
+};
+
+@class PMConfigUnitNetworkVast;
+@class PMConfigUnitNetworkVastGam;
+
+/// The adunit network definition
+SWIFT_CLASS("_TtC14PlaywireMobile19PMConfigUnitNetwork")
+@interface PMConfigUnitNetwork : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull name;
+@property (nonatomic, readonly, strong) PMConfigUnitNetworkVast * _Nullable vast;
+@property (nonatomic, readonly, strong) PMConfigUnitNetworkVastGam * _Nullable vastGam;
+@end
+
+
+SWIFT_CLASS("_TtC14PlaywireMobile23PMConfigUnitNetworkVast")
+@interface PMConfigUnitNetworkVast : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull url;
+@end
+
+
+SWIFT_CLASS("_TtC14PlaywireMobile26PMConfigUnitNetworkVastGam")
+@interface PMConfigUnitNetworkVastGam : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull code;
+@end
+
+
+SWIFT_PROTOCOL("_TtP14PlaywireMobile14PMFullScreenAd_")
+@protocol PMFullScreenAd <PMAd>
+- (void)showFrom:(UIViewController * _Nonnull)vc;
+@end
+
+
+SWIFT_PROTOCOL("_TtP14PlaywireMobile22PMFullScreenAdDelegate_")
+@protocol PMFullScreenAdDelegate <PMAdDelegate>
+- (void)fullScreenAdClosedWithFullScreen:(id <PMFullScreenAd> _Nonnull)fullScreen;
+@end
+
 @class NSCoder;
 @protocol UIViewControllerTransitionCoordinator;
-@class NSString;
 @class NSBundle;
 
 SWIFT_CLASS("_TtC14PlaywireMobile28PMFullScreenAdViewController")
@@ -717,11 +1027,39 @@ SWIFT_CLASS("_TtC14PlaywireMobile28PMFullScreenAdViewController")
 @end
 
 
+SWIFT_PROTOCOL("_TtP14PlaywireMobile16PMInterstitialAd_")
+@protocol PMInterstitialAd <PMFullScreenAd>
+@end
+
+
+SWIFT_PROTOCOL("_TtP14PlaywireMobile24PMInterstitialAdDelegate_")
+@protocol PMInterstitialAdDelegate <PMFullScreenAdDelegate>
+- (void)fullScreenAdClosedWithFullScreen:(id <PMFullScreenAd> _Nonnull)fullScreen;
+@end
+
+
+SWIFT_CLASS("_TtC14PlaywireMobile22PMInterstitialAdLoader")
+@interface PMInterstitialAdLoader : PMAdLoader
+- (void)loadOnComplete:(void (^ _Nonnull)(id <PMInterstitialAd> _Nullable))onComplete;
+- (nonnull instancetype)initWithAdUnitName:(NSString * _Nonnull)adUnitName OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC14PlaywireMobile16PMNListenerToken")
 @interface PMNListenerToken : NSObject
 - (void)cancel;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+/// Interface definition for network configuration on SDK initialization, ad requests loading, etc.
+SWIFT_PROTOCOL("_TtP14PlaywireMobile9PMNetwork_")
+@protocol PMNetwork
+- (BOOL)supportsModeWithMode:(enum PMConfigUnitMode)mode SWIFT_WARN_UNUSED_RESULT;
+- (void)loadWithConfig:(PMConfig * _Nonnull)config configUnit:(PMConfigUnit * _Nonnull)configUnit configUnitNetwork:(PMConfigUnitNetwork * _Nonnull)configUnitNetwork loaderConfiguration:(PMAdLoaderConfiguration * _Nullable)loaderConfiguration onComplete:(void (^ _Nonnull)(void))onComplete;
+- (BOOL)isSuccess SWIFT_WARN_UNUSED_RESULT;
+- (id <PMInterstitialAd> _Nullable)asInterstitialWithLoader:(PMAdLoader * _Nonnull)loader SWIFT_WARN_UNUSED_RESULT;
 @end
 
 

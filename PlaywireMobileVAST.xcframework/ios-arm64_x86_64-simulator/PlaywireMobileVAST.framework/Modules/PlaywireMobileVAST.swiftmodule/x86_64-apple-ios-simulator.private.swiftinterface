@@ -23,11 +23,11 @@ public class PMVastNetworkAdapterBase : PlaywireMobile.PMNetworkAdapter {
 }
 public class PMVastNetworkBase : PlaywireMobile.PMNetwork, GoogleInteractiveMediaAds.IMAAdsLoaderDelegate {
   public init()
-  public func supportsMode(mode: PlaywireMobile.PMConfigUnitMode) -> Swift.Bool
-  public func load(config: PlaywireMobile.PMConfig, configUnit: PlaywireMobile.PMConfigUnit, configUnitNetwork: PlaywireMobile.PMConfigUnitNetwork, loaderConfiguration: PlaywireMobile.PMAdLoaderConfiguration?, onComplete: @escaping () -> Swift.Void)
+  @objc public func supportsMode(mode: PlaywireMobile.PMConfigUnitMode) -> Swift.Bool
+  @objc public func load(config: PlaywireMobile.PMConfig, configUnit: PlaywireMobile.PMConfigUnit, configUnitNetwork: PlaywireMobile.PMConfigUnitNetwork, loaderConfiguration: PlaywireMobile.PMAdLoaderConfiguration?, onComplete: @escaping () -> Swift.Void)
   @objc public func adsLoader(_ loader: GoogleInteractiveMediaAds.IMAAdsLoader, adsLoadedWith adsLoadedData: GoogleInteractiveMediaAds.IMAAdsLoadedData)
   @objc public func adsLoader(_ loader: GoogleInteractiveMediaAds.IMAAdsLoader, failedWith adErrorData: GoogleInteractiveMediaAds.IMAAdLoadingErrorData)
-  public func isSuccess() -> Swift.Bool
-  public func asInterstitial(loader: PlaywireMobile.PMAdLoader) -> (any PlaywireMobile.PMInterstitialAd)?
+  @objc public func isSuccess() -> Swift.Bool
+  @objc public func asInterstitial(loader: PlaywireMobile.PMAdLoader) -> (any PlaywireMobile.PMInterstitialAd)?
   @objc deinit
 }

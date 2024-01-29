@@ -932,7 +932,7 @@
                 "kind": "TypeNominal",
                 "name": "PMFullScreenAd",
                 "printedName": "PlaywireMobile.PMFullScreenAd",
-                "usr": "s:14PlaywireMobile14PMFullScreenAdP"
+                "usr": "c:@M@PlaywireMobile@objc(pl)PMFullScreenAd"
               },
               {
                 "kind": "TypeNominal",
@@ -1474,13 +1474,14 @@
         "name": "PMAdDelegate",
         "printedName": "PMAdDelegate",
         "declKind": "Protocol",
-        "usr": "s:14PlaywireMobile12PMAdDelegateP",
+        "usr": "c:@M@PlaywireMobile@objc(pl)PMAdDelegate",
         "mangledName": "$s14PlaywireMobile12PMAdDelegateP",
         "moduleName": "PlaywireMobile",
         "genericSig": "<τ_0_0 : AnyObject>",
         "sugared_genericSig": "<Self : AnyObject>",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "ObjC"
         ]
       },
       {
@@ -1497,14 +1498,17 @@
                 "kind": "TypeNominal",
                 "name": "PMAdLoader",
                 "printedName": "PlaywireMobile.PMAdLoader",
-                "usr": "s:14PlaywireMobile10PMAdLoaderC"
+                "usr": "c:@M@PlaywireMobile@objc(cs)PMAdLoader"
               }
             ],
             "declKind": "Var",
-            "usr": "s:14PlaywireMobile4PMAdP8adLoaderAA0cE0Cvp",
+            "usr": "c:@M@PlaywireMobile@objc(pl)PMAd(py)adLoader",
             "mangledName": "$s14PlaywireMobile4PMAdP8adLoaderAA0cE0Cvp",
             "moduleName": "PlaywireMobile",
             "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -1515,16 +1519,19 @@
                     "kind": "TypeNominal",
                     "name": "PMAdLoader",
                     "printedName": "PlaywireMobile.PMAdLoader",
-                    "usr": "s:14PlaywireMobile10PMAdLoaderC"
+                    "usr": "c:@M@PlaywireMobile@objc(cs)PMAdLoader"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14PlaywireMobile4PMAdP8adLoaderAA0cE0Cvg",
+                "usr": "c:@M@PlaywireMobile@objc(pl)PMAd(im)adLoader",
                 "mangledName": "$s14PlaywireMobile4PMAdP8adLoaderAA0cE0Cvg",
                 "moduleName": "PlaywireMobile",
                 "genericSig": "<τ_0_0 where τ_0_0 : PlaywireMobile.PMAd>",
                 "sugared_genericSig": "<Self where Self : PlaywireMobile.PMAd>",
                 "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "get"
               }
@@ -1539,14 +1546,17 @@
                 "kind": "TypeNominal",
                 "name": "PMNetwork",
                 "printedName": "PlaywireMobile.PMNetwork",
-                "usr": "s:14PlaywireMobile9PMNetworkP"
+                "usr": "c:@M@PlaywireMobile@objc(pl)PMNetwork"
               }
             ],
             "declKind": "Var",
-            "usr": "s:14PlaywireMobile4PMAdP7networkAA9PMNetwork_pvp",
+            "usr": "c:@M@PlaywireMobile@objc(pl)PMAd(py)network",
             "mangledName": "$s14PlaywireMobile4PMAdP7networkAA9PMNetwork_pvp",
             "moduleName": "PlaywireMobile",
             "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -1557,16 +1567,19 @@
                     "kind": "TypeNominal",
                     "name": "PMNetwork",
                     "printedName": "PlaywireMobile.PMNetwork",
-                    "usr": "s:14PlaywireMobile9PMNetworkP"
+                    "usr": "c:@M@PlaywireMobile@objc(pl)PMNetwork"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14PlaywireMobile4PMAdP7networkAA9PMNetwork_pvg",
+                "usr": "c:@M@PlaywireMobile@objc(pl)PMAd(im)network",
                 "mangledName": "$s14PlaywireMobile4PMAdP7networkAA9PMNetwork_pvg",
                 "moduleName": "PlaywireMobile",
                 "genericSig": "<τ_0_0 where τ_0_0 : PlaywireMobile.PMAd>",
                 "sugared_genericSig": "<Self where Self : PlaywireMobile.PMAd>",
                 "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "get"
               }
@@ -1586,17 +1599,20 @@
                     "kind": "TypeNominal",
                     "name": "PMAdDelegate",
                     "printedName": "PlaywireMobile.PMAdDelegate",
-                    "usr": "s:14PlaywireMobile12PMAdDelegateP"
+                    "usr": "c:@M@PlaywireMobile@objc(pl)PMAdDelegate"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:14PlaywireMobile4PMAdP8delegateAA0C8Delegate_pSgvp",
+            "usr": "c:@M@PlaywireMobile@objc(pl)PMAd(py)delegate",
             "mangledName": "$s14PlaywireMobile4PMAdP8delegateAA0C8Delegate_pSgvp",
             "moduleName": "PlaywireMobile",
             "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -1612,19 +1628,22 @@
                         "kind": "TypeNominal",
                         "name": "PMAdDelegate",
                         "printedName": "PlaywireMobile.PMAdDelegate",
-                        "usr": "s:14PlaywireMobile12PMAdDelegateP"
+                        "usr": "c:@M@PlaywireMobile@objc(pl)PMAdDelegate"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14PlaywireMobile4PMAdP8delegateAA0C8Delegate_pSgvg",
+                "usr": "c:@M@PlaywireMobile@objc(pl)PMAd(im)delegate",
                 "mangledName": "$s14PlaywireMobile4PMAdP8delegateAA0C8Delegate_pSgvg",
                 "moduleName": "PlaywireMobile",
                 "genericSig": "<τ_0_0 where τ_0_0 : PlaywireMobile.PMAd>",
                 "sugared_genericSig": "<Self where Self : PlaywireMobile.PMAd>",
                 "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "get"
               },
@@ -1647,53 +1666,37 @@
                         "kind": "TypeNominal",
                         "name": "PMAdDelegate",
                         "printedName": "PlaywireMobile.PMAdDelegate",
-                        "usr": "s:14PlaywireMobile12PMAdDelegateP"
+                        "usr": "c:@M@PlaywireMobile@objc(pl)PMAdDelegate"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14PlaywireMobile4PMAdP8delegateAA0C8Delegate_pSgvs",
+                "usr": "c:@M@PlaywireMobile@objc(pl)PMAd(im)setDelegate:",
                 "mangledName": "$s14PlaywireMobile4PMAdP8delegateAA0C8Delegate_pSgvs",
                 "moduleName": "PlaywireMobile",
                 "genericSig": "<τ_0_0 where τ_0_0 : PlaywireMobile.PMAd>",
                 "sugared_genericSig": "<Self where Self : PlaywireMobile.PMAd>",
                 "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
                 "reqNewWitnessTableEntry": true,
                 "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:14PlaywireMobile4PMAdP8delegateAA0C8Delegate_pSgvM",
-                "mangledName": "$s14PlaywireMobile4PMAdP8delegateAA0C8Delegate_pSgvM",
-                "moduleName": "PlaywireMobile",
-                "genericSig": "<τ_0_0 where τ_0_0 : PlaywireMobile.PMAd>",
-                "sugared_genericSig": "<Self where Self : PlaywireMobile.PMAd>",
-                "protocolReq": true,
-                "implicit": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "_modify"
               }
             ]
           }
         ],
         "declKind": "Protocol",
-        "usr": "s:14PlaywireMobile4PMAdP",
+        "usr": "c:@M@PlaywireMobile@objc(pl)PMAd",
         "mangledName": "$s14PlaywireMobile4PMAdP",
         "moduleName": "PlaywireMobile",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "ObjC"
         ]
       },
       {
@@ -2346,35 +2349,39 @@
                 "kind": "TypeNominal",
                 "name": "PMFullScreenAd",
                 "printedName": "PlaywireMobile.PMFullScreenAd",
-                "usr": "s:14PlaywireMobile14PMFullScreenAdP"
+                "usr": "c:@M@PlaywireMobile@objc(pl)PMFullScreenAd"
               }
             ],
             "declKind": "Func",
-            "usr": "s:14PlaywireMobile22PMFullScreenAdDelegateP04fulldE6Closed0gD0yAA0cdE0_p_tF",
+            "usr": "c:@M@PlaywireMobile@objc(pl)PMFullScreenAdDelegate(im)fullScreenAdClosedWithFullScreen:",
             "mangledName": "$s14PlaywireMobile22PMFullScreenAdDelegateP04fulldE6Closed0gD0yAA0cdE0_p_tF",
             "moduleName": "PlaywireMobile",
             "genericSig": "<τ_0_0 where τ_0_0 : PlaywireMobile.PMFullScreenAdDelegate>",
             "sugared_genericSig": "<Self where Self : PlaywireMobile.PMFullScreenAdDelegate>",
             "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
-        "usr": "s:14PlaywireMobile22PMFullScreenAdDelegateP",
+        "usr": "c:@M@PlaywireMobile@objc(pl)PMFullScreenAdDelegate",
         "mangledName": "$s14PlaywireMobile22PMFullScreenAdDelegateP",
         "moduleName": "PlaywireMobile",
         "genericSig": "<τ_0_0 : PlaywireMobile.PMAdDelegate>",
         "sugared_genericSig": "<Self : PlaywireMobile.PMAdDelegate>",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "ObjC"
         ],
         "conformances": [
           {
             "kind": "Conformance",
             "name": "PMAdDelegate",
             "printedName": "PMAdDelegate",
-            "usr": "s:14PlaywireMobile12PMAdDelegateP",
+            "usr": "c:@M@PlaywireMobile@objc(pl)PMAdDelegate",
             "mangledName": "$s14PlaywireMobile12PMAdDelegateP"
           }
         ]
@@ -2402,31 +2409,35 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:14PlaywireMobile14PMFullScreenAdP4show4fromySo16UIViewControllerC_tF",
+            "usr": "c:@M@PlaywireMobile@objc(pl)PMFullScreenAd(im)showFrom:",
             "mangledName": "$s14PlaywireMobile14PMFullScreenAdP4show4fromySo16UIViewControllerC_tF",
             "moduleName": "PlaywireMobile",
             "genericSig": "<τ_0_0 where τ_0_0 : PlaywireMobile.PMFullScreenAd>",
             "sugared_genericSig": "<Self where Self : PlaywireMobile.PMFullScreenAd>",
             "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
-        "usr": "s:14PlaywireMobile14PMFullScreenAdP",
+        "usr": "c:@M@PlaywireMobile@objc(pl)PMFullScreenAd",
         "mangledName": "$s14PlaywireMobile14PMFullScreenAdP",
         "moduleName": "PlaywireMobile",
         "genericSig": "<τ_0_0 : PlaywireMobile.PMAd>",
         "sugared_genericSig": "<Self : PlaywireMobile.PMAd>",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "ObjC"
         ],
         "conformances": [
           {
             "kind": "Conformance",
             "name": "PMAd",
             "printedName": "PMAd",
-            "usr": "s:14PlaywireMobile4PMAdP",
+            "usr": "c:@M@PlaywireMobile@objc(pl)PMAd",
             "mangledName": "$s14PlaywireMobile4PMAdP"
           }
         ]
@@ -2459,12 +2470,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:14PlaywireMobile12PMConfigUnitV4nameSSvp",
-            "mangledName": "$s14PlaywireMobile12PMConfigUnitV4nameSSvp",
+            "usr": "c:@M@PlaywireMobile@objc(cs)PMConfigUnit(py)name",
+            "mangledName": "$s14PlaywireMobile12PMConfigUnitC4nameSSvp",
             "moduleName": "PlaywireMobile",
             "declAttributes": [
+              "Final",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -2482,10 +2495,14 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14PlaywireMobile12PMConfigUnitV4nameSSvg",
-                "mangledName": "$s14PlaywireMobile12PMConfigUnitV4nameSSvg",
+                "usr": "c:@M@PlaywireMobile@objc(cs)PMConfigUnit(im)name",
+                "mangledName": "$s14PlaywireMobile12PMConfigUnitC4nameSSvg",
                 "moduleName": "PlaywireMobile",
                 "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
                 "accessorKind": "get"
               }
             ]
@@ -2499,16 +2516,18 @@
                 "kind": "TypeNominal",
                 "name": "PMConfigUnitMode",
                 "printedName": "PlaywireMobile.PMConfigUnitMode",
-                "usr": "s:14PlaywireMobile16PMConfigUnitModeO"
+                "usr": "c:@M@PlaywireMobile@E@PMConfigUnitMode"
               }
             ],
             "declKind": "Var",
-            "usr": "s:14PlaywireMobile12PMConfigUnitV4modeAA0cD4ModeOvp",
-            "mangledName": "$s14PlaywireMobile12PMConfigUnitV4modeAA0cD4ModeOvp",
+            "usr": "c:@M@PlaywireMobile@objc(cs)PMConfigUnit(py)mode",
+            "mangledName": "$s14PlaywireMobile12PMConfigUnitC4modeAA0cD4ModeOvp",
             "moduleName": "PlaywireMobile",
             "declAttributes": [
+              "Final",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -2522,14 +2541,18 @@
                     "kind": "TypeNominal",
                     "name": "PMConfigUnitMode",
                     "printedName": "PlaywireMobile.PMConfigUnitMode",
-                    "usr": "s:14PlaywireMobile16PMConfigUnitModeO"
+                    "usr": "c:@M@PlaywireMobile@E@PMConfigUnitMode"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14PlaywireMobile12PMConfigUnitV4modeAA0cD4ModeOvg",
-                "mangledName": "$s14PlaywireMobile12PMConfigUnitV4modeAA0cD4ModeOvg",
+                "usr": "c:@M@PlaywireMobile@objc(cs)PMConfigUnit(im)mode",
+                "mangledName": "$s14PlaywireMobile12PMConfigUnitC4modeAA0cD4ModeOvg",
                 "moduleName": "PlaywireMobile",
                 "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
                 "accessorKind": "get"
               }
             ]
@@ -2555,10 +2578,11 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:14PlaywireMobile12PMConfigUnitV11timeToCloseSiSgvp",
-            "mangledName": "$s14PlaywireMobile12PMConfigUnitV11timeToCloseSiSgvp",
+            "usr": "s:14PlaywireMobile12PMConfigUnitC11timeToCloseSiSgvp",
+            "mangledName": "$s14PlaywireMobile12PMConfigUnitC11timeToCloseSiSgvp",
             "moduleName": "PlaywireMobile",
             "declAttributes": [
+              "Final",
               "HasStorage",
               "AccessControl"
             ],
@@ -2586,10 +2610,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14PlaywireMobile12PMConfigUnitV11timeToCloseSiSgvg",
-                "mangledName": "$s14PlaywireMobile12PMConfigUnitV11timeToCloseSiSgvg",
+                "usr": "s:14PlaywireMobile12PMConfigUnitC11timeToCloseSiSgvg",
+                "mangledName": "$s14PlaywireMobile12PMConfigUnitC11timeToCloseSiSgvg",
                 "moduleName": "PlaywireMobile",
                 "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
                 "accessorKind": "get"
               }
             ]
@@ -2613,7 +2640,7 @@
                         "kind": "TypeNominal",
                         "name": "PMConfigUnitNetwork",
                         "printedName": "PlaywireMobile.PMConfigUnitNetwork",
-                        "usr": "s:14PlaywireMobile19PMConfigUnitNetworkV"
+                        "usr": "c:@M@PlaywireMobile@objc(cs)PMConfigUnitNetwork"
                       }
                     ],
                     "usr": "s:Sa"
@@ -2623,13 +2650,15 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:14PlaywireMobile12PMConfigUnitV8networksSayAA0cD7NetworkVGSgvp",
-            "mangledName": "$s14PlaywireMobile12PMConfigUnitV8networksSayAA0cD7NetworkVGSgvp",
+            "usr": "c:@M@PlaywireMobile@objc(cs)PMConfigUnit(py)networks",
+            "mangledName": "$s14PlaywireMobile12PMConfigUnitC8networksSayAA0cD7NetworkCGSgvp",
             "moduleName": "PlaywireMobile",
             "declAttributes": [
+              "Final",
               "HasStorage",
               "AccessControl",
-              "RawDocComment"
+              "RawDocComment",
+              "ObjC"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -2653,7 +2682,7 @@
                             "kind": "TypeNominal",
                             "name": "PMConfigUnitNetwork",
                             "printedName": "PlaywireMobile.PMConfigUnitNetwork",
-                            "usr": "s:14PlaywireMobile19PMConfigUnitNetworkV"
+                            "usr": "c:@M@PlaywireMobile@objc(cs)PMConfigUnitNetwork"
                           }
                         ],
                         "usr": "s:Sa"
@@ -2663,10 +2692,14 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14PlaywireMobile12PMConfigUnitV8networksSayAA0cD7NetworkVGSgvg",
-                "mangledName": "$s14PlaywireMobile12PMConfigUnitV8networksSayAA0cD7NetworkVGSgvg",
+                "usr": "c:@M@PlaywireMobile@objc(cs)PMConfigUnit(im)networks",
+                "mangledName": "$s14PlaywireMobile12PMConfigUnitC8networksSayAA0cD7NetworkCGSgvg",
                 "moduleName": "PlaywireMobile",
                 "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
                 "accessorKind": "get"
               }
             ]
@@ -2680,7 +2713,7 @@
                 "kind": "TypeNominal",
                 "name": "PMConfigUnit",
                 "printedName": "PlaywireMobile.PMConfigUnit",
-                "usr": "s:14PlaywireMobile12PMConfigUnitV"
+                "usr": "c:@M@PlaywireMobile@objc(cs)PMConfigUnit"
               },
               {
                 "kind": "TypeNominal",
@@ -2690,21 +2723,28 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:14PlaywireMobile12PMConfigUnitV4fromACs7Decoder_p_tKcfc",
-            "mangledName": "$s14PlaywireMobile12PMConfigUnitV4fromACs7Decoder_p_tKcfc",
+            "usr": "s:14PlaywireMobile12PMConfigUnitC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s14PlaywireMobile12PMConfigUnitC4fromACs7Decoder_p_tKcfc",
             "moduleName": "PlaywireMobile",
             "implicit": true,
             "throwing": true,
             "init_kind": "Designated"
           }
         ],
-        "declKind": "Struct",
-        "usr": "s:14PlaywireMobile12PMConfigUnitV",
-        "mangledName": "$s14PlaywireMobile12PMConfigUnitV",
+        "declKind": "Class",
+        "usr": "c:@M@PlaywireMobile@objc(cs)PMConfigUnit",
+        "mangledName": "$s14PlaywireMobile12PMConfigUnitC",
         "moduleName": "PlaywireMobile",
         "declAttributes": [
+          "Final",
           "AccessControl",
-          "RawDocComment"
+          "ObjCMembers",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
         ],
         "conformances": [
           {
@@ -2713,6 +2753,55 @@
             "printedName": "Decodable",
             "usr": "s:Se",
             "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
       },
@@ -2735,7 +2824,7 @@
                     "kind": "TypeNominal",
                     "name": "PMConfigUnitMode",
                     "printedName": "PlaywireMobile.PMConfigUnitMode",
-                    "usr": "s:14PlaywireMobile16PMConfigUnitModeO"
+                    "usr": "c:@M@PlaywireMobile@E@PMConfigUnitMode"
                   },
                   {
                     "kind": "TypeNominal",
@@ -2746,7 +2835,7 @@
                         "kind": "TypeNominal",
                         "name": "PMConfigUnitMode",
                         "printedName": "PlaywireMobile.PMConfigUnitMode",
-                        "usr": "s:14PlaywireMobile16PMConfigUnitModeO"
+                        "usr": "c:@M@PlaywireMobile@E@PMConfigUnitMode"
                       }
                     ]
                   }
@@ -2754,9 +2843,41 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:14PlaywireMobile16PMConfigUnitModeO12InterstitialyA2CmF",
+            "usr": "c:@M@PlaywireMobile@E@PMConfigUnitMode@PMConfigUnitModeInterstitial",
             "mangledName": "$s14PlaywireMobile16PMConfigUnitModeO12InterstitialyA2CmF",
-            "moduleName": "PlaywireMobile"
+            "moduleName": "PlaywireMobile",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PMConfigUnitMode",
+                "printedName": "PlaywireMobile.PMConfigUnitMode",
+                "usr": "c:@M@PlaywireMobile@E@PMConfigUnitMode"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:14PlaywireMobile16PMConfigUnitModeO4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s14PlaywireMobile16PMConfigUnitModeO4fromACs7Decoder_p_tKcfc",
+            "moduleName": "PlaywireMobile",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
           },
           {
             "kind": "Constructor",
@@ -2772,21 +2893,21 @@
                     "kind": "TypeNominal",
                     "name": "PMConfigUnitMode",
                     "printedName": "PlaywireMobile.PMConfigUnitMode",
-                    "usr": "s:14PlaywireMobile16PMConfigUnitModeO"
+                    "usr": "c:@M@PlaywireMobile@E@PMConfigUnitMode"
                   }
                 ],
                 "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:14PlaywireMobile16PMConfigUnitModeO8rawValueACSgSS_tcfc",
-            "mangledName": "$s14PlaywireMobile16PMConfigUnitModeO8rawValueACSgSS_tcfc",
+            "usr": "s:14PlaywireMobile16PMConfigUnitModeO8rawValueACSgSi_tcfc",
+            "mangledName": "$s14PlaywireMobile16PMConfigUnitModeO8rawValueACSgSi_tcfc",
             "moduleName": "PlaywireMobile",
             "implicit": true,
             "init_kind": "Designated"
@@ -2798,14 +2919,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
               }
             ],
             "declKind": "Var",
-            "usr": "s:14PlaywireMobile16PMConfigUnitModeO8rawValueSSvp",
-            "mangledName": "$s14PlaywireMobile16PMConfigUnitModeO8rawValueSSvp",
+            "usr": "s:14PlaywireMobile16PMConfigUnitModeO8rawValueSivp",
+            "mangledName": "$s14PlaywireMobile16PMConfigUnitModeO8rawValueSivp",
             "moduleName": "PlaywireMobile",
             "implicit": true,
             "accessors": [
@@ -2816,14 +2937,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14PlaywireMobile16PMConfigUnitModeO8rawValueSSvg",
-                "mangledName": "$s14PlaywireMobile16PMConfigUnitModeO8rawValueSSvg",
+                "usr": "s:14PlaywireMobile16PMConfigUnitModeO8rawValueSivg",
+                "mangledName": "$s14PlaywireMobile16PMConfigUnitModeO8rawValueSivg",
                 "moduleName": "PlaywireMobile",
                 "implicit": true,
                 "accessorKind": "get"
@@ -2832,13 +2953,14 @@
           }
         ],
         "declKind": "Enum",
-        "usr": "s:14PlaywireMobile16PMConfigUnitModeO",
+        "usr": "c:@M@PlaywireMobile@E@PMConfigUnitMode",
         "mangledName": "$s14PlaywireMobile16PMConfigUnitModeO",
         "moduleName": "PlaywireMobile",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "ObjC"
         ],
-        "enumRawTypeName": "String",
+        "enumRawTypeName": "Int",
         "conformances": [
           {
             "kind": "Conformance",
@@ -2866,9 +2988,9 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
                   }
                 ]
               }
@@ -2903,12 +3025,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:14PlaywireMobile19PMConfigUnitNetworkV4nameSSvp",
-            "mangledName": "$s14PlaywireMobile19PMConfigUnitNetworkV4nameSSvp",
+            "usr": "c:@M@PlaywireMobile@objc(cs)PMConfigUnitNetwork(py)name",
+            "mangledName": "$s14PlaywireMobile19PMConfigUnitNetworkC4nameSSvp",
             "moduleName": "PlaywireMobile",
             "declAttributes": [
+              "Final",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -2926,10 +3050,14 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14PlaywireMobile19PMConfigUnitNetworkV4nameSSvg",
-                "mangledName": "$s14PlaywireMobile19PMConfigUnitNetworkV4nameSSvg",
+                "usr": "c:@M@PlaywireMobile@objc(cs)PMConfigUnitNetwork(im)name",
+                "mangledName": "$s14PlaywireMobile19PMConfigUnitNetworkC4nameSSvg",
                 "moduleName": "PlaywireMobile",
                 "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
                 "accessorKind": "get"
               }
             ]
@@ -2948,19 +3076,21 @@
                     "kind": "TypeNominal",
                     "name": "PMConfigUnitNetworkVast",
                     "printedName": "PlaywireMobile.PMConfigUnitNetworkVast",
-                    "usr": "s:14PlaywireMobile23PMConfigUnitNetworkVastV"
+                    "usr": "c:@M@PlaywireMobile@objc(cs)PMConfigUnitNetworkVast"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:14PlaywireMobile19PMConfigUnitNetworkV4vastAA0cdE4VastVSgvp",
-            "mangledName": "$s14PlaywireMobile19PMConfigUnitNetworkV4vastAA0cdE4VastVSgvp",
+            "usr": "c:@M@PlaywireMobile@objc(cs)PMConfigUnitNetwork(py)vast",
+            "mangledName": "$s14PlaywireMobile19PMConfigUnitNetworkC4vastAA0cdE4VastCSgvp",
             "moduleName": "PlaywireMobile",
             "declAttributes": [
+              "Final",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -2979,17 +3109,21 @@
                         "kind": "TypeNominal",
                         "name": "PMConfigUnitNetworkVast",
                         "printedName": "PlaywireMobile.PMConfigUnitNetworkVast",
-                        "usr": "s:14PlaywireMobile23PMConfigUnitNetworkVastV"
+                        "usr": "c:@M@PlaywireMobile@objc(cs)PMConfigUnitNetworkVast"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14PlaywireMobile19PMConfigUnitNetworkV4vastAA0cdE4VastVSgvg",
-                "mangledName": "$s14PlaywireMobile19PMConfigUnitNetworkV4vastAA0cdE4VastVSgvg",
+                "usr": "c:@M@PlaywireMobile@objc(cs)PMConfigUnitNetwork(im)vast",
+                "mangledName": "$s14PlaywireMobile19PMConfigUnitNetworkC4vastAA0cdE4VastCSgvg",
                 "moduleName": "PlaywireMobile",
                 "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
                 "accessorKind": "get"
               }
             ]
@@ -3008,19 +3142,21 @@
                     "kind": "TypeNominal",
                     "name": "PMConfigUnitNetworkVastGam",
                     "printedName": "PlaywireMobile.PMConfigUnitNetworkVastGam",
-                    "usr": "s:14PlaywireMobile26PMConfigUnitNetworkVastGamV"
+                    "usr": "c:@M@PlaywireMobile@objc(cs)PMConfigUnitNetworkVastGam"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:14PlaywireMobile19PMConfigUnitNetworkV7vastGamAA0cde4VastG0VSgvp",
-            "mangledName": "$s14PlaywireMobile19PMConfigUnitNetworkV7vastGamAA0cde4VastG0VSgvp",
+            "usr": "c:@M@PlaywireMobile@objc(cs)PMConfigUnitNetwork(py)vastGam",
+            "mangledName": "$s14PlaywireMobile19PMConfigUnitNetworkC7vastGamAA0cde4VastG0CSgvp",
             "moduleName": "PlaywireMobile",
             "declAttributes": [
+              "Final",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -3039,17 +3175,21 @@
                         "kind": "TypeNominal",
                         "name": "PMConfigUnitNetworkVastGam",
                         "printedName": "PlaywireMobile.PMConfigUnitNetworkVastGam",
-                        "usr": "s:14PlaywireMobile26PMConfigUnitNetworkVastGamV"
+                        "usr": "c:@M@PlaywireMobile@objc(cs)PMConfigUnitNetworkVastGam"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14PlaywireMobile19PMConfigUnitNetworkV7vastGamAA0cde4VastG0VSgvg",
-                "mangledName": "$s14PlaywireMobile19PMConfigUnitNetworkV7vastGamAA0cde4VastG0VSgvg",
+                "usr": "c:@M@PlaywireMobile@objc(cs)PMConfigUnitNetwork(im)vastGam",
+                "mangledName": "$s14PlaywireMobile19PMConfigUnitNetworkC7vastGamAA0cde4VastG0CSgvg",
                 "moduleName": "PlaywireMobile",
                 "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
                 "accessorKind": "get"
               }
             ]
@@ -3063,7 +3203,7 @@
                 "kind": "TypeNominal",
                 "name": "PMConfigUnitNetwork",
                 "printedName": "PlaywireMobile.PMConfigUnitNetwork",
-                "usr": "s:14PlaywireMobile19PMConfigUnitNetworkV"
+                "usr": "c:@M@PlaywireMobile@objc(cs)PMConfigUnitNetwork"
               },
               {
                 "kind": "TypeNominal",
@@ -3073,21 +3213,28 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:14PlaywireMobile19PMConfigUnitNetworkV4fromACs7Decoder_p_tKcfc",
-            "mangledName": "$s14PlaywireMobile19PMConfigUnitNetworkV4fromACs7Decoder_p_tKcfc",
+            "usr": "s:14PlaywireMobile19PMConfigUnitNetworkC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s14PlaywireMobile19PMConfigUnitNetworkC4fromACs7Decoder_p_tKcfc",
             "moduleName": "PlaywireMobile",
             "implicit": true,
             "throwing": true,
             "init_kind": "Designated"
           }
         ],
-        "declKind": "Struct",
-        "usr": "s:14PlaywireMobile19PMConfigUnitNetworkV",
-        "mangledName": "$s14PlaywireMobile19PMConfigUnitNetworkV",
+        "declKind": "Class",
+        "usr": "c:@M@PlaywireMobile@objc(cs)PMConfigUnitNetwork",
+        "mangledName": "$s14PlaywireMobile19PMConfigUnitNetworkC",
         "moduleName": "PlaywireMobile",
         "declAttributes": [
+          "Final",
           "AccessControl",
-          "RawDocComment"
+          "ObjCMembers",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
         ],
         "conformances": [
           {
@@ -3096,6 +3243,55 @@
             "printedName": "Decodable",
             "usr": "s:Se",
             "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
       },
@@ -3117,12 +3313,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:14PlaywireMobile23PMConfigUnitNetworkVastV3urlSSvp",
-            "mangledName": "$s14PlaywireMobile23PMConfigUnitNetworkVastV3urlSSvp",
+            "usr": "c:@M@PlaywireMobile@objc(cs)PMConfigUnitNetworkVast(py)url",
+            "mangledName": "$s14PlaywireMobile23PMConfigUnitNetworkVastC3urlSSvp",
             "moduleName": "PlaywireMobile",
             "declAttributes": [
+              "Final",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -3140,10 +3338,14 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14PlaywireMobile23PMConfigUnitNetworkVastV3urlSSvg",
-                "mangledName": "$s14PlaywireMobile23PMConfigUnitNetworkVastV3urlSSvg",
+                "usr": "c:@M@PlaywireMobile@objc(cs)PMConfigUnitNetworkVast(im)url",
+                "mangledName": "$s14PlaywireMobile23PMConfigUnitNetworkVastC3urlSSvg",
                 "moduleName": "PlaywireMobile",
                 "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
                 "accessorKind": "get"
               }
             ]
@@ -3157,7 +3359,7 @@
                 "kind": "TypeNominal",
                 "name": "PMConfigUnitNetworkVast",
                 "printedName": "PlaywireMobile.PMConfigUnitNetworkVast",
-                "usr": "s:14PlaywireMobile23PMConfigUnitNetworkVastV"
+                "usr": "c:@M@PlaywireMobile@objc(cs)PMConfigUnitNetworkVast"
               },
               {
                 "kind": "TypeNominal",
@@ -3167,20 +3369,27 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:14PlaywireMobile23PMConfigUnitNetworkVastV4fromACs7Decoder_p_tKcfc",
-            "mangledName": "$s14PlaywireMobile23PMConfigUnitNetworkVastV4fromACs7Decoder_p_tKcfc",
+            "usr": "s:14PlaywireMobile23PMConfigUnitNetworkVastC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s14PlaywireMobile23PMConfigUnitNetworkVastC4fromACs7Decoder_p_tKcfc",
             "moduleName": "PlaywireMobile",
             "implicit": true,
             "throwing": true,
             "init_kind": "Designated"
           }
         ],
-        "declKind": "Struct",
-        "usr": "s:14PlaywireMobile23PMConfigUnitNetworkVastV",
-        "mangledName": "$s14PlaywireMobile23PMConfigUnitNetworkVastV",
+        "declKind": "Class",
+        "usr": "c:@M@PlaywireMobile@objc(cs)PMConfigUnitNetworkVast",
+        "mangledName": "$s14PlaywireMobile23PMConfigUnitNetworkVastC",
         "moduleName": "PlaywireMobile",
         "declAttributes": [
-          "AccessControl"
+          "Final",
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
         ],
         "conformances": [
           {
@@ -3189,6 +3398,55 @@
             "printedName": "Decodable",
             "usr": "s:Se",
             "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
       },
@@ -3210,12 +3468,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:14PlaywireMobile26PMConfigUnitNetworkVastGamV4codeSSvp",
-            "mangledName": "$s14PlaywireMobile26PMConfigUnitNetworkVastGamV4codeSSvp",
+            "usr": "c:@M@PlaywireMobile@objc(cs)PMConfigUnitNetworkVastGam(py)code",
+            "mangledName": "$s14PlaywireMobile26PMConfigUnitNetworkVastGamC4codeSSvp",
             "moduleName": "PlaywireMobile",
             "declAttributes": [
+              "Final",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -3233,10 +3493,14 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14PlaywireMobile26PMConfigUnitNetworkVastGamV4codeSSvg",
-                "mangledName": "$s14PlaywireMobile26PMConfigUnitNetworkVastGamV4codeSSvg",
+                "usr": "c:@M@PlaywireMobile@objc(cs)PMConfigUnitNetworkVastGam(im)code",
+                "mangledName": "$s14PlaywireMobile26PMConfigUnitNetworkVastGamC4codeSSvg",
                 "moduleName": "PlaywireMobile",
                 "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
                 "accessorKind": "get"
               }
             ]
@@ -3250,7 +3514,7 @@
                 "kind": "TypeNominal",
                 "name": "PMConfigUnitNetworkVastGam",
                 "printedName": "PlaywireMobile.PMConfigUnitNetworkVastGam",
-                "usr": "s:14PlaywireMobile26PMConfigUnitNetworkVastGamV"
+                "usr": "c:@M@PlaywireMobile@objc(cs)PMConfigUnitNetworkVastGam"
               },
               {
                 "kind": "TypeNominal",
@@ -3260,20 +3524,27 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:14PlaywireMobile26PMConfigUnitNetworkVastGamV4fromACs7Decoder_p_tKcfc",
-            "mangledName": "$s14PlaywireMobile26PMConfigUnitNetworkVastGamV4fromACs7Decoder_p_tKcfc",
+            "usr": "s:14PlaywireMobile26PMConfigUnitNetworkVastGamC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s14PlaywireMobile26PMConfigUnitNetworkVastGamC4fromACs7Decoder_p_tKcfc",
             "moduleName": "PlaywireMobile",
             "implicit": true,
             "throwing": true,
             "init_kind": "Designated"
           }
         ],
-        "declKind": "Struct",
-        "usr": "s:14PlaywireMobile26PMConfigUnitNetworkVastGamV",
-        "mangledName": "$s14PlaywireMobile26PMConfigUnitNetworkVastGamV",
+        "declKind": "Class",
+        "usr": "c:@M@PlaywireMobile@objc(cs)PMConfigUnitNetworkVastGam",
+        "mangledName": "$s14PlaywireMobile26PMConfigUnitNetworkVastGamC",
         "moduleName": "PlaywireMobile",
         "declAttributes": [
-          "AccessControl"
+          "Final",
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
         ],
         "conformances": [
           {
@@ -3282,6 +3553,55 @@
             "printedName": "Decodable",
             "usr": "s:Se",
             "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
       },
@@ -3397,7 +3717,7 @@
                 "kind": "TypeNominal",
                 "name": "PMConfigNetwork",
                 "printedName": "PlaywireMobile.PMConfigNetwork",
-                "usr": "s:14PlaywireMobile15PMConfigNetworkV"
+                "usr": "c:@M@PlaywireMobile@objc(cs)PMConfigNetwork"
               },
               {
                 "kind": "TypeNominal",
@@ -3434,8 +3754,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:14PlaywireMobile16PMNetworkAdapterP10initialize6config10onCompleteyAA15PMConfigNetworkV_yypSgcSgtF",
-            "mangledName": "$s14PlaywireMobile16PMNetworkAdapterP10initialize6config10onCompleteyAA15PMConfigNetworkV_yypSgcSgtF",
+            "usr": "s:14PlaywireMobile16PMNetworkAdapterP10initialize6config10onCompleteyAA15PMConfigNetworkC_yypSgcSgtF",
+            "mangledName": "$s14PlaywireMobile16PMNetworkAdapterP10initialize6config10onCompleteyAA15PMConfigNetworkC_yypSgcSgtF",
             "moduleName": "PlaywireMobile",
             "genericSig": "<τ_0_0 where τ_0_0 : PlaywireMobile.PMNetworkAdapter>",
             "sugared_genericSig": "<Self where Self : PlaywireMobile.PMNetworkAdapter>",
@@ -3452,7 +3772,7 @@
                 "kind": "TypeNominal",
                 "name": "PMNetwork",
                 "printedName": "PlaywireMobile.PMNetwork",
-                "usr": "s:14PlaywireMobile9PMNetworkP"
+                "usr": "c:@M@PlaywireMobile@objc(pl)PMNetwork"
               }
             ],
             "declKind": "Func",
@@ -3961,15 +4281,15 @@
                     "kind": "TypeNominal",
                     "name": "PMConfig",
                     "printedName": "PlaywireMobile.PMConfig",
-                    "usr": "s:14PlaywireMobile8PMConfigV"
+                    "usr": "c:@M@PlaywireMobile@objc(cs)PMConfig"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:14PlaywireMobile10PMAdLoaderC6configAA8PMConfigVSgvp",
-            "mangledName": "$s14PlaywireMobile10PMAdLoaderC6configAA8PMConfigVSgvp",
+            "usr": "s:14PlaywireMobile10PMAdLoaderC6configAA8PMConfigCSgvp",
+            "mangledName": "$s14PlaywireMobile10PMAdLoaderC6configAA8PMConfigCSgvp",
             "moduleName": "PlaywireMobile",
             "declAttributes": [
               "Final",
@@ -3993,15 +4313,15 @@
                         "kind": "TypeNominal",
                         "name": "PMConfig",
                         "printedName": "PlaywireMobile.PMConfig",
-                        "usr": "s:14PlaywireMobile8PMConfigV"
+                        "usr": "c:@M@PlaywireMobile@objc(cs)PMConfig"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14PlaywireMobile10PMAdLoaderC6configAA8PMConfigVSgvg",
-                "mangledName": "$s14PlaywireMobile10PMAdLoaderC6configAA8PMConfigVSgvg",
+                "usr": "s:14PlaywireMobile10PMAdLoaderC6configAA8PMConfigCSgvg",
+                "mangledName": "$s14PlaywireMobile10PMAdLoaderC6configAA8PMConfigCSgvg",
                 "moduleName": "PlaywireMobile",
                 "implicit": true,
                 "declAttributes": [
@@ -4025,15 +4345,15 @@
                     "kind": "TypeNominal",
                     "name": "PMConfigUnit",
                     "printedName": "PlaywireMobile.PMConfigUnit",
-                    "usr": "s:14PlaywireMobile12PMConfigUnitV"
+                    "usr": "c:@M@PlaywireMobile@objc(cs)PMConfigUnit"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:14PlaywireMobile10PMAdLoaderC10configUnitAA08PMConfigF0VSgvp",
-            "mangledName": "$s14PlaywireMobile10PMAdLoaderC10configUnitAA08PMConfigF0VSgvp",
+            "usr": "s:14PlaywireMobile10PMAdLoaderC10configUnitAA08PMConfigF0CSgvp",
+            "mangledName": "$s14PlaywireMobile10PMAdLoaderC10configUnitAA08PMConfigF0CSgvp",
             "moduleName": "PlaywireMobile",
             "declAttributes": [
               "Final",
@@ -4057,15 +4377,15 @@
                         "kind": "TypeNominal",
                         "name": "PMConfigUnit",
                         "printedName": "PlaywireMobile.PMConfigUnit",
-                        "usr": "s:14PlaywireMobile12PMConfigUnitV"
+                        "usr": "c:@M@PlaywireMobile@objc(cs)PMConfigUnit"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14PlaywireMobile10PMAdLoaderC10configUnitAA08PMConfigF0VSgvg",
-                "mangledName": "$s14PlaywireMobile10PMAdLoaderC10configUnitAA08PMConfigF0VSgvg",
+                "usr": "s:14PlaywireMobile10PMAdLoaderC10configUnitAA08PMConfigF0CSgvg",
+                "mangledName": "$s14PlaywireMobile10PMAdLoaderC10configUnitAA08PMConfigF0CSgvg",
                 "moduleName": "PlaywireMobile",
                 "implicit": true,
                 "declAttributes": [
@@ -4129,7 +4449,7 @@
                 "kind": "TypeNominal",
                 "name": "PMAdLoader",
                 "printedName": "PlaywireMobile.PMAdLoader",
-                "usr": "s:14PlaywireMobile10PMAdLoaderC"
+                "usr": "c:@M@PlaywireMobile@objc(cs)PMAdLoader"
               },
               {
                 "kind": "TypeNominal",
@@ -4139,11 +4459,13 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:14PlaywireMobile10PMAdLoaderCyACSScfc",
+            "usr": "c:@M@PlaywireMobile@objc(cs)PMAdLoader(im)initWithAdUnitName:",
             "mangledName": "$s14PlaywireMobile10PMAdLoaderCyACSScfc",
             "moduleName": "PlaywireMobile",
+            "objc_name": "initWithAdUnitName:",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "init_kind": "Designated"
           },
@@ -4156,7 +4478,7 @@
                 "kind": "TypeNominal",
                 "name": "PMAdLoader",
                 "printedName": "PlaywireMobile.PMAdLoader",
-                "usr": "s:14PlaywireMobile10PMAdLoaderC"
+                "usr": "c:@M@PlaywireMobile@objc(cs)PMAdLoader"
               },
               {
                 "kind": "TypeNominal",
@@ -4172,22 +4494,106 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:14PlaywireMobile10PMAdLoaderCyACSS_AA0cD13ConfigurationCtcfc",
+            "usr": "c:@M@PlaywireMobile@objc(cs)PMAdLoader(im)initWithAdUnitName:configuration:",
             "mangledName": "$s14PlaywireMobile10PMAdLoaderCyACSS_AA0cD13ConfigurationCtcfc",
             "moduleName": "PlaywireMobile",
+            "objc_name": "initWithAdUnitName:configuration:",
             "declAttributes": [
               "Convenience",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "init_kind": "Convenience"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PMAdLoader",
+                "printedName": "PlaywireMobile.PMAdLoader",
+                "usr": "c:@M@PlaywireMobile@objc(cs)PMAdLoader"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PlaywireMobile@objc(cs)PMAdLoader(im)init",
+            "mangledName": "$s14PlaywireMobile10PMAdLoaderCACycfc",
+            "moduleName": "PlaywireMobile",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
           }
         ],
         "declKind": "Class",
-        "usr": "s:14PlaywireMobile10PMAdLoaderC",
+        "usr": "c:@M@PlaywireMobile@objc(cs)PMAdLoader",
         "mangledName": "$s14PlaywireMobile10PMAdLoaderC",
         "moduleName": "PlaywireMobile",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
         ]
       },
       {
@@ -4224,7 +4630,7 @@
                         "kind": "TypeNominal",
                         "name": "PMInterstitialAd",
                         "printedName": "PlaywireMobile.PMInterstitialAd",
-                        "usr": "s:14PlaywireMobile16PMInterstitialAdP"
+                        "usr": "c:@M@PlaywireMobile@objc(pl)PMInterstitialAd"
                       }
                     ],
                     "usr": "s:Sq"
@@ -4233,12 +4639,13 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:14PlaywireMobile22PMInterstitialAdLoaderC4load10onCompleteyyAA0cD0_pSgc_tF",
+            "usr": "c:@M@PlaywireMobile@objc(cs)PMInterstitialAdLoader(im)loadOnComplete:",
             "mangledName": "$s14PlaywireMobile22PMInterstitialAdLoaderC4load10onCompleteyyAA0cD0_pSgc_tF",
             "moduleName": "PlaywireMobile",
             "declAttributes": [
               "Final",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -4251,7 +4658,7 @@
                 "kind": "TypeNominal",
                 "name": "PMInterstitialAdLoader",
                 "printedName": "PlaywireMobile.PMInterstitialAdLoader",
-                "usr": "s:14PlaywireMobile22PMInterstitialAdLoaderC"
+                "usr": "c:@M@PlaywireMobile@objc(cs)PMInterstitialAdLoader"
               },
               {
                 "kind": "TypeNominal",
@@ -4261,29 +4668,85 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:14PlaywireMobile22PMInterstitialAdLoaderCyACSScfc",
+            "usr": "c:@M@PlaywireMobile@objc(cs)PMInterstitialAdLoader(im)initWithAdUnitName:",
             "mangledName": "$s14PlaywireMobile22PMInterstitialAdLoaderCyACSScfc",
             "moduleName": "PlaywireMobile",
             "overriding": true,
             "implicit": true,
+            "objc_name": "initWithAdUnitName:",
             "declAttributes": [
+              "ObjC",
               "Override"
             ],
             "init_kind": "Designated"
           }
         ],
         "declKind": "Class",
-        "usr": "s:14PlaywireMobile22PMInterstitialAdLoaderC",
+        "usr": "c:@M@PlaywireMobile@objc(cs)PMInterstitialAdLoader",
         "mangledName": "$s14PlaywireMobile22PMInterstitialAdLoaderC",
         "moduleName": "PlaywireMobile",
         "declAttributes": [
           "AccessControl",
-          "Final"
+          "Final",
+          "ObjCMembers",
+          "ObjC"
         ],
-        "superclassUsr": "s:14PlaywireMobile10PMAdLoaderC",
+        "superclassUsr": "c:@M@PlaywireMobile@objc(cs)PMAdLoader",
         "inheritsConvenienceInitializers": true,
         "superclassNames": [
-          "PlaywireMobile.PMAdLoader"
+          "PlaywireMobile.PMAdLoader",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
         ]
       },
       {
@@ -4315,42 +4778,47 @@
                 "kind": "TypeNominal",
                 "name": "PMFullScreenAd",
                 "printedName": "PlaywireMobile.PMFullScreenAd",
-                "usr": "s:14PlaywireMobile14PMFullScreenAdP"
+                "usr": "c:@M@PlaywireMobile@objc(pl)PMFullScreenAd"
               }
             ],
             "declKind": "Func",
-            "usr": "s:14PlaywireMobile24PMInterstitialAdDelegateP010fullScreenD6Closed0fG0yAA06PMFullgD0_p_tF",
+            "usr": "c:@M@PlaywireMobile@objc(pl)PMInterstitialAdDelegate(im)fullScreenAdClosedWithFullScreen:",
             "mangledName": "$s14PlaywireMobile24PMInterstitialAdDelegateP010fullScreenD6Closed0fG0yAA06PMFullgD0_p_tF",
             "moduleName": "PlaywireMobile",
             "genericSig": "<τ_0_0 where τ_0_0 : PlaywireMobile.PMInterstitialAdDelegate>",
             "sugared_genericSig": "<Self where Self : PlaywireMobile.PMInterstitialAdDelegate>",
             "protocolReq": true,
             "overriding": true,
+            "objc_name": "fullScreenAdClosedWithFullScreen:",
+            "declAttributes": [
+              "ObjC"
+            ],
             "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
-        "usr": "s:14PlaywireMobile24PMInterstitialAdDelegateP",
+        "usr": "c:@M@PlaywireMobile@objc(pl)PMInterstitialAdDelegate",
         "mangledName": "$s14PlaywireMobile24PMInterstitialAdDelegateP",
         "moduleName": "PlaywireMobile",
         "genericSig": "<τ_0_0 : PlaywireMobile.PMFullScreenAdDelegate>",
         "sugared_genericSig": "<Self : PlaywireMobile.PMFullScreenAdDelegate>",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "ObjC"
         ],
         "conformances": [
           {
             "kind": "Conformance",
             "name": "PMFullScreenAdDelegate",
             "printedName": "PMFullScreenAdDelegate",
-            "usr": "s:14PlaywireMobile22PMFullScreenAdDelegateP",
+            "usr": "c:@M@PlaywireMobile@objc(pl)PMFullScreenAdDelegate",
             "mangledName": "$s14PlaywireMobile22PMFullScreenAdDelegateP"
           },
           {
             "kind": "Conformance",
             "name": "PMAdDelegate",
             "printedName": "PMAdDelegate",
-            "usr": "s:14PlaywireMobile12PMAdDelegateP",
+            "usr": "c:@M@PlaywireMobile@objc(pl)PMAdDelegate",
             "mangledName": "$s14PlaywireMobile12PMAdDelegateP"
           }
         ]
@@ -4360,27 +4828,28 @@
         "name": "PMInterstitialAd",
         "printedName": "PMInterstitialAd",
         "declKind": "Protocol",
-        "usr": "s:14PlaywireMobile16PMInterstitialAdP",
+        "usr": "c:@M@PlaywireMobile@objc(pl)PMInterstitialAd",
         "mangledName": "$s14PlaywireMobile16PMInterstitialAdP",
         "moduleName": "PlaywireMobile",
         "genericSig": "<τ_0_0 : PlaywireMobile.PMFullScreenAd>",
         "sugared_genericSig": "<Self : PlaywireMobile.PMFullScreenAd>",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "ObjC"
         ],
         "conformances": [
           {
             "kind": "Conformance",
             "name": "PMFullScreenAd",
             "printedName": "PMFullScreenAd",
-            "usr": "s:14PlaywireMobile14PMFullScreenAdP",
+            "usr": "c:@M@PlaywireMobile@objc(pl)PMFullScreenAd",
             "mangledName": "$s14PlaywireMobile14PMFullScreenAdP"
           },
           {
             "kind": "Conformance",
             "name": "PMAd",
             "printedName": "PMAd",
-            "usr": "s:14PlaywireMobile4PMAdP",
+            "usr": "c:@M@PlaywireMobile@objc(pl)PMAd",
             "mangledName": "$s14PlaywireMobile4PMAdP"
           }
         ]
@@ -4432,16 +4901,19 @@
                 "kind": "TypeNominal",
                 "name": "PMConfigUnitMode",
                 "printedName": "PlaywireMobile.PMConfigUnitMode",
-                "usr": "s:14PlaywireMobile16PMConfigUnitModeO"
+                "usr": "c:@M@PlaywireMobile@E@PMConfigUnitMode"
               }
             ],
             "declKind": "Func",
-            "usr": "s:14PlaywireMobile9PMNetworkP12supportsMode4modeSbAA012PMConfigUnitE0O_tF",
+            "usr": "c:@M@PlaywireMobile@objc(pl)PMNetwork(im)supportsModeWithMode:",
             "mangledName": "$s14PlaywireMobile9PMNetworkP12supportsMode4modeSbAA012PMConfigUnitE0O_tF",
             "moduleName": "PlaywireMobile",
             "genericSig": "<τ_0_0 where τ_0_0 : PlaywireMobile.PMNetwork>",
             "sugared_genericSig": "<Self where Self : PlaywireMobile.PMNetwork>",
             "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
@@ -4459,19 +4931,19 @@
                 "kind": "TypeNominal",
                 "name": "PMConfig",
                 "printedName": "PlaywireMobile.PMConfig",
-                "usr": "s:14PlaywireMobile8PMConfigV"
+                "usr": "c:@M@PlaywireMobile@objc(cs)PMConfig"
               },
               {
                 "kind": "TypeNominal",
                 "name": "PMConfigUnit",
                 "printedName": "PlaywireMobile.PMConfigUnit",
-                "usr": "s:14PlaywireMobile12PMConfigUnitV"
+                "usr": "c:@M@PlaywireMobile@objc(cs)PMConfigUnit"
               },
               {
                 "kind": "TypeNominal",
                 "name": "PMConfigUnitNetwork",
                 "printedName": "PlaywireMobile.PMConfigUnitNetwork",
-                "usr": "s:14PlaywireMobile19PMConfigUnitNetworkV"
+                "usr": "c:@M@PlaywireMobile@objc(cs)PMConfigUnitNetwork"
               },
               {
                 "kind": "TypeNominal",
@@ -4506,12 +4978,15 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:14PlaywireMobile9PMNetworkP4load6config0E4Unit0eF7Network19loaderConfiguration10onCompleteyAA8PMConfigV_AA0lF0VAA0lfG0VAA010PMAdLoaderI0CSgyyctF",
-            "mangledName": "$s14PlaywireMobile9PMNetworkP4load6config0E4Unit0eF7Network19loaderConfiguration10onCompleteyAA8PMConfigV_AA0lF0VAA0lfG0VAA010PMAdLoaderI0CSgyyctF",
+            "usr": "c:@M@PlaywireMobile@objc(pl)PMNetwork(im)loadWithConfig:configUnit:configUnitNetwork:loaderConfiguration:onComplete:",
+            "mangledName": "$s14PlaywireMobile9PMNetworkP4load6config0E4Unit0eF7Network19loaderConfiguration10onCompleteyAA8PMConfigC_AA0lF0CAA0lfG0CAA010PMAdLoaderI0CSgyyctF",
             "moduleName": "PlaywireMobile",
             "genericSig": "<τ_0_0 where τ_0_0 : PlaywireMobile.PMNetwork>",
             "sugared_genericSig": "<Self where Self : PlaywireMobile.PMNetwork>",
             "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
@@ -4528,12 +5003,15 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:14PlaywireMobile9PMNetworkP9isSuccessSbyF",
+            "usr": "c:@M@PlaywireMobile@objc(pl)PMNetwork(im)isSuccess",
             "mangledName": "$s14PlaywireMobile9PMNetworkP9isSuccessSbyF",
             "moduleName": "PlaywireMobile",
             "genericSig": "<τ_0_0 where τ_0_0 : PlaywireMobile.PMNetwork>",
             "sugared_genericSig": "<Self where Self : PlaywireMobile.PMNetwork>",
             "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
@@ -4551,7 +5029,7 @@
                     "kind": "TypeNominal",
                     "name": "PMInterstitialAd",
                     "printedName": "PlaywireMobile.PMInterstitialAd",
-                    "usr": "s:14PlaywireMobile16PMInterstitialAdP"
+                    "usr": "c:@M@PlaywireMobile@objc(pl)PMInterstitialAd"
                   }
                 ],
                 "usr": "s:Sq"
@@ -4560,26 +5038,32 @@
                 "kind": "TypeNominal",
                 "name": "PMAdLoader",
                 "printedName": "PlaywireMobile.PMAdLoader",
-                "usr": "s:14PlaywireMobile10PMAdLoaderC"
+                "usr": "c:@M@PlaywireMobile@objc(cs)PMAdLoader"
               }
             ],
             "declKind": "Func",
-            "usr": "s:14PlaywireMobile9PMNetworkP14asInterstitial6loaderAA16PMInterstitialAd_pSgAA10PMAdLoaderC_tF",
+            "usr": "c:@M@PlaywireMobile@objc(pl)PMNetwork(im)asInterstitialWithLoader:",
             "mangledName": "$s14PlaywireMobile9PMNetworkP14asInterstitial6loaderAA16PMInterstitialAd_pSgAA10PMAdLoaderC_tF",
             "moduleName": "PlaywireMobile",
             "genericSig": "<τ_0_0 where τ_0_0 : PlaywireMobile.PMNetwork>",
             "sugared_genericSig": "<Self where Self : PlaywireMobile.PMNetwork>",
             "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
-        "usr": "s:14PlaywireMobile9PMNetworkP",
+        "usr": "c:@M@PlaywireMobile@objc(pl)PMNetwork",
         "mangledName": "$s14PlaywireMobile9PMNetworkP",
         "moduleName": "PlaywireMobile",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
         "declAttributes": [
           "AccessControl",
+          "ObjC",
           "RawDocComment"
         ]
       },
@@ -4885,10 +5369,11 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:14PlaywireMobile15PMConfigNetworkV4typeAA0cD4TypeOvp",
-            "mangledName": "$s14PlaywireMobile15PMConfigNetworkV4typeAA0cD4TypeOvp",
+            "usr": "s:14PlaywireMobile15PMConfigNetworkC4typeAA0cD4TypeOvp",
+            "mangledName": "$s14PlaywireMobile15PMConfigNetworkC4typeAA0cD4TypeOvp",
             "moduleName": "PlaywireMobile",
             "declAttributes": [
+              "Final",
               "HasStorage",
               "AccessControl"
             ],
@@ -4908,10 +5393,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14PlaywireMobile15PMConfigNetworkV4typeAA0cD4TypeOvg",
-                "mangledName": "$s14PlaywireMobile15PMConfigNetworkV4typeAA0cD4TypeOvg",
+                "usr": "s:14PlaywireMobile15PMConfigNetworkC4typeAA0cD4TypeOvg",
+                "mangledName": "$s14PlaywireMobile15PMConfigNetworkC4typeAA0cD4TypeOvg",
                 "moduleName": "PlaywireMobile",
                 "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
                 "accessorKind": "get"
               }
             ]
@@ -4925,7 +5413,7 @@
                 "kind": "TypeNominal",
                 "name": "PMConfigNetwork",
                 "printedName": "PlaywireMobile.PMConfigNetwork",
-                "usr": "s:14PlaywireMobile15PMConfigNetworkV"
+                "usr": "c:@M@PlaywireMobile@objc(cs)PMConfigNetwork"
               },
               {
                 "kind": "TypeNominal",
@@ -4935,21 +5423,28 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:14PlaywireMobile15PMConfigNetworkV4fromACs7Decoder_p_tKcfc",
-            "mangledName": "$s14PlaywireMobile15PMConfigNetworkV4fromACs7Decoder_p_tKcfc",
+            "usr": "s:14PlaywireMobile15PMConfigNetworkC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s14PlaywireMobile15PMConfigNetworkC4fromACs7Decoder_p_tKcfc",
             "moduleName": "PlaywireMobile",
             "implicit": true,
             "throwing": true,
             "init_kind": "Designated"
           }
         ],
-        "declKind": "Struct",
-        "usr": "s:14PlaywireMobile15PMConfigNetworkV",
-        "mangledName": "$s14PlaywireMobile15PMConfigNetworkV",
+        "declKind": "Class",
+        "usr": "c:@M@PlaywireMobile@objc(cs)PMConfigNetwork",
+        "mangledName": "$s14PlaywireMobile15PMConfigNetworkC",
         "moduleName": "PlaywireMobile",
         "declAttributes": [
+          "Final",
           "AccessControl",
-          "RawDocComment"
+          "ObjCMembers",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
         ],
         "conformances": [
           {
@@ -4958,6 +5453,55 @@
             "printedName": "Decodable",
             "usr": "s:Se",
             "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
       },
@@ -4990,19 +5534,21 @@
                     "kind": "TypeNominal",
                     "name": "PMConfigApp",
                     "printedName": "PlaywireMobile.PMConfigApp",
-                    "usr": "s:14PlaywireMobile11PMConfigAppV"
+                    "usr": "c:@M@PlaywireMobile@objc(cs)PMConfigApp"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:14PlaywireMobile8PMConfigV3appAA0C3AppVSgvp",
-            "mangledName": "$s14PlaywireMobile8PMConfigV3appAA0C3AppVSgvp",
+            "usr": "c:@M@PlaywireMobile@objc(cs)PMConfig(py)app",
+            "mangledName": "$s14PlaywireMobile8PMConfigC3appAA0C3AppCSgvp",
             "moduleName": "PlaywireMobile",
             "declAttributes": [
+              "Final",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -5021,17 +5567,21 @@
                         "kind": "TypeNominal",
                         "name": "PMConfigApp",
                         "printedName": "PlaywireMobile.PMConfigApp",
-                        "usr": "s:14PlaywireMobile11PMConfigAppV"
+                        "usr": "c:@M@PlaywireMobile@objc(cs)PMConfigApp"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14PlaywireMobile8PMConfigV3appAA0C3AppVSgvg",
-                "mangledName": "$s14PlaywireMobile8PMConfigV3appAA0C3AppVSgvg",
+                "usr": "c:@M@PlaywireMobile@objc(cs)PMConfig(im)app",
+                "mangledName": "$s14PlaywireMobile8PMConfigC3appAA0C3AppCSgvg",
                 "moduleName": "PlaywireMobile",
                 "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
                 "accessorKind": "get"
               }
             ]
@@ -5061,7 +5611,7 @@
                         "kind": "TypeNominal",
                         "name": "PMConfigNetwork",
                         "printedName": "PlaywireMobile.PMConfigNetwork",
-                        "usr": "s:14PlaywireMobile15PMConfigNetworkV"
+                        "usr": "c:@M@PlaywireMobile@objc(cs)PMConfigNetwork"
                       }
                     ],
                     "usr": "s:SD"
@@ -5071,12 +5621,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:14PlaywireMobile8PMConfigV8networksSDySSAA0C7NetworkVGSgvp",
-            "mangledName": "$s14PlaywireMobile8PMConfigV8networksSDySSAA0C7NetworkVGSgvp",
+            "usr": "c:@M@PlaywireMobile@objc(cs)PMConfig(py)networks",
+            "mangledName": "$s14PlaywireMobile8PMConfigC8networksSDySSAA0C7NetworkCGSgvp",
             "moduleName": "PlaywireMobile",
             "declAttributes": [
+              "Final",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -5106,7 +5658,7 @@
                             "kind": "TypeNominal",
                             "name": "PMConfigNetwork",
                             "printedName": "PlaywireMobile.PMConfigNetwork",
-                            "usr": "s:14PlaywireMobile15PMConfigNetworkV"
+                            "usr": "c:@M@PlaywireMobile@objc(cs)PMConfigNetwork"
                           }
                         ],
                         "usr": "s:SD"
@@ -5116,10 +5668,14 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14PlaywireMobile8PMConfigV8networksSDySSAA0C7NetworkVGSgvg",
-                "mangledName": "$s14PlaywireMobile8PMConfigV8networksSDySSAA0C7NetworkVGSgvg",
+                "usr": "c:@M@PlaywireMobile@objc(cs)PMConfig(im)networks",
+                "mangledName": "$s14PlaywireMobile8PMConfigC8networksSDySSAA0C7NetworkCGSgvg",
                 "moduleName": "PlaywireMobile",
                 "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
                 "accessorKind": "get"
               }
             ]
@@ -5143,7 +5699,7 @@
                         "kind": "TypeNominal",
                         "name": "PMConfigUnit",
                         "printedName": "PlaywireMobile.PMConfigUnit",
-                        "usr": "s:14PlaywireMobile12PMConfigUnitV"
+                        "usr": "c:@M@PlaywireMobile@objc(cs)PMConfigUnit"
                       }
                     ],
                     "usr": "s:Sa"
@@ -5153,12 +5709,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:14PlaywireMobile8PMConfigV5unitsSayAA0C4UnitVGSgvp",
-            "mangledName": "$s14PlaywireMobile8PMConfigV5unitsSayAA0C4UnitVGSgvp",
+            "usr": "c:@M@PlaywireMobile@objc(cs)PMConfig(py)units",
+            "mangledName": "$s14PlaywireMobile8PMConfigC5unitsSayAA0C4UnitCGSgvp",
             "moduleName": "PlaywireMobile",
             "declAttributes": [
+              "Final",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -5182,7 +5740,7 @@
                             "kind": "TypeNominal",
                             "name": "PMConfigUnit",
                             "printedName": "PlaywireMobile.PMConfigUnit",
-                            "usr": "s:14PlaywireMobile12PMConfigUnitV"
+                            "usr": "c:@M@PlaywireMobile@objc(cs)PMConfigUnit"
                           }
                         ],
                         "usr": "s:Sa"
@@ -5192,10 +5750,14 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14PlaywireMobile8PMConfigV5unitsSayAA0C4UnitVGSgvg",
-                "mangledName": "$s14PlaywireMobile8PMConfigV5unitsSayAA0C4UnitVGSgvg",
+                "usr": "c:@M@PlaywireMobile@objc(cs)PMConfig(im)units",
+                "mangledName": "$s14PlaywireMobile8PMConfigC5unitsSayAA0C4UnitCGSgvg",
                 "moduleName": "PlaywireMobile",
                 "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
                 "accessorKind": "get"
               }
             ]
@@ -5209,7 +5771,7 @@
                 "kind": "TypeNominal",
                 "name": "PMConfig",
                 "printedName": "PlaywireMobile.PMConfig",
-                "usr": "s:14PlaywireMobile8PMConfigV"
+                "usr": "c:@M@PlaywireMobile@objc(cs)PMConfig"
               },
               {
                 "kind": "TypeNominal",
@@ -5219,21 +5781,28 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:14PlaywireMobile8PMConfigV4fromACs7Decoder_p_tKcfc",
-            "mangledName": "$s14PlaywireMobile8PMConfigV4fromACs7Decoder_p_tKcfc",
+            "usr": "s:14PlaywireMobile8PMConfigC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s14PlaywireMobile8PMConfigC4fromACs7Decoder_p_tKcfc",
             "moduleName": "PlaywireMobile",
             "implicit": true,
             "throwing": true,
             "init_kind": "Designated"
           }
         ],
-        "declKind": "Struct",
-        "usr": "s:14PlaywireMobile8PMConfigV",
-        "mangledName": "$s14PlaywireMobile8PMConfigV",
+        "declKind": "Class",
+        "usr": "c:@M@PlaywireMobile@objc(cs)PMConfig",
+        "mangledName": "$s14PlaywireMobile8PMConfigC",
         "moduleName": "PlaywireMobile",
         "declAttributes": [
+          "Final",
           "AccessControl",
-          "RawDocComment"
+          "ObjCMembers",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
         ],
         "conformances": [
           {
@@ -5242,6 +5811,55 @@
             "printedName": "Decodable",
             "usr": "s:Se",
             "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
       },
@@ -5291,12 +5909,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:14PlaywireMobile11PMConfigAppV8storeUrlSSSgvp",
-            "mangledName": "$s14PlaywireMobile11PMConfigAppV8storeUrlSSSgvp",
+            "usr": "c:@M@PlaywireMobile@objc(cs)PMConfigApp(py)storeUrl",
+            "mangledName": "$s14PlaywireMobile11PMConfigAppC8storeUrlSSSgvp",
             "moduleName": "PlaywireMobile",
             "declAttributes": [
+              "Final",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -5322,10 +5942,14 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14PlaywireMobile11PMConfigAppV8storeUrlSSSgvg",
-                "mangledName": "$s14PlaywireMobile11PMConfigAppV8storeUrlSSSgvg",
+                "usr": "c:@M@PlaywireMobile@objc(cs)PMConfigApp(im)storeUrl",
+                "mangledName": "$s14PlaywireMobile11PMConfigAppC8storeUrlSSSgvg",
                 "moduleName": "PlaywireMobile",
                 "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
                 "accessorKind": "get"
               }
             ]
@@ -5351,10 +5975,11 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:14PlaywireMobile11PMConfigAppV15childProtectionSbSgvp",
-            "mangledName": "$s14PlaywireMobile11PMConfigAppV15childProtectionSbSgvp",
+            "usr": "s:14PlaywireMobile11PMConfigAppC15childProtectionSbSgvp",
+            "mangledName": "$s14PlaywireMobile11PMConfigAppC15childProtectionSbSgvp",
             "moduleName": "PlaywireMobile",
             "declAttributes": [
+              "Final",
               "HasStorage",
               "AccessControl"
             ],
@@ -5382,10 +6007,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14PlaywireMobile11PMConfigAppV15childProtectionSbSgvg",
-                "mangledName": "$s14PlaywireMobile11PMConfigAppV15childProtectionSbSgvg",
+                "usr": "s:14PlaywireMobile11PMConfigAppC15childProtectionSbSgvg",
+                "mangledName": "$s14PlaywireMobile11PMConfigAppC15childProtectionSbSgvg",
                 "moduleName": "PlaywireMobile",
                 "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
                 "accessorKind": "get"
               }
             ]
@@ -5411,12 +6039,14 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:14PlaywireMobile11PMConfigAppV12publisherUrlSSSgvp",
-            "mangledName": "$s14PlaywireMobile11PMConfigAppV12publisherUrlSSSgvp",
+            "usr": "c:@M@PlaywireMobile@objc(cs)PMConfigApp(py)publisherUrl",
+            "mangledName": "$s14PlaywireMobile11PMConfigAppC12publisherUrlSSSgvp",
             "moduleName": "PlaywireMobile",
             "declAttributes": [
+              "Final",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -5442,10 +6072,14 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:14PlaywireMobile11PMConfigAppV12publisherUrlSSSgvg",
-                "mangledName": "$s14PlaywireMobile11PMConfigAppV12publisherUrlSSSgvg",
+                "usr": "c:@M@PlaywireMobile@objc(cs)PMConfigApp(im)publisherUrl",
+                "mangledName": "$s14PlaywireMobile11PMConfigAppC12publisherUrlSSSgvg",
                 "moduleName": "PlaywireMobile",
                 "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
                 "accessorKind": "get"
               }
             ]
@@ -5459,7 +6093,7 @@
                 "kind": "TypeNominal",
                 "name": "PMConfigApp",
                 "printedName": "PlaywireMobile.PMConfigApp",
-                "usr": "s:14PlaywireMobile11PMConfigAppV"
+                "usr": "c:@M@PlaywireMobile@objc(cs)PMConfigApp"
               },
               {
                 "kind": "TypeNominal",
@@ -5469,21 +6103,28 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:14PlaywireMobile11PMConfigAppV4fromACs7Decoder_p_tKcfc",
-            "mangledName": "$s14PlaywireMobile11PMConfigAppV4fromACs7Decoder_p_tKcfc",
+            "usr": "s:14PlaywireMobile11PMConfigAppC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s14PlaywireMobile11PMConfigAppC4fromACs7Decoder_p_tKcfc",
             "moduleName": "PlaywireMobile",
             "implicit": true,
             "throwing": true,
             "init_kind": "Designated"
           }
         ],
-        "declKind": "Struct",
-        "usr": "s:14PlaywireMobile11PMConfigAppV",
-        "mangledName": "$s14PlaywireMobile11PMConfigAppV",
+        "declKind": "Class",
+        "usr": "c:@M@PlaywireMobile@objc(cs)PMConfigApp",
+        "mangledName": "$s14PlaywireMobile11PMConfigAppC",
         "moduleName": "PlaywireMobile",
         "declAttributes": [
+          "Final",
           "AccessControl",
-          "RawDocComment"
+          "ObjCMembers",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
         ],
         "conformances": [
           {
@@ -5492,6 +6133,55 @@
             "printedName": "Decodable",
             "usr": "s:Se",
             "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
       },
@@ -8389,6 +9079,13 @@
       "value": "true"
     },
     {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobile\/config\/models\/PMConfigUnit.swift",
+      "kind": "StringLiteral",
+      "offset": 942,
+      "length": 14,
+      "value": "\"Interstitial\""
+    },
+    {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobile\/config\/PMMetadata.swift",
       "kind": "StringLiteral",
       "offset": 1305,
@@ -8531,107 +9228,114 @@
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobile\/ads\/PMAdLoader.swift",
       "kind": "BooleanLiteral",
-      "offset": 627,
+      "offset": 643,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobile\/ads\/PMAdLoader.swift",
       "kind": "Array",
-      "offset": 665,
+      "offset": 681,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobile\/ads\/PMAdLoader.swift",
       "kind": "StringLiteral",
-      "offset": 1402,
+      "offset": 1489,
       "length": 9,
       "value": "\"ad unit\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobile\/ads\/PMAdLoader.swift",
       "kind": "BooleanLiteral",
-      "offset": 2141,
+      "offset": 2228,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobile\/ads\/PMAdLoader.swift",
       "kind": "StringLiteral",
-      "offset": 2394,
+      "offset": 2481,
       "length": 9,
       "value": "\"ad unit\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobile\/ads\/PMAdLoader.swift",
       "kind": "IntegerLiteral",
-      "offset": 2621,
+      "offset": 2708,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobile\/ads\/PMAdLoader.swift",
       "kind": "StringLiteral",
-      "offset": 3146,
+      "offset": 3233,
       "length": 9,
       "value": "\"ad unit\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobile\/ads\/PMAdLoader.swift",
       "kind": "IntegerLiteral",
-      "offset": 3624,
+      "offset": 3711,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobile\/ads\/PMAdLoader.swift",
       "kind": "StringLiteral",
-      "offset": 4149,
+      "offset": 4236,
       "length": 9,
       "value": "\"ad unit\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobile\/ads\/PMAdLoader.swift",
       "kind": "StringLiteral",
-      "offset": 4180,
+      "offset": 4267,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobile\/ads\/PMAdLoader.swift",
       "kind": "StringLiteral",
-      "offset": 4208,
+      "offset": 4295,
       "length": 9,
       "value": "\"network\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobile\/ads\/PMAdLoader.swift",
       "kind": "StringLiteral",
-      "offset": 4564,
+      "offset": 4651,
       "length": 9,
       "value": "\"ad unit\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobile\/ads\/PMAdLoader.swift",
       "kind": "StringLiteral",
-      "offset": 4595,
+      "offset": 4682,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobile\/ads\/PMAdLoader.swift",
       "kind": "StringLiteral",
-      "offset": 4623,
+      "offset": 4710,
       "length": 9,
       "value": "\"network\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobile\/ads\/PMAdLoader.swift",
       "kind": "IntegerLiteral",
-      "offset": 4768,
+      "offset": 4855,
       "length": 1,
       "value": "1"
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobile\/ads\/PMAdLoader.swift",
+      "kind": "StringLiteral",
+      "offset": 466,
+      "length": 10,
+      "value": "\"PlaywireMobile.PMAdLoader\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/projects\/playwire-mobile\/ios\/playwire-mobile-ios\/PlaywireMobile\/config\/PMConfigLoader.swift",
