@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/PlaywireMobile-Swift.h</key>
 		<data>
-		2jcT/6SBDQRZwPTkRHQMhiKaFJk=
+		citl4s3aHg5FiuBC0AI4GLM+VgI=
 		</data>
 		<key>Headers/PlaywireMobile.h</key>
 		<data>
@@ -18,15 +18,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		/n9/hdMC3pD3FiVADZy6jFDwd60=
+		xCaEa6wXHU9uwiOlm39VPLkSlas=
 		</data>
 		<key>Modules/PlaywireMobile.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		wd90cHUwi+dE1uvrK94EFxoJE8g=
+		aEZrRkHLHXWrJet2gmh23Xq9lio=
 		</data>
 		<key>Modules/PlaywireMobile.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		IpOhObSDSlZ8P1Arg3BHaCP3Kvc=
+		u0gqyg7S8I8yl5EIWOyKzz8m018=
 		</data>
 		<key>Modules/PlaywireMobile.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -34,19 +34,19 @@
 		</data>
 		<key>Modules/PlaywireMobile.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		IpOhObSDSlZ8P1Arg3BHaCP3Kvc=
+		u0gqyg7S8I8yl5EIWOyKzz8m018=
 		</data>
 		<key>Modules/PlaywireMobile.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Tr5gaXv5xhNOiFpSuU+QFipYQdM=
+		FE7TGoSHI0XAqiYUaBpvD+m04RY=
 		</data>
 		<key>Modules/PlaywireMobile.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		wd90cHUwi+dE1uvrK94EFxoJE8g=
+		aEZrRkHLHXWrJet2gmh23Xq9lio=
 		</data>
 		<key>Modules/PlaywireMobile.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		lGVDgXnz6Zss//BM7BlYljOB54A=
+		tG5FX9lwCWbcDNBzKBC1wXJyVVU=
 		</data>
 		<key>Modules/PlaywireMobile.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -54,11 +54,11 @@
 		</data>
 		<key>Modules/PlaywireMobile.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		lGVDgXnz6Zss//BM7BlYljOB54A=
+		tG5FX9lwCWbcDNBzKBC1wXJyVVU=
 		</data>
 		<key>Modules/PlaywireMobile.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		XdH7NVS641r9CYet5xt4WyzBPZw=
+		r/eKVn57Mns8Vb4O5dOHCcvJil8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -78,7 +78,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NA1i+0wmPxJJwz1b7hnb5/HvPp7T1TncoKx26/osjeg=
+			sUjOtXovjtRW4h+AOfgl9o+4VDlexbhcLWQfKUZ84/Q=
 			</data>
 		</dict>
 		<key>Headers/PlaywireMobile.h</key>
@@ -92,14 +92,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+NWSpClxyTcqHVbUm6VZi2AvqzvxeMGA39yQ3Rkk+YY=
+			WWceUDyu+mM30OffTTC2aiS1jyB6ep7eLQAuXLXIz+8=
 			</data>
 		</dict>
 		<key>Modules/PlaywireMobile.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sj2+CtTiq/RhlNjKXZJGyzc7ae2pLJ0HJV/m9hh0CJU=
+			wULj60n3NAyIGQlRNKx8kakkZQnd2rYtKx/C1gQt1Eo=
 			</data>
 		</dict>
 		<key>Modules/PlaywireMobile.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -113,28 +113,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			sj2+CtTiq/RhlNjKXZJGyzc7ae2pLJ0HJV/m9hh0CJU=
+			wULj60n3NAyIGQlRNKx8kakkZQnd2rYtKx/C1gQt1Eo=
 			</data>
 		</dict>
 		<key>Modules/PlaywireMobile.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eaUNMdlKGnlW17F//dKLPNKbU1KPZOJT23axvneSbQY=
+			5SZ8ag9sSFtcE0q02kj2hIqJv5BsuIK0ue4oNwGqKhM=
 			</data>
 		</dict>
 		<key>Modules/PlaywireMobile.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+NWSpClxyTcqHVbUm6VZi2AvqzvxeMGA39yQ3Rkk+YY=
+			WWceUDyu+mM30OffTTC2aiS1jyB6ep7eLQAuXLXIz+8=
 			</data>
 		</dict>
 		<key>Modules/PlaywireMobile.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YBc31xiS9zEVpORb5HmArQS7Hm/DfG4M5WNqjFkIq0o=
+			NM0mTldFkYzvaktgbS3r9xw7rCQbHy6EMcmyfTYzDG4=
 			</data>
 		</dict>
 		<key>Modules/PlaywireMobile.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -148,14 +148,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			YBc31xiS9zEVpORb5HmArQS7Hm/DfG4M5WNqjFkIq0o=
+			NM0mTldFkYzvaktgbS3r9xw7rCQbHy6EMcmyfTYzDG4=
 			</data>
 		</dict>
 		<key>Modules/PlaywireMobile.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hADhz1uHIV3GWgYjU3VZ7V7Fh4HsdtbcDisDJXu5RRQ=
+			9AjHMM5TDbEEGCT3RlDWAP2Sogrjd+bYBAxxEjT9eTo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
