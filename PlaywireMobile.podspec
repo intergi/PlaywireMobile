@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'PlaywireMobile'
-  s.version          = '1.2.0'
+  s.version          = '1.2.1'
   s.summary          = 'PlaywireMobile SDK'
   s.homepage         = 'https://www.playwire.com'
   s.license          = { :type => 'Custom', :file => 'LICENSE' }
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
 
     ss.dependency 'PlaywireMobile/Core', "#{s.version}"
 
-    ss.dependency 'GoogleAds-IMA-iOS-SDK', '~> 3.19.2'
+    ss.dependency 'GoogleAds-IMA-iOS-SDK', '~> 3.22.1'
 
   end
   
