@@ -37,22 +37,29 @@ public typealias PMNAction = (_ event: PlaywireMobile.PMNEvent, _ data: Playwire
   @objc deinit
 }
 @objc @_Concurrency.MainActor(unsafe) open class PMFullScreenAdViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) final public let timeToClose: Swift.Int
   @_Concurrency.MainActor(unsafe) final public let adContentContainer: UIKit.UIView
-  @_Concurrency.MainActor(unsafe) public init(fullScreenAd: any PlaywireMobile.PMFullScreenAd, countDownVisible: Swift.Bool, muteVisible: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) public init(fullScreenAd: any PlaywireMobile.PMFullScreenAd)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) open func startCDBTimer(total: Swift.Float)
+  @_Concurrency.MainActor(unsafe) open func startCloseButtonAnnimation()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillTransition(to size: CoreFoundation.CGSize, with coordinator: any UIKit.UIViewControllerTransitionCoordinator)
   @_Concurrency.MainActor(unsafe) open func setupLayout()
   @_Concurrency.MainActor(unsafe) open func setupConstraints()
   @_Concurrency.MainActor(unsafe) open func setupHandlers()
+  @objc @_Concurrency.MainActor(unsafe) open func setControls(close: Swift.Bool, countdown: Swift.Bool, mute: Swift.Bool, ad: Swift.Bool)
   @objc @_Concurrency.MainActor(unsafe) open func close()
-  @_Concurrency.MainActor(unsafe) open func setContdown(value: Swift.Int)
+  @objc @_Concurrency.MainActor(unsafe) open func setContdown(value: Swift.Int)
   @objc @_Concurrency.MainActor(unsafe) open func onMutePressed()
-  @_Concurrency.MainActor(unsafe) open var isMuted: Swift.Bool {
-    get
-    set(value)
+  @objc @_Concurrency.MainActor(unsafe) open var isMuted: Swift.Bool {
+    @objc get
+    @objc set(value)
   }
+  @objc @_Concurrency.MainActor(unsafe) public func setCloseButtonFilling(filling: Swift.Float)
+  @objc @_Concurrency.MainActor(unsafe) public func startLoading()
+  @objc @_Concurrency.MainActor(unsafe) public func stopLoading()
   @objc deinit
 }
 @objc public protocol PMAdDelegate {

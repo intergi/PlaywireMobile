@@ -470,8 +470,14 @@ SWIFT_CLASS("_TtC14PlaywireMobile28PMFullScreenAdViewController")
 - (void)viewDidLoad;
 - (void)viewDidAppear:(BOOL)animated;
 - (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id <UIViewControllerTransitionCoordinator> _Nonnull)coordinator;
+- (void)setControlsWithClose:(BOOL)close countdown:(BOOL)countdown mute:(BOOL)mute ad:(BOOL)ad;
 - (void)close;
+- (void)setContdownWithValue:(NSInteger)value;
 - (void)onMutePressed;
+@property (nonatomic) BOOL isMuted;
+- (void)setCloseButtonFillingWithFilling:(float)filling;
+- (void)startLoading;
+- (void)stopLoading;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
 
@@ -1021,8 +1027,14 @@ SWIFT_CLASS("_TtC14PlaywireMobile28PMFullScreenAdViewController")
 - (void)viewDidLoad;
 - (void)viewDidAppear:(BOOL)animated;
 - (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id <UIViewControllerTransitionCoordinator> _Nonnull)coordinator;
+- (void)setControlsWithClose:(BOOL)close countdown:(BOOL)countdown mute:(BOOL)mute ad:(BOOL)ad;
 - (void)close;
+- (void)setContdownWithValue:(NSInteger)value;
 - (void)onMutePressed;
+@property (nonatomic) BOOL isMuted;
+- (void)setCloseButtonFillingWithFilling:(float)filling;
+- (void)startLoading;
+- (void)stopLoading;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
 
