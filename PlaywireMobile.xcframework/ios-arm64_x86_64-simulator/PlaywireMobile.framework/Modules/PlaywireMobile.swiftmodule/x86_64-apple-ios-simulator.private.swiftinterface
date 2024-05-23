@@ -37,6 +37,7 @@ public typealias PMNAction = (_ event: PlaywireMobile.PMNEvent, _ data: Playwire
   @objc deinit
 }
 @objc @_Concurrency.MainActor(unsafe) open class PMFullScreenAdViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) final public let fullScreenAd: any PlaywireMobile.PMFullScreenAd
   @_Concurrency.MainActor(unsafe) final public let timeToClose: Swift.Int
   @_Concurrency.MainActor(unsafe) final public let adContentContainer: UIKit.UIView
   @_Concurrency.MainActor(unsafe) public init(fullScreenAd: any PlaywireMobile.PMFullScreenAd)
@@ -89,7 +90,11 @@ public enum PMNSeverity : Swift.Int {
   @objc deinit
 }
 @objc public protocol PMFullScreenAdDelegate : PlaywireMobile.PMAdDelegate {
+  @objc func fullScreenAdWillClose(fullScreen: any PlaywireMobile.PMFullScreenAd)
   @objc func fullScreenAdClosed(fullScreen: any PlaywireMobile.PMFullScreenAd)
+  @objc func fullScreeenAdPresented(fullScreen: any PlaywireMobile.PMFullScreenAd)
+  @objc func fullScreeenAdImpressionRecorded(fullScreen: any PlaywireMobile.PMFullScreenAd)
+  @objc func fullScreeenAdClicked(fullScreen: any PlaywireMobile.PMFullScreenAd)
 }
 @objc public protocol PMFullScreenAd : PlaywireMobile.PMAd {
   @objc func show(from vc: UIKit.UIViewController)
@@ -144,7 +149,7 @@ public protocol PMNetworkAdapter {
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @objcMembers final public class PMAdLoaderConfiguration : ObjectiveC.NSObject {
-  @objc final public var viewController: UIKit.UIViewController? {
+  @objc weak final public var viewController: UIKit.UIViewController? {
     get
   }
   @objc @discardableResult
