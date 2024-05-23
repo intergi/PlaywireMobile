@@ -332,7 +332,7 @@ SWIFT_CLASS("_TtC14PlaywireMobile10PMAdLoader")
 
 SWIFT_CLASS("_TtC14PlaywireMobile23PMAdLoaderConfiguration")
 @interface PMAdLoaderConfiguration : NSObject
-@property (nonatomic, readonly, strong) UIViewController * _Nullable viewController;
+@property (nonatomic, readonly, weak) UIViewController * _Nullable viewController;
 - (PMAdLoaderConfiguration * _Nonnull)withViewController:(UIViewController * _Nonnull)viewController;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -457,7 +457,11 @@ SWIFT_PROTOCOL("_TtP14PlaywireMobile14PMFullScreenAd_")
 
 SWIFT_PROTOCOL("_TtP14PlaywireMobile22PMFullScreenAdDelegate_")
 @protocol PMFullScreenAdDelegate <PMAdDelegate>
+- (void)fullScreenAdWillCloseWithFullScreen:(id <PMFullScreenAd> _Nonnull)fullScreen;
 - (void)fullScreenAdClosedWithFullScreen:(id <PMFullScreenAd> _Nonnull)fullScreen;
+- (void)fullScreeenAdPresentedWithFullScreen:(id <PMFullScreenAd> _Nonnull)fullScreen;
+- (void)fullScreeenAdImpressionRecordedWithFullScreen:(id <PMFullScreenAd> _Nonnull)fullScreen;
+- (void)fullScreeenAdClickedWithFullScreen:(id <PMFullScreenAd> _Nonnull)fullScreen;
 @end
 
 @class NSCoder;
@@ -889,7 +893,7 @@ SWIFT_CLASS("_TtC14PlaywireMobile10PMAdLoader")
 
 SWIFT_CLASS("_TtC14PlaywireMobile23PMAdLoaderConfiguration")
 @interface PMAdLoaderConfiguration : NSObject
-@property (nonatomic, readonly, strong) UIViewController * _Nullable viewController;
+@property (nonatomic, readonly, weak) UIViewController * _Nullable viewController;
 - (PMAdLoaderConfiguration * _Nonnull)withViewController:(UIViewController * _Nonnull)viewController;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -1014,7 +1018,11 @@ SWIFT_PROTOCOL("_TtP14PlaywireMobile14PMFullScreenAd_")
 
 SWIFT_PROTOCOL("_TtP14PlaywireMobile22PMFullScreenAdDelegate_")
 @protocol PMFullScreenAdDelegate <PMAdDelegate>
+- (void)fullScreenAdWillCloseWithFullScreen:(id <PMFullScreenAd> _Nonnull)fullScreen;
 - (void)fullScreenAdClosedWithFullScreen:(id <PMFullScreenAd> _Nonnull)fullScreen;
+- (void)fullScreeenAdPresentedWithFullScreen:(id <PMFullScreenAd> _Nonnull)fullScreen;
+- (void)fullScreeenAdImpressionRecordedWithFullScreen:(id <PMFullScreenAd> _Nonnull)fullScreen;
+- (void)fullScreeenAdClickedWithFullScreen:(id <PMFullScreenAd> _Nonnull)fullScreen;
 @end
 
 @class NSCoder;
