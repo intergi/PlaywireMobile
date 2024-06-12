@@ -64,54 +64,6 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "PlaywireMobileVAST",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "PlaywireMobileVAST"
-      },
-      {
-        "kind": "Import",
-        "name": "AVFoundation",
-        "printedName": "AVFoundation",
-        "declKind": "Import",
-        "moduleName": "PlaywireMobileVAST"
-      },
-      {
-        "kind": "Import",
-        "name": "PlaywireMobile",
-        "printedName": "PlaywireMobile",
-        "declKind": "Import",
-        "moduleName": "PlaywireMobileVAST"
-      },
-      {
-        "kind": "Import",
-        "name": "GoogleInteractiveMediaAds",
-        "printedName": "GoogleInteractiveMediaAds",
-        "declKind": "Import",
-        "moduleName": "PlaywireMobileVAST"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "PlaywireMobileVAST",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "PlaywireMobile",
         "printedName": "PlaywireMobile",
         "declKind": "Import",
@@ -276,6 +228,33 @@
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "supportsMode",
+            "printedName": "supportsMode(mode:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PMConfigUnitMode",
+                "printedName": "PlaywireMobile.PMConfigUnitMode",
+                "usr": "c:@M@PlaywireMobile@E@PMConfigUnitMode"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18PlaywireMobileVAST24PMVastNetworkAdapterBaseC12supportsMode4modeSb0aB0012PMConfigUnitI0O_tF",
+            "mangledName": "$s18PlaywireMobileVAST24PMVastNetworkAdapterBaseC12supportsMode4modeSb0aB0012PMConfigUnitI0O_tF",
+            "moduleName": "PlaywireMobileVAST",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -320,35 +299,6 @@
               "AccessControl"
             ],
             "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "supportsMode",
-            "printedName": "supportsMode(mode:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "PMConfigUnitMode",
-                "printedName": "PlaywireMobile.PMConfigUnitMode",
-                "usr": "c:@M@PlaywireMobile@E@PMConfigUnitMode"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:18PlaywireMobileVAST17PMVastNetworkBaseC12supportsMode4modeSb0aB0012PMConfigUnitH0O_tF",
-            "mangledName": "$s18PlaywireMobileVAST17PMVastNetworkBaseC12supportsMode4modeSb0aB0012PMConfigUnitH0O_tF",
-            "moduleName": "PlaywireMobileVAST",
-            "objc_name": "supportsModeWithMode:",
-            "declAttributes": [
-              "ObjC",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
@@ -548,6 +498,43 @@
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "asBanner",
+            "printedName": "asBanner(loader:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PlaywireMobile.PMBannerAd?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PMBannerAd",
+                    "printedName": "PlaywireMobile.PMBannerAd",
+                    "usr": "c:@M@PlaywireMobile@objc(pl)PMBannerAd"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PMAdLoader",
+                "printedName": "PlaywireMobile.PMAdLoader",
+                "usr": "c:@M@PlaywireMobile@objc(cs)PMAdLoader"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18PlaywireMobileVAST17PMVastNetworkBaseC8asBanner6loader0aB010PMBannerAd_pSgAF10PMAdLoaderC_tF",
+            "mangledName": "$s18PlaywireMobileVAST17PMVastNetworkBaseC8asBanner6loader0aB010PMBannerAd_pSgAF10PMAdLoaderC_tF",
+            "moduleName": "PlaywireMobileVAST",
+            "objc_name": "asBannerWithLoader:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -579,6 +566,78 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PlaywireMobileVAST",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PlaywireMobileVAST"
+      },
+      {
+        "kind": "Import",
+        "name": "PlaywireMobile",
+        "printedName": "PlaywireMobile",
+        "declKind": "Import",
+        "moduleName": "PlaywireMobileVAST"
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "PlaywireMobileVAST"
+      },
+      {
+        "kind": "Import",
+        "name": "GoogleInteractiveMediaAds",
+        "printedName": "GoogleInteractiveMediaAds",
+        "declKind": "Import",
+        "moduleName": "PlaywireMobileVAST"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PlaywireMobileVAST",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PlaywireMobileVAST"
+      },
+      {
+        "kind": "Import",
+        "name": "PlaywireMobile",
+        "printedName": "PlaywireMobile",
+        "declKind": "Import",
+        "moduleName": "PlaywireMobileVAST"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PlaywireMobileVAST",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "PlaywireMobile",
         "printedName": "PlaywireMobile",
         "declKind": "Import",
@@ -596,420 +655,455 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/maksymdanylov\/Development\/Playwire\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
       "kind": "StringLiteral",
       "offset": 686,
       "length": 7,
       "value": "\"https\""
     },
     {
-      "filePath": "\/Users\/maksymdanylov\/Development\/Playwire\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
       "kind": "StringLiteral",
       "offset": 724,
       "length": 26,
       "value": "\"pubads.g.doubleclick.net\""
     },
     {
-      "filePath": "\/Users\/maksymdanylov\/Development\/Playwire\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
       "kind": "StringLiteral",
       "offset": 781,
       "length": 13,
       "value": "\"\/gampad\/ads\""
     },
     {
-      "filePath": "\/Users\/maksymdanylov\/Development\/Playwire\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
       "kind": "StringLiteral",
       "offset": 868,
       "length": 4,
       "value": "\"iu\""
     },
     {
-      "filePath": "\/Users\/maksymdanylov\/Development\/Playwire\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
       "kind": "StringLiteral",
       "offset": 950,
       "length": 5,
       "value": "\"url\""
     },
     {
-      "filePath": "\/Users\/maksymdanylov\/Development\/Playwire\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
       "kind": "StringLiteral",
       "offset": 1052,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/maksymdanylov\/Development\/Playwire\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
       "kind": "StringLiteral",
       "offset": 1092,
       "length": 17,
       "value": "\"description_url\""
     },
     {
-      "filePath": "\/Users\/maksymdanylov\/Development\/Playwire\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
       "kind": "StringLiteral",
       "offset": 1181,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/maksymdanylov\/Development\/Playwire\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
       "kind": "StringLiteral",
       "offset": 1221,
       "length": 5,
       "value": "\"env\""
     },
     {
-      "filePath": "\/Users\/maksymdanylov\/Development\/Playwire\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
       "kind": "StringLiteral",
       "offset": 1235,
       "length": 4,
       "value": "\"vp\""
     },
     {
-      "filePath": "\/Users\/maksymdanylov\/Development\/Playwire\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
       "kind": "StringLiteral",
       "offset": 1277,
       "length": 10,
       "value": "\"gdfp_req\""
     },
     {
-      "filePath": "\/Users\/maksymdanylov\/Development\/Playwire\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
       "kind": "StringLiteral",
       "offset": 1296,
       "length": 3,
       "value": "\"1\""
     },
     {
-      "filePath": "\/Users\/maksymdanylov\/Development\/Playwire\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
       "kind": "StringLiteral",
       "offset": 1337,
       "length": 8,
       "value": "\"output\""
     },
     {
-      "filePath": "\/Users\/maksymdanylov\/Development\/Playwire\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
       "kind": "StringLiteral",
       "offset": 1354,
       "length": 11,
       "value": "\"xml_vast4\""
     },
     {
-      "filePath": "\/Users\/maksymdanylov\/Development\/Playwire\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
       "kind": "StringLiteral",
       "offset": 1403,
       "length": 4,
       "value": "\"sz\""
     },
     {
-      "filePath": "\/Users\/maksymdanylov\/Development\/Playwire\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
       "kind": "StringLiteral",
       "offset": 1416,
       "length": 9,
       "value": "\"640x480\""
     },
     {
-      "filePath": "\/Users\/maksymdanylov\/Development\/Playwire\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
       "kind": "StringLiteral",
       "offset": 1463,
       "length": 25,
       "value": "\"unviewed_position_start\""
     },
     {
-      "filePath": "\/Users\/maksymdanylov\/Development\/Playwire\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
       "kind": "StringLiteral",
       "offset": 1497,
       "length": 3,
       "value": "\"1\""
     },
     {
-      "filePath": "\/Users\/maksymdanylov\/Development\/Playwire\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
       "kind": "StringLiteral",
       "offset": 1538,
       "length": 6,
       "value": "\"impl\""
     },
     {
-      "filePath": "\/Users\/maksymdanylov\/Development\/Playwire\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
       "kind": "StringLiteral",
       "offset": 1553,
       "length": 3,
       "value": "\"s\""
     },
     {
-      "filePath": "\/Users\/maksymdanylov\/Development\/Playwire\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
       "kind": "StringLiteral",
       "offset": 1594,
       "length": 6,
       "value": "\"nofb\""
     },
     {
-      "filePath": "\/Users\/maksymdanylov\/Development\/Playwire\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
       "kind": "StringLiteral",
       "offset": 1609,
       "length": 3,
       "value": "\"1\""
     },
     {
-      "filePath": "\/Users\/maksymdanylov\/Development\/Playwire\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
       "kind": "StringLiteral",
       "offset": 1744,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/maksymdanylov\/Development\/Playwire\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
       "kind": "StringLiteral",
       "offset": 2175,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/maksymdanylov\/Development\/Playwire\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
       "kind": "StringLiteral",
       "offset": 2287,
       "length": 7,
       "value": "\"https\""
     },
     {
-      "filePath": "\/Users\/maksymdanylov\/Development\/Playwire\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
       "kind": "StringLiteral",
       "offset": 2320,
       "length": 16,
       "value": "\"apps.apple.com\""
     },
     {
-      "filePath": "\/Users\/maksymdanylov\/Development\/Playwire\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
       "kind": "StringLiteral",
       "offset": 2389,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/maksymdanylov\/Development\/Playwire\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
       "kind": "StringLiteral",
       "offset": 2459,
       "length": 5,
       "value": "\"\/id\""
     },
     {
-      "filePath": "\/Users\/maksymdanylov\/Development\/Playwire\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
       "kind": "StringLiteral",
       "offset": 2497,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/maksymdanylov\/Development\/Playwire\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
       "kind": "StringLiteral",
       "offset": 2542,
       "length": 37,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/maksymdanylov\/Development\/Playwire\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastGamNetwork.swift",
       "kind": "StringLiteral",
       "offset": 2553,
       "length": 1,
       "value": "\".adsenseformobileapps.com\""
     },
     {
-      "filePath": "\/Users\/maksymdanylov\/Development\/Playwire\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastInterstitialBase.swift",
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastInterstitialBase.swift",
       "kind": "BooleanLiteral",
-      "offset": 768,
+      "offset": 351,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/maksymdanylov\/Development\/Playwire\/playwire-mobile-ios\/PlaywireMobileVAST\/misc\/String+URLEncoding.swift",
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastInterstitialBase.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1187,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastInterstitialBase.swift",
       "kind": "StringLiteral",
-      "offset": 361,
-      "length": 7,
-      "value": "\":?=\/&\""
+      "offset": 1351,
+      "length": 9,
+      "value": "\"ad unit\""
     },
     {
-      "filePath": "\/Users\/maksymdanylov\/Development\/Playwire\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastFullScreenAdViewController.swift",
-      "kind": "FloatLiteral",
-      "offset": 593,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Users\/maksymdanylov\/Development\/Playwire\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastFullScreenAdViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1150,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/maksymdanylov\/Development\/Playwire\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastFullScreenAdViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1168,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/maksymdanylov\/Development\/Playwire\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastFullScreenAdViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1181,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/maksymdanylov\/Development\/Playwire\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastFullScreenAdViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1192,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/maksymdanylov\/Development\/Playwire\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastFullScreenAdViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1445,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/maksymdanylov\/Development\/Playwire\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastFullScreenAdViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1553,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/maksymdanylov\/Development\/Playwire\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastFullScreenAdViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1651,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/maksymdanylov\/Development\/Playwire\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastFullScreenAdViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1755,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/maksymdanylov\/Development\/Playwire\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastFullScreenAdViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1826,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/maksymdanylov\/Development\/Playwire\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastFullScreenAdViewController.swift",
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastInterstitialBase.swift",
       "kind": "StringLiteral",
-      "offset": 2672,
-      "length": 6,
-      "value": "\"vast\""
+      "offset": 180,
+      "length": 22,
+      "value": "\"PlaywireMobileVAST.PMVastInterstitialBase\""
     },
     {
-      "filePath": "\/Users\/maksymdanylov\/Development\/Playwire\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastFullScreenAdViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 2696,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/maksymdanylov\/Development\/Playwire\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastFullScreenAdViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3195,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/maksymdanylov\/Development\/Playwire\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastFullScreenAdViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3207,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/maksymdanylov\/Development\/Playwire\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastFullScreenAdViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3217,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/maksymdanylov\/Development\/Playwire\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastFullScreenAdViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3342,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/maksymdanylov\/Development\/Playwire\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastFullScreenAdViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3346,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/maksymdanylov\/Development\/Playwire\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastFullScreenAdViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 247,
-      "length": 32,
-      "value": "\"PlaywireMobileVAST.PMVastFullScreenAdViewController\""
-    },
-    {
-      "filePath": "\/Users\/maksymdanylov\/Development\/Playwire\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastNetworkBase.swift",
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastNetworkBase.swift",
       "kind": "BooleanLiteral",
       "offset": 445,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/maksymdanylov\/Development\/Playwire\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastNetworkBase.swift",
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastNetworkBase.swift",
       "kind": "BooleanLiteral",
       "offset": 573,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/maksymdanylov\/Development\/Playwire\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastNetworkBase.swift",
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastNetworkBase.swift",
       "kind": "StringLiteral",
       "offset": 684,
       "length": 27,
       "value": "\"Subclasses must implement\""
     },
     {
-      "filePath": "\/Users\/maksymdanylov\/Development\/Playwire\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastNetworkBase.swift",
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastNetworkBase.swift",
       "kind": "StringLiteral",
-      "offset": 1485,
+      "offset": 1633,
       "length": 27,
       "value": "\"Subclasses must implement\""
     },
     {
-      "filePath": "\/Users\/maksymdanylov\/Development\/Playwire\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastNetworkBase.swift",
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastNetworkBase.swift",
       "kind": "StringLiteral",
-      "offset": 3464,
+      "offset": 3490,
       "length": 6,
       "value": "\"vast\""
     },
     {
-      "filePath": "\/Users\/maksymdanylov\/Development\/Playwire\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastNetworkBase.swift",
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastNetworkBase.swift",
       "kind": "StringLiteral",
-      "offset": 3480,
+      "offset": 3506,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/maksymdanylov\/Development\/Playwire\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastNetworkBase.swift",
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastNetworkBase.swift",
       "kind": "StringLiteral",
-      "offset": 3829,
+      "offset": 3855,
       "length": 6,
       "value": "\"vast\""
     },
     {
-      "filePath": "\/Users\/maksymdanylov\/Development\/Playwire\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastNetworkBase.swift",
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastNetworkBase.swift",
       "kind": "StringLiteral",
-      "offset": 3845,
+      "offset": 3871,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/maksymdanylov\/Development\/Playwire\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastNetwork.swift",
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/misc\/String+URLEncoding.swift",
+      "kind": "StringLiteral",
+      "offset": 361,
+      "length": 7,
+      "value": "\":?=\/&\""
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastAdPlayerView.swift",
+      "kind": "FloatLiteral",
+      "offset": 552,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastAdPlayerView.swift",
+      "kind": "StringLiteral",
+      "offset": 632,
+      "length": 39,
+      "value": "\"init(coder:) has not been implemented\""
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastAdPlayerView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 805,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastAdPlayerView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 833,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastAdPlayerView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1202,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastAdPlayerView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1228,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastAdPlayerView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1256,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastAdPlayerView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1603,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastAdPlayerView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1711,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastAdPlayerView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1809,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastAdPlayerView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1913,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastAdPlayerView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1984,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastAdPlayerView.swift",
+      "kind": "StringLiteral",
+      "offset": 2675,
+      "length": 6,
+      "value": "\"vast\""
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastAdPlayerView.swift",
+      "kind": "StringLiteral",
+      "offset": 2699,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastAdPlayerView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3041,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastAdPlayerView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3292,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastAdPlayerView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3296,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastAdPlayerView.swift",
+      "kind": "StringLiteral",
+      "offset": 227,
+      "length": 18,
+      "value": "\"PlaywireMobileVAST.PMVastAdPlayerView\""
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastBanner.swift",
+      "kind": "BooleanLiteral",
+      "offset": 380,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastBanner.swift",
+      "kind": "StringLiteral",
+      "offset": 174,
+      "length": 12,
+      "value": "\"PlaywireMobileVAST.PMVastBanner\""
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastNetwork.swift",
       "kind": "StringLiteral",
       "offset": 629,
       "length": 2,
