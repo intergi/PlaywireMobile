@@ -301,6 +301,19 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
+typedef SWIFT_ENUM(NSInteger, FloatingBannerCorner, open) {
+  FloatingBannerCornerTopLeft = 0,
+  FloatingBannerCornerTopRight = 1,
+  FloatingBannerCornerBottomLeft = 2,
+  FloatingBannerCornerBottomRight = 3,
+};
+
+
+SWIFT_PROTOCOL("_TtP14PlaywireMobile23FloatingManagerDelegate_")
+@protocol FloatingManagerDelegate
+- (void)floatingBannerWithVisible:(BOOL)visible;
+@end
+
 @class PMAdLoader;
 @protocol PMNetwork;
 @protocol PMAdDelegate;
@@ -310,31 +323,76 @@ SWIFT_PROTOCOL("_TtP14PlaywireMobile4PMAd_")
 @property (nonatomic, readonly, strong) PMAdLoader * _Nonnull adLoader;
 @property (nonatomic, readonly, strong) id <PMNetwork> _Nonnull network;
 @property (nonatomic, strong) id <PMAdDelegate> _Nullable delegate;
+@property (nonatomic, readonly) BOOL isVideo;
 @end
 
 
 SWIFT_PROTOCOL("_TtP14PlaywireMobile12PMAdDelegate_")
 @protocol PMAdDelegate
+- (void)adImpressedWithAd:(id <PMAd> _Nonnull)ad;
+- (void)adClickedWithAd:(id <PMAd> _Nonnull)ad;
 @end
 
-@class NSString;
-@class PMAdLoaderConfiguration;
 
 SWIFT_CLASS("_TtC14PlaywireMobile10PMAdLoader")
 @interface PMAdLoader : NSObject
-- (nonnull instancetype)initWithAdUnitName:(NSString * _Nonnull)adUnitName OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithAdUnitName:(NSString * _Nonnull)adUnitName configuration:(PMAdLoaderConfiguration * _Nonnull)configuration;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@class NSString;
 @class UIViewController;
+@class PMBannerAdLoader;
+@class PMInterstitialAdLoader;
+
+SWIFT_CLASS("_TtC14PlaywireMobile17PMAdLoaderBuilder")
+@interface PMAdLoaderBuilder : NSObject
+- (nonnull instancetype)initWithAdUnitName:(NSString * _Nonnull)adUnitName OBJC_DESIGNATED_INITIALIZER;
+- (PMAdLoaderBuilder * _Nonnull)withViewController:(UIViewController * _Nonnull)viewController;
+- (PMAdLoaderBuilder * _Nonnull)withSuccessRate:(double)successRate;
+- (PMAdLoaderBuilder * _Nonnull)withMock:(BOOL)mock;
+- (PMBannerAdLoader * _Nonnull)buildBannerAdLoader SWIFT_WARN_UNUSED_RESULT;
+- (PMInterstitialAdLoader * _Nonnull)buildInterstitialAdLoader SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 
 SWIFT_CLASS("_TtC14PlaywireMobile23PMAdLoaderConfiguration")
 @interface PMAdLoaderConfiguration : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull adUnitName;
 @property (nonatomic, readonly, weak) UIViewController * _Nullable viewController;
-- (PMAdLoaderConfiguration * _Nonnull)withViewController:(UIViewController * _Nonnull)viewController;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, readonly) double successRate;
+@property (nonatomic, readonly) BOOL mock;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@protocol PMAdPlayerViewDelegate;
+@class NSCoder;
+@class UITraitCollection;
+
+SWIFT_CLASS("_TtC14PlaywireMobile14PMAdPlayerView")
+@interface PMAdPlayerView : UIView
+@property (nonatomic, strong) id <PMAdPlayerViewDelegate> _Nullable delegate;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)traitCollectionDidChange:(UITraitCollection * _Nullable)previousTraitCollection;
+@property (nonatomic) BOOL isMuted;
+- (void)onMutePressed;
+- (void)onFullscreenPressed;
+- (void)layoutSubviews;
+- (void)setCloseButtonFillingWithFilling:(float)filling;
+- (void)close;
+- (void)setContdownWithValue:(NSInteger)value;
+- (void)startLoading;
+- (void)stopLoading;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+@end
+
+
+SWIFT_PROTOCOL("_TtP14PlaywireMobile22PMAdPlayerViewDelegate_")
+@protocol PMAdPlayerViewDelegate
+- (void)closePressedWithAdPlayerView:(PMAdPlayerView * _Nonnull)adPlayerView;
 @end
 
 
@@ -344,6 +402,26 @@ SWIFT_CLASS("_TtC14PlaywireMobile18PMAdsConfiguration")
 @property (nonatomic, readonly, strong) UIViewController * _Nullable viewController;
 - (PMAdsConfiguration * _Nonnull)withViewController:(UIViewController * _Nonnull)viewController;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_PROTOCOL("_TtP14PlaywireMobile10PMBannerAd_")
+@protocol PMBannerAd <PMAd>
+@property (nonatomic, readonly, strong) UIView * _Nonnull adView;
+@end
+
+
+SWIFT_PROTOCOL("_TtP14PlaywireMobile18PMBannerAdDelegate_")
+@protocol PMBannerAdDelegate <PMAdDelegate>
+- (void)bannerAdFinishedPlayingWithBanner:(id <PMBannerAd> _Nonnull)banner;
+@end
+
+
+SWIFT_CLASS("_TtC14PlaywireMobile16PMBannerAdLoader")
+@interface PMBannerAdLoader : PMAdLoader
+- (void)loadOnAdResult:(void (^ _Nonnull)(id <PMBannerAd> _Nullable))onAdResult;
+- (void)refresh;
+- (void)adImpressedWithAd:(id <PMAd> _Nonnull)ad;
 @end
 
 @class PMConfigApp;
@@ -400,15 +478,25 @@ SWIFT_CLASS("_TtC14PlaywireMobile11PMConfigApp")
 /// </ul>
 SWIFT_CLASS("_TtC14PlaywireMobile15PMConfigNetwork")
 @interface PMConfigNetwork : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 enum PMConfigUnitMode : NSInteger;
+@class PMConfigUnitSize;
+@class PMConfigUnitRefresh;
 @class PMConfigUnitNetwork;
 
 /// The adunit definition
 /// <ul>
 ///   <li>
 ///     <em>mode</em>: only interstitial supported by now. In the future: banners, rewarded, etc
+///   </li>
+///   <li>
+///     <em>timeToClose</em>: [seconds] time that user must wait until it can close/hide the ad
+///   </li>
+///   <li>
+///     <em>size</em>: ad content size
 ///   </li>
 ///   <li>
 ///     <em>networks</em>: set of networks that can be used to request this adunit
@@ -418,11 +506,15 @@ SWIFT_CLASS("_TtC14PlaywireMobile12PMConfigUnit")
 @interface PMConfigUnit : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nonnull name;
 @property (nonatomic, readonly) enum PMConfigUnitMode mode;
+@property (nonatomic, readonly, strong) PMConfigUnitSize * _Nullable size;
+@property (nonatomic, readonly, strong) PMConfigUnitRefresh * _Nullable refresh;
 @property (nonatomic, readonly, copy) NSArray<PMConfigUnitNetwork *> * _Nullable networks;
 @end
 
 typedef SWIFT_ENUM(NSInteger, PMConfigUnitMode, open) {
-  PMConfigUnitModeInterstitial = 0,
+  PMConfigUnitModeUnknown = 0,
+  PMConfigUnitModeInterstitial = 1,
+  PMConfigUnitModeBanner = 2,
 };
 
 @class PMConfigUnitNetworkVast;
@@ -434,6 +526,8 @@ SWIFT_CLASS("_TtC14PlaywireMobile19PMConfigUnitNetwork")
 @property (nonatomic, readonly, copy) NSString * _Nonnull name;
 @property (nonatomic, readonly, strong) PMConfigUnitNetworkVast * _Nullable vast;
 @property (nonatomic, readonly, strong) PMConfigUnitNetworkVastGam * _Nullable vastGam;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
@@ -449,6 +543,50 @@ SWIFT_CLASS("_TtC14PlaywireMobile26PMConfigUnitNetworkVastGam")
 @end
 
 
+SWIFT_CLASS("_TtC14PlaywireMobile19PMConfigUnitRefresh")
+@interface PMConfigUnitRefresh : NSObject
+@property (nonatomic, readonly) NSInteger autoTime;
+@property (nonatomic, readonly) NSInteger autoMaxCount;
+@property (nonatomic, readonly) NSInteger manualTime;
+@property (nonatomic, readonly) NSInteger manualMaxCount;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+/// The adunit size definition
+SWIFT_CLASS("_TtC14PlaywireMobile16PMConfigUnitSize")
+@interface PMConfigUnitSize : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PMConfigUnitSize * _Nonnull _320x50;)
++ (PMConfigUnitSize * _Nonnull)_320x50 SWIFT_WARN_UNUSED_RESULT;
+@property (nonatomic, readonly) NSInteger width;
+@property (nonatomic, readonly) NSInteger height;
+@property (nonatomic, readonly) CGSize cgSize;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class UIGestureRecognizer;
+@class NSNumber;
+
+SWIFT_CLASS("_TtC14PlaywireMobile23PMFloatingBannerManager")
+@interface PMFloatingBannerManager : NSObject <PMBannerAdDelegate, UIGestureRecognizerDelegate>
+@property (nonatomic, weak) id <FloatingManagerDelegate> _Nullable delegate;
+- (void)adImpressedWithAd:(id <PMAd> _Nonnull)ad;
+- (void)adClickedWithAd:(id <PMAd> _Nonnull)ad;
+- (void)bannerAdFinishedPlayingWithBanner:(id <PMBannerAd> _Nonnull)banner;
+@property (nonatomic, readonly) BOOL isDisplaying;
+- (BOOL)gestureRecognizer:(UIGestureRecognizer * _Nonnull)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer * _Nonnull)otherGestureRecognizer SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWithController:(UIViewController * _Nonnull)controller adUnitName:(NSString * _Nonnull)adUnitName;
+- (nonnull instancetype)initWithController:(UIViewController * _Nonnull)controller bannerLoader:(PMBannerAdLoader * _Nonnull)bannerLoader OBJC_DESIGNATED_INITIALIZER;
+- (void)layoutSuperimposedTo:(UIView * _Nonnull)targetView animated:(BOOL)animated;
+- (void)layoutCorneredIn:(UIViewController * _Nonnull)viewController at:(NSNumber * _Nonnull)corner withOptions:(NSArray<NSNumber *> * _Nonnull)options animated:(BOOL)animated;
+- (void)removeLayout;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
 SWIFT_PROTOCOL("_TtP14PlaywireMobile14PMFullScreenAd_")
 @protocol PMFullScreenAd <PMAd>
 - (void)showFrom:(UIViewController * _Nonnull)vc;
@@ -457,31 +595,17 @@ SWIFT_PROTOCOL("_TtP14PlaywireMobile14PMFullScreenAd_")
 
 SWIFT_PROTOCOL("_TtP14PlaywireMobile22PMFullScreenAdDelegate_")
 @protocol PMFullScreenAdDelegate <PMAdDelegate>
+- (void)fullScreeenAdPresentedWithFullScreen:(id <PMFullScreenAd> _Nonnull)fullScreen;
 - (void)fullScreenAdWillCloseWithFullScreen:(id <PMFullScreenAd> _Nonnull)fullScreen;
 - (void)fullScreenAdClosedWithFullScreen:(id <PMFullScreenAd> _Nonnull)fullScreen;
-- (void)fullScreeenAdPresentedWithFullScreen:(id <PMFullScreenAd> _Nonnull)fullScreen;
-- (void)fullScreeenAdImpressionRecordedWithFullScreen:(id <PMFullScreenAd> _Nonnull)fullScreen;
-- (void)fullScreeenAdClickedWithFullScreen:(id <PMFullScreenAd> _Nonnull)fullScreen;
 @end
 
-@class NSCoder;
-@protocol UIViewControllerTransitionCoordinator;
 @class NSBundle;
 
 SWIFT_CLASS("_TtC14PlaywireMobile28PMFullScreenAdViewController")
-@interface PMFullScreenAdViewController : UIViewController
+@interface PMFullScreenAdViewController : UIViewController <PMAdPlayerViewDelegate>
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-- (void)viewDidLoad;
-- (void)viewDidAppear:(BOOL)animated;
-- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id <UIViewControllerTransitionCoordinator> _Nonnull)coordinator;
-- (void)setControlsWithClose:(BOOL)close countdown:(BOOL)countdown mute:(BOOL)mute ad:(BOOL)ad;
-- (void)close;
-- (void)setContdownWithValue:(NSInteger)value;
-- (void)onMutePressed;
-@property (nonatomic) BOOL isMuted;
-- (void)setCloseButtonFillingWithFilling:(float)filling;
-- (void)startLoading;
-- (void)stopLoading;
+- (void)closePressedWithAdPlayerView:(PMAdPlayerView * _Nonnull)adPlayerView;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
 
@@ -493,14 +617,12 @@ SWIFT_PROTOCOL("_TtP14PlaywireMobile16PMInterstitialAd_")
 
 SWIFT_PROTOCOL("_TtP14PlaywireMobile24PMInterstitialAdDelegate_")
 @protocol PMInterstitialAdDelegate <PMFullScreenAdDelegate>
-- (void)fullScreenAdClosedWithFullScreen:(id <PMFullScreenAd> _Nonnull)fullScreen;
 @end
 
 
 SWIFT_CLASS("_TtC14PlaywireMobile22PMInterstitialAdLoader")
 @interface PMInterstitialAdLoader : PMAdLoader
-- (void)loadOnComplete:(void (^ _Nonnull)(id <PMInterstitialAd> _Nullable))onComplete;
-- (nonnull instancetype)initWithAdUnitName:(NSString * _Nonnull)adUnitName OBJC_DESIGNATED_INITIALIZER;
+- (void)loadOnAdResult:(void (^ _Nonnull)(id <PMInterstitialAd> _Nullable))onAdResult;
 @end
 
 
@@ -515,10 +637,10 @@ SWIFT_CLASS("_TtC14PlaywireMobile16PMNListenerToken")
 /// Interface definition for network configuration on SDK initialization, ad requests loading, etc.
 SWIFT_PROTOCOL("_TtP14PlaywireMobile9PMNetwork_")
 @protocol PMNetwork
-- (BOOL)supportsModeWithMode:(enum PMConfigUnitMode)mode SWIFT_WARN_UNUSED_RESULT;
 - (void)loadWithConfig:(PMConfig * _Nonnull)config configUnit:(PMConfigUnit * _Nonnull)configUnit configUnitNetwork:(PMConfigUnitNetwork * _Nonnull)configUnitNetwork loaderConfiguration:(PMAdLoaderConfiguration * _Nullable)loaderConfiguration onComplete:(void (^ _Nonnull)(void))onComplete;
 - (BOOL)isSuccess SWIFT_WARN_UNUSED_RESULT;
 - (id <PMInterstitialAd> _Nullable)asInterstitialWithLoader:(PMAdLoader * _Nonnull)loader SWIFT_WARN_UNUSED_RESULT;
+- (id <PMBannerAd> _Nullable)asBannerWithLoader:(PMAdLoader * _Nonnull)loader SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
