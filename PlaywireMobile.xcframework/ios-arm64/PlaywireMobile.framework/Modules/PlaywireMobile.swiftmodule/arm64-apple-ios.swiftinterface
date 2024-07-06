@@ -52,6 +52,7 @@ public typealias PMNAction = (_ event: PlaywireMobile.PMNEvent, _ data: Playwire
   @objc var network: any PlaywireMobile.PMNetwork { get }
   @objc var delegate: (any PlaywireMobile.PMAdDelegate)? { get set }
   @objc var isVideo: Swift.Bool { get }
+  @objc func cleanup()
 }
 extension PlaywireMobile.PMAd {
   public func asFullScreenAd() -> (any PlaywireMobile.PMFullScreenAd)?
@@ -288,24 +289,29 @@ public protocol PMNetworkAdapter {
     get
   }
 }
-@objc public protocol FloatingManagerDelegate {
-  @objc func floatingBanner(visible: Swift.Bool)
+@objc public protocol PMFloatingBannerManagerDelegate {
+  @objc func floatingManagerLoadResult(manager: PlaywireMobile.PMFloatingBannerManager, banner: (any PlaywireMobile.PMBannerAd)?)
+  @objc func floatingManagerViewVisibilityChange(manager: PlaywireMobile.PMFloatingBannerManager, visible: Swift.Bool)
+  @objc func floatingManagerStartBeingDelegate(manager: PlaywireMobile.PMFloatingBannerManager)
+  @objc func floatingManagerResignBeingDelegate(manager: PlaywireMobile.PMFloatingBannerManager)
 }
-@objc @objcMembers @_Concurrency.MainActor(unsafe) public class PMFloatingBannerManager : ObjectiveC.NSObject, PlaywireMobile.PMBannerAdDelegate, UIKit.UIGestureRecognizerDelegate {
-  @objc @_Concurrency.MainActor(unsafe) weak public var delegate: (any PlaywireMobile.FloatingManagerDelegate)?
-  @_Concurrency.MainActor(unsafe) @objc public func adImpressed(ad: any PlaywireMobile.PMAd)
-  @_Concurrency.MainActor(unsafe) @objc public func adClicked(ad: any PlaywireMobile.PMAd)
-  @_Concurrency.MainActor(unsafe) @objc public func bannerAdFinishedPlaying(banner: any PlaywireMobile.PMBannerAd)
-  @objc @_Concurrency.MainActor(unsafe) public var isDisplaying: Swift.Bool {
+@objc @objcMembers @_Concurrency.MainActor(unsafe) public class PMFloatingBannerManager : ObjectiveC.NSObject, UIKit.UIGestureRecognizerDelegate {
+  @objc @_Concurrency.MainActor(unsafe) weak public var delegate: (any PlaywireMobile.PMFloatingBannerManagerDelegate)? {
     @objc get
+    @objc set
   }
   @_Concurrency.MainActor(unsafe) @objc public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
-  @objc @_Concurrency.MainActor(unsafe) convenience public init(controller: UIKit.UIViewController, adUnitName: Swift.String)
-  @objc @_Concurrency.MainActor(unsafe) public init(controller: UIKit.UIViewController, bannerLoader: PlaywireMobile.PMBannerAdLoader)
+  @objc @_Concurrency.MainActor(unsafe) convenience public init(controller: UIKit.UIViewController, adUnitName: Swift.String, delegate: (any PlaywireMobile.PMFloatingBannerManagerDelegate)? = nil)
+  @objc @_Concurrency.MainActor(unsafe) public init(controller: UIKit.UIViewController, bannerLoader: PlaywireMobile.PMBannerAdLoader, delegate: (any PlaywireMobile.PMFloatingBannerManagerDelegate)? = nil)
   @objc @_Concurrency.MainActor(unsafe) public func layoutSuperimposed(to targetView: UIKit.UIView, animated: Swift.Bool = false)
   @objc @_Concurrency.MainActor(unsafe) public func layoutCornered(in viewController: UIKit.UIViewController, at corner: Foundation.NSNumber, withOptions options: [Foundation.NSNumber], animated: ObjectiveC.ObjCBool = false)
   @_Concurrency.MainActor(unsafe) public func layoutCornered(in viewController: UIKit.UIViewController, at corner: PlaywireMobile.FloatingBannerCorner, withOptions options: [PlaywireMobile.FloatingBannerCorner], animated: Swift.Bool = false)
-  @objc @_Concurrency.MainActor(unsafe) public func removeLayout()
+  @objc @_Concurrency.MainActor(unsafe) public func reset()
+  @objc @_Concurrency.MainActor(unsafe) public var isVisible: Swift.Bool {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor(unsafe) public func show()
+  @objc @_Concurrency.MainActor(unsafe) public func hide()
   @objc deinit
 }
 @objc public protocol PMNetwork {
