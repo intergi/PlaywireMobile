@@ -1,13 +1,13 @@
 Pod::Spec.new do |s|
   s.name             = 'PlaywireMobile'
-  s.version          = '3.0.1'
+  s.version          = '3.0.2'
   s.summary          = 'PlaywireMobile SDK'
   s.homepage         = 'https://www.playwire.com'
   s.license          = { :type => 'Custom', :file => 'LICENSE' }
   s.author           = { 'ios.team' => 'mobile.team@playwire.com' }
   s.source           = { :git => 'https://github.com/intergi/PlaywireMobile.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '12.4'
+  s.ios.deployment_target = '13.0'
   s.swift_version = '5.0'
   s.cocoapods_version = '>= 1.12.1'
   s.requires_arc = true
