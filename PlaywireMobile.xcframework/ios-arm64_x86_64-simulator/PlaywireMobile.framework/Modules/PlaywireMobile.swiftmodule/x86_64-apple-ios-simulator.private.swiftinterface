@@ -303,6 +303,8 @@ public protocol PMNetworkAdapter {
   @_Concurrency.MainActor(unsafe) @objc public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
   @objc @_Concurrency.MainActor(unsafe) convenience public init(controller: UIKit.UIViewController, adUnitName: Swift.String, delegate: (any PlaywireMobile.PMFloatingBannerManagerDelegate)? = nil)
   @objc @_Concurrency.MainActor(unsafe) public init(controller: UIKit.UIViewController, bannerLoader: PlaywireMobile.PMBannerAdLoader, delegate: (any PlaywireMobile.PMFloatingBannerManagerDelegate)? = nil)
+  @objc @_Concurrency.MainActor(unsafe) public var corneredMargins: UIKit.UIEdgeInsets
+  @objc @_Concurrency.MainActor(unsafe) public var animationTime: Swift.Double
   @objc @_Concurrency.MainActor(unsafe) public func layoutSuperimposed(to targetView: UIKit.UIView, animated: Swift.Bool = false)
   @objc @_Concurrency.MainActor(unsafe) public func layoutCornered(in viewController: UIKit.UIViewController, at corner: Foundation.NSNumber, withOptions options: [Foundation.NSNumber], animated: ObjectiveC.ObjCBool = false)
   @_Concurrency.MainActor(unsafe) public func layoutCornered(in viewController: UIKit.UIViewController, at corner: PlaywireMobile.FloatingBannerCorner, withOptions options: [PlaywireMobile.FloatingBannerCorner], animated: Swift.Bool = false)
