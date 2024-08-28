@@ -571,6 +571,8 @@ SWIFT_CLASS("_TtC14PlaywireMobile23PMFloatingBannerManager")
 - (BOOL)gestureRecognizer:(UIGestureRecognizer * _Nonnull)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer * _Nonnull)otherGestureRecognizer SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithController:(UIViewController * _Nonnull)controller adUnitName:(NSString * _Nonnull)adUnitName delegate:(id <PMFloatingBannerManagerDelegate> _Nullable)delegate;
 - (nonnull instancetype)initWithController:(UIViewController * _Nonnull)controller bannerLoader:(PMBannerAdLoader * _Nonnull)bannerLoader delegate:(id <PMFloatingBannerManagerDelegate> _Nullable)delegate OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic) UIEdgeInsets corneredMargins;
+@property (nonatomic) double animationTime;
 - (void)layoutSuperimposedTo:(UIView * _Nonnull)targetView animated:(BOOL)animated;
 - (void)layoutCorneredIn:(UIViewController * _Nonnull)viewController at:(NSNumber * _Nonnull)corner withOptions:(NSArray<NSNumber *> * _Nonnull)options animated:(BOOL)animated;
 - (void)reset;
