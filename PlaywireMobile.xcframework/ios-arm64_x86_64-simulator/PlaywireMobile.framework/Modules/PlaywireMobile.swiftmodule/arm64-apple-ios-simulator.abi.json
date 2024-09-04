@@ -131,7 +131,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "() -> ()",
+                "printedName": "(Swift.Bool) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -140,15 +140,16 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
                   }
                 ]
               }
             ],
             "declKind": "Func",
             "usr": "c:@M@PlaywireMobile@objc(cs)PlaywireMobileAds(im)initializeWithPublisherId:appId:configuration:completionHandler:",
-            "mangledName": "$s14PlaywireMobile0aB3AdsC10initialize11publisherId03appF013configuration17completionHandlerySS_SSAA18PMAdsConfigurationCyyctF",
+            "mangledName": "$s14PlaywireMobile0aB3AdsC10initialize11publisherId03appF013configuration17completionHandlerySS_SSAA18PMAdsConfigurationCySbctF",
             "moduleName": "PlaywireMobile",
             "declAttributes": [
               "Final",
@@ -13323,50 +13324,71 @@
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/PlaywireMobileAds.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1966,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/PlaywireMobileAds.swift",
       "kind": "StringLiteral",
-      "offset": 2059,
+      "offset": 2100,
       "length": 3,
       "value": "\":\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/PlaywireMobileAds.swift",
       "kind": "IntegerLiteral",
-      "offset": 2110,
+      "offset": 2151,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/PlaywireMobileAds.swift",
       "kind": "IntegerLiteral",
-      "offset": 2133,
+      "offset": 2174,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/PlaywireMobileAds.swift",
       "kind": "StringLiteral",
-      "offset": 2139,
+      "offset": 2180,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/PlaywireMobileAds.swift",
       "kind": "IntegerLiteral",
-      "offset": 2192,
+      "offset": 2233,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/PlaywireMobileAds.swift",
       "kind": "IntegerLiteral",
-      "offset": 2215,
+      "offset": 2256,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/PlaywireMobileAds.swift",
       "kind": "BooleanLiteral",
-      "offset": 3371,
+      "offset": 2662,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/PlaywireMobileAds.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3144,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/PlaywireMobileAds.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3523,
       "length": 5,
       "value": "false"
     },

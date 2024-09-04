@@ -671,7 +671,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PlaywireMobi
 + (PlaywireMobileAds * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-- (void)initializeWithPublisherId:(NSString * _Nonnull)publisherId appId:(NSString * _Nonnull)appId configuration:(PMAdsConfiguration * _Nonnull)configuration completionHandler:(void (^ _Nonnull)(void))completionHandler;
+- (void)initializeWithPublisherId:(NSString * _Nonnull)publisherId appId:(NSString * _Nonnull)appId configuration:(PMAdsConfiguration * _Nonnull)configuration completionHandler:(void (^ _Nonnull)(BOOL))completionHandler;
 @end
 
 
