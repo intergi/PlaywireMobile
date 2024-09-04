@@ -14,7 +14,7 @@ import _SwiftConcurrencyShims
 import os
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers final public class PlaywireMobileAds : ObjectiveC.NSObject {
   @objc public static let shared: PlaywireMobile.PlaywireMobileAds
-  @objc final public func initialize(publisherId: Swift.String, appId: Swift.String, configuration: PlaywireMobile.PMAdsConfiguration = PMAdsConfiguration(), completionHandler: @escaping () -> Swift.Void)
+  @objc final public func initialize(publisherId: Swift.String, appId: Swift.String, configuration: PlaywireMobile.PMAdsConfiguration = PMAdsConfiguration(), completionHandler: @escaping (Swift.Bool) -> Swift.Void)
   @objc deinit
 }
 public typealias PMNData = [Swift.String : Any]
