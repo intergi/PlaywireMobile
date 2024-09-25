@@ -301,11 +301,11 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
-typedef SWIFT_ENUM(NSInteger, FloatingBannerCorner, open) {
-  FloatingBannerCornerTopLeft = 0,
-  FloatingBannerCornerTopRight = 1,
-  FloatingBannerCornerBottomLeft = 2,
-  FloatingBannerCornerBottomRight = 3,
+typedef SWIFT_ENUM(NSInteger, FloatingViewCorner, open) {
+  FloatingViewCornerTopLeft = 0,
+  FloatingViewCornerTopRight = 1,
+  FloatingViewCornerBottomLeft = 2,
+  FloatingViewCornerBottomRight = 3,
 };
 
 @class PMAdLoader;
@@ -390,6 +390,34 @@ SWIFT_PROTOCOL("_TtP14PlaywireMobile22PMAdPlayerViewDelegate_")
 - (void)closePressedWithAdPlayerView:(PMAdPlayerView * _Nonnull)adPlayerView;
 @end
 
+@protocol PMBannerAd;
+@protocol PMAdViewPresenterDelegate;
+
+SWIFT_CLASS("_TtC14PlaywireMobile17PMAdViewPresenter")
+@interface PMAdViewPresenter : NSObject
+@property (nonatomic, readonly, strong) id <PMBannerAd> _Nullable banner;
+@property (nonatomic, weak) id <PMAdViewPresenterDelegate> _Nullable delegate;
+- (nonnull instancetype)initWithAdUnitName:(NSString * _Nonnull)adUnitName controller:(UIViewController * _Nonnull)controller;
+- (nonnull instancetype)initWithBannerLoader:(PMBannerAdLoader * _Nonnull)bannerLoader OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, strong) UIView * _Nullable bannerHolder;
+- (void)cleanup;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_PROTOCOL("_TtP14PlaywireMobile25PMAdViewPresenterDelegate_")
+@protocol PMAdViewPresenterDelegate
+- (void)didChangeAdPresenterBannerWithPresenter:(PMAdViewPresenter * _Nonnull)presenter oldBanner:(id <PMBannerAd> _Nullable)oldBanner newBanner:(id <PMBannerAd> _Nullable)newBanner;
+@end
+
+
+SWIFT_PROTOCOL("_TtP14PlaywireMobile27PMAdViewPresenterViewHolder_")
+@protocol PMAdViewPresenterViewHolder
+- (void)willStartPresentingAdWithPresenter:(PMAdViewPresenter * _Nonnull)presenter refresh:(BOOL)refresh;
+- (void)didEndPresentingAdWithPresenter:(PMAdViewPresenter * _Nonnull)presenter willRefresh:(BOOL)willRefresh;
+@end
+
 
 /// PMAdsConfiguration is an initialization helper which includes all optional or required parameters used during initialization, e.g., a view controller for CMP process.
 SWIFT_CLASS("_TtC14PlaywireMobile18PMAdsConfiguration")
@@ -403,6 +431,8 @@ SWIFT_CLASS("_TtC14PlaywireMobile18PMAdsConfiguration")
 SWIFT_PROTOCOL("_TtP14PlaywireMobile10PMBannerAd_")
 @protocol PMBannerAd <PMAd>
 @property (nonatomic, readonly, strong) UIView * _Nonnull adView;
+- (void)willStartContextChange;
+- (void)didEndContextChange;
 @end
 
 
@@ -417,6 +447,14 @@ SWIFT_CLASS("_TtC14PlaywireMobile16PMBannerAdLoader")
 - (void)loadOnAdResult:(void (^ _Nonnull)(id <PMBannerAd> _Nullable))onAdResult;
 - (void)refresh;
 - (void)adImpressedWithAd:(id <PMAd> _Nonnull)ad;
+@end
+
+
+SWIFT_CLASS("_TtC14PlaywireMobile12PMBannerView")
+@interface PMBannerView : UIView
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (nonnull instancetype)initWithBannerLoader:(PMBannerAdLoader * _Nonnull)bannerLoader OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
 @class PMConfigApp;
@@ -561,35 +599,40 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PMConfigUnit
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@protocol PMFloatingBannerManagerDelegate;
-@class UIGestureRecognizer;
-@class NSNumber;
+@protocol PMFloatingBannerAnimationHandler;
+@class PMFloatingView;
 
-SWIFT_CLASS("_TtC14PlaywireMobile23PMFloatingBannerManager")
-@interface PMFloatingBannerManager : NSObject <UIGestureRecognizerDelegate>
-@property (nonatomic, weak) id <PMFloatingBannerManagerDelegate> _Nullable delegate;
-- (BOOL)gestureRecognizer:(UIGestureRecognizer * _Nonnull)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer * _Nonnull)otherGestureRecognizer SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)initWithController:(UIViewController * _Nonnull)controller adUnitName:(NSString * _Nonnull)adUnitName delegate:(id <PMFloatingBannerManagerDelegate> _Nullable)delegate;
-- (nonnull instancetype)initWithController:(UIViewController * _Nonnull)controller bannerLoader:(PMBannerAdLoader * _Nonnull)bannerLoader delegate:(id <PMFloatingBannerManagerDelegate> _Nullable)delegate OBJC_DESIGNATED_INITIALIZER;
-@property (nonatomic) UIEdgeInsets corneredMargins;
-@property (nonatomic) double animationTime;
-- (void)layoutSuperimposedTo:(UIView * _Nonnull)targetView animated:(BOOL)animated;
-- (void)layoutCorneredIn:(UIViewController * _Nonnull)viewController at:(NSNumber * _Nonnull)corner withOptions:(NSArray<NSNumber *> * _Nonnull)options animated:(BOOL)animated;
-- (void)reset;
-@property (nonatomic, readonly) BOOL isVisible;
-- (void)show;
-- (void)hide;
+SWIFT_CLASS("_TtC14PlaywireMobile16PMFloatingBanner")
+@interface PMFloatingBanner : NSObject <PMAdViewPresenterDelegate>
+@property (nonatomic, weak) id <PMFloatingBannerAnimationHandler> _Nullable animationHandler;
+@property (nonatomic) enum FloatingViewCorner preferredCorner;
+@property (nonatomic, strong) UIView * _Nullable inlineView;
+- (nonnull instancetype)initWithPresenter:(PMAdViewPresenter * _Nonnull)presenter floatingView:(PMFloatingView * _Nonnull)floatingView OBJC_DESIGNATED_INITIALIZER;
+- (void)didChangeAdPresenterBannerWithPresenter:(PMAdViewPresenter * _Nonnull)presenter oldBanner:(id <PMBannerAd> _Nullable)oldBanner newBanner:(id <PMBannerAd> _Nullable)newBanner;
+- (void)cleanup;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
-SWIFT_PROTOCOL("_TtP14PlaywireMobile31PMFloatingBannerManagerDelegate_")
-@protocol PMFloatingBannerManagerDelegate
-- (void)floatingManagerLoadResultWithManager:(PMFloatingBannerManager * _Nonnull)manager banner:(id <PMBannerAd> _Nullable)banner;
-- (void)floatingManagerViewVisibilityChangeWithManager:(PMFloatingBannerManager * _Nonnull)manager visible:(BOOL)visible;
-- (void)floatingManagerStartBeingDelegateWithManager:(PMFloatingBannerManager * _Nonnull)manager;
-- (void)floatingManagerResignBeingDelegateWithManager:(PMFloatingBannerManager * _Nonnull)manager;
+SWIFT_PROTOCOL("_TtP14PlaywireMobile32PMFloatingBannerAnimationHandler_")
+@protocol PMFloatingBannerAnimationHandler
+- (void)performAnimationWithBlock:(SWIFT_NOESCAPE void (^ _Nonnull)(void))block completion:(void (^ _Nullable)(void))completion;
+@end
+
+@class UIGestureRecognizer;
+
+SWIFT_CLASS("_TtC14PlaywireMobile14PMFloatingView")
+@interface PMFloatingView : UIView <UIGestureRecognizerDelegate>
+@property (nonatomic) UIEdgeInsets corneredMargins;
+@property (nonatomic) CGSize corneredSize;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (nonnull instancetype)initWithController:(UIViewController * _Nonnull)controller OBJC_DESIGNATED_INITIALIZER;
+- (BOOL)gestureRecognizer:(UIGestureRecognizer * _Nonnull)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer * _Nonnull)otherGestureRecognizer SWIFT_WARN_UNUSED_RESULT;
+- (void)layoutSuperimposedTo:(UIView * _Nonnull)targetView;
+- (void)layoutCornered;
+- (void)resetLayout;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
 

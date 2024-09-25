@@ -36,11 +36,36 @@ public typealias PMNAction = (_ event: PlaywireMobile.PMNEvent, _ data: Playwire
   public func notify(event: PlaywireMobile.PMNEvent, data: [Swift.String : Any]? = nil)
   @objc deinit
 }
+@objc public enum FloatingViewCorner : Swift.Int {
+  case topLeft
+  case topRight
+  case bottomLeft
+  case bottomRight
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers @_Concurrency.MainActor(unsafe) public class PMFloatingView : UIKit.UIView, UIKit.UIGestureRecognizerDelegate {
+  @objc @_Concurrency.MainActor(unsafe) public var corneredMargins: UIKit.UIEdgeInsets
+  @objc @_Concurrency.MainActor(unsafe) public var corneredSize: CoreFoundation.CGSize
+  @objc @_Concurrency.MainActor(unsafe) public init(controller: UIKit.UIViewController)
+  @_Concurrency.MainActor(unsafe) @objc public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
+  @objc @_Concurrency.MainActor(unsafe) public func layoutSuperimposed(to targetView: UIKit.UIView)
+  @objc @_Concurrency.MainActor(unsafe) public func layoutCornered()
+  @objc @_Concurrency.MainActor(unsafe) public func resetLayout()
+  @objc deinit
+}
 @objc @_Concurrency.MainActor(unsafe) open class PMFullScreenAdViewController : UIKit.UIViewController, PlaywireMobile.PMAdPlayerViewDelegate {
   @_Concurrency.MainActor(unsafe) public init(fullScreenAd: any PlaywireMobile.PMFullScreenAd, adPlayerView: PlaywireMobile.PMAdPlayerView)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @_Concurrency.MainActor(unsafe) @objc public func closePressed(adPlayerView: PlaywireMobile.PMAdPlayerView)
   @_Concurrency.MainActor(unsafe) open func createAdView(ad: any PlaywireMobile.PMAd) -> PlaywireMobile.PMAdPlayerView
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers @_Concurrency.MainActor(unsafe) public class PMBannerView : UIKit.UIView {
+  @objc @_Concurrency.MainActor(unsafe) public init(bannerLoader: PlaywireMobile.PMBannerAdLoader)
   @objc deinit
 }
 @objc public protocol PMAdDelegate {
@@ -208,6 +233,8 @@ extension PlaywireMobile.PMFullScreenAd {
 }
 @objc public protocol PMBannerAd : PlaywireMobile.PMAd {
   @objc var adView: UIKit.UIView { get }
+  @objc func willStartContextChange()
+  @objc func didEndContextChange()
 }
 extension PlaywireMobile.PMBannerAd {
   public func notifyAdMediaFinishedPlaying()
@@ -278,49 +305,47 @@ public protocol PMNetworkAdapter {
 }
 @objc public protocol PMInterstitialAd : PlaywireMobile.PMFullScreenAd {
 }
-@objc public enum FloatingBannerCorner : Swift.Int {
-  case topLeft
-  case topRight
-  case bottomLeft
-  case bottomRight
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-@objc public protocol PMFloatingBannerManagerDelegate {
-  @objc func floatingManagerLoadResult(manager: PlaywireMobile.PMFloatingBannerManager, banner: (any PlaywireMobile.PMBannerAd)?)
-  @objc func floatingManagerViewVisibilityChange(manager: PlaywireMobile.PMFloatingBannerManager, visible: Swift.Bool)
-  @objc func floatingManagerStartBeingDelegate(manager: PlaywireMobile.PMFloatingBannerManager)
-  @objc func floatingManagerResignBeingDelegate(manager: PlaywireMobile.PMFloatingBannerManager)
-}
-@objc @objcMembers @_Concurrency.MainActor(unsafe) public class PMFloatingBannerManager : ObjectiveC.NSObject, UIKit.UIGestureRecognizerDelegate {
-  @objc @_Concurrency.MainActor(unsafe) weak public var delegate: (any PlaywireMobile.PMFloatingBannerManagerDelegate)? {
-    @objc get
-    @objc set
-  }
-  @_Concurrency.MainActor(unsafe) @objc public func gestureRecognizer(_ gestureRecognizer: UIKit.UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
-  @objc @_Concurrency.MainActor(unsafe) convenience public init(controller: UIKit.UIViewController, adUnitName: Swift.String, delegate: (any PlaywireMobile.PMFloatingBannerManagerDelegate)? = nil)
-  @objc @_Concurrency.MainActor(unsafe) public init(controller: UIKit.UIViewController, bannerLoader: PlaywireMobile.PMBannerAdLoader, delegate: (any PlaywireMobile.PMFloatingBannerManagerDelegate)? = nil)
-  @objc @_Concurrency.MainActor(unsafe) public var corneredMargins: UIKit.UIEdgeInsets
-  @objc @_Concurrency.MainActor(unsafe) public var animationTime: Swift.Double
-  @objc @_Concurrency.MainActor(unsafe) public func layoutSuperimposed(to targetView: UIKit.UIView, animated: Swift.Bool = false)
-  @objc @_Concurrency.MainActor(unsafe) public func layoutCornered(in viewController: UIKit.UIViewController, at corner: Foundation.NSNumber, withOptions options: [Foundation.NSNumber], animated: ObjectiveC.ObjCBool = false)
-  @_Concurrency.MainActor(unsafe) public func layoutCornered(in viewController: UIKit.UIViewController, at corner: PlaywireMobile.FloatingBannerCorner, withOptions options: [PlaywireMobile.FloatingBannerCorner], animated: Swift.Bool = false)
-  @objc @_Concurrency.MainActor(unsafe) public func reset()
-  @objc @_Concurrency.MainActor(unsafe) public var isVisible: Swift.Bool {
-    @objc get
-  }
-  @objc @_Concurrency.MainActor(unsafe) public func show()
-  @objc @_Concurrency.MainActor(unsafe) public func hide()
-  @objc deinit
-}
 @objc public protocol PMNetwork {
   @objc func load(config: PlaywireMobile.PMConfig, configUnit: PlaywireMobile.PMConfigUnit, configUnitNetwork: PlaywireMobile.PMConfigUnitNetwork, loaderConfiguration: PlaywireMobile.PMAdLoaderConfiguration?, onComplete: @escaping () -> Swift.Void)
   @objc func isSuccess() -> Swift.Bool
   @objc func asInterstitial(loader: PlaywireMobile.PMAdLoader) -> (any PlaywireMobile.PMInterstitialAd)?
   @objc func asBanner(loader: PlaywireMobile.PMAdLoader) -> (any PlaywireMobile.PMBannerAd)?
+}
+@objc public protocol PMAdViewPresenterDelegate {
+  @objc func didChangeAdPresenterBanner(presenter: PlaywireMobile.PMAdViewPresenter, oldBanner: (any PlaywireMobile.PMBannerAd)?, newBanner: (any PlaywireMobile.PMBannerAd)?)
+}
+@objc public protocol PMAdViewPresenterViewHolder {
+  @objc func willStartPresentingAd(presenter: PlaywireMobile.PMAdViewPresenter, refresh: Swift.Bool)
+  @objc func didEndPresentingAd(presenter: PlaywireMobile.PMAdViewPresenter, willRefresh: Swift.Bool)
+}
+@objc @objcMembers public class PMAdViewPresenter : ObjectiveC.NSObject {
+  @objc public var banner: (any PlaywireMobile.PMBannerAd)? {
+    get
+  }
+  @objc weak public var delegate: (any PlaywireMobile.PMAdViewPresenterDelegate)?
+  @objc convenience public init(adUnitName: Swift.String, controller: UIKit.UIViewController)
+  @objc public init(bannerLoader: PlaywireMobile.PMBannerAdLoader)
+  @objc public var bannerHolder: UIKit.UIView? {
+    @objc get
+    @objc set
+  }
+  @objc public func cleanup()
+  @objc deinit
+}
+@objc public protocol PMFloatingBannerAnimationHandler {
+  @objc func performAnimation(block: () -> Swift.Void, completion: (() -> Swift.Void)?)
+}
+@objc @objcMembers public class PMFloatingBanner : ObjectiveC.NSObject, PlaywireMobile.PMAdViewPresenterDelegate {
+  @objc weak public var animationHandler: (any PlaywireMobile.PMFloatingBannerAnimationHandler)?
+  @objc public var preferredCorner: PlaywireMobile.FloatingViewCorner
+  @objc public var inlineView: UIKit.UIView? {
+    @objc get
+    @objc set
+  }
+  @objc public init(presenter: PlaywireMobile.PMAdViewPresenter, floatingView: PlaywireMobile.PMFloatingView)
+  @objc deinit
+  @objc public func didChangeAdPresenterBanner(presenter: PlaywireMobile.PMAdViewPresenter, oldBanner: (any PlaywireMobile.PMBannerAd)?, newBanner: (any PlaywireMobile.PMBannerAd)?)
+  @objc public func cleanup()
 }
 public enum PMConfigNetworkType : Swift.String, Swift.Decodable {
   case Mock
@@ -420,6 +445,9 @@ public enum PMNEventType : Swift.Int {
     get
   }
 }
+extension PlaywireMobile.FloatingViewCorner : Swift.Equatable {}
+extension PlaywireMobile.FloatingViewCorner : Swift.Hashable {}
+extension PlaywireMobile.FloatingViewCorner : Swift.RawRepresentable {}
 extension PlaywireMobile.PMNSeverity : Swift.Equatable {}
 extension PlaywireMobile.PMNSeverity : Swift.Hashable {}
 extension PlaywireMobile.PMNSeverity : Swift.RawRepresentable {}
@@ -428,9 +456,6 @@ extension PlaywireMobile.PMConfigUnitMode : Swift.Hashable {}
 extension PlaywireMobile.PMConfigUnitMode : Swift.RawRepresentable {}
 extension PlaywireMobile.PMAdPlayerView.Layout : Swift.Equatable {}
 extension PlaywireMobile.PMAdPlayerView.Layout : Swift.Hashable {}
-extension PlaywireMobile.FloatingBannerCorner : Swift.Equatable {}
-extension PlaywireMobile.FloatingBannerCorner : Swift.Hashable {}
-extension PlaywireMobile.FloatingBannerCorner : Swift.RawRepresentable {}
 extension PlaywireMobile.PMConfigNetworkType : Swift.Equatable {}
 extension PlaywireMobile.PMConfigNetworkType : Swift.Hashable {}
 extension PlaywireMobile.PMConfigNetworkType : Swift.RawRepresentable {}
