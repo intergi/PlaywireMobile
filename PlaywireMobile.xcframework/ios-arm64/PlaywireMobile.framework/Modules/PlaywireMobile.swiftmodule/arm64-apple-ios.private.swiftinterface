@@ -333,7 +333,7 @@ public protocol PMNetworkAdapter {
   @objc deinit
 }
 @objc public protocol PMFloatingBannerAnimationHandler {
-  @objc func performAnimation(block: () -> Swift.Void, completion: (() -> Swift.Void)?)
+  @objc func performAnimation(block: @escaping () -> Swift.Void, completion: (() -> Swift.Void)?)
 }
 @objc @objcMembers public class PMFloatingBanner : ObjectiveC.NSObject, PlaywireMobile.PMAdViewPresenterDelegate {
   @objc weak public var animationHandler: (any PlaywireMobile.PMFloatingBannerAnimationHandler)?

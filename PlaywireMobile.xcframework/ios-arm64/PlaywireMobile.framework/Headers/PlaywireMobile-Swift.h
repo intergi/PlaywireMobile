@@ -617,7 +617,7 @@ SWIFT_CLASS("_TtC14PlaywireMobile16PMFloatingBanner")
 
 SWIFT_PROTOCOL("_TtP14PlaywireMobile32PMFloatingBannerAnimationHandler_")
 @protocol PMFloatingBannerAnimationHandler
-- (void)performAnimationWithBlock:(SWIFT_NOESCAPE void (^ _Nonnull)(void))block completion:(void (^ _Nullable)(void))completion;
+- (void)performAnimationWithBlock:(void (^ _Nonnull)(void))block completion:(void (^ _Nullable)(void))completion;
 @end
 
 @class UIGestureRecognizer;

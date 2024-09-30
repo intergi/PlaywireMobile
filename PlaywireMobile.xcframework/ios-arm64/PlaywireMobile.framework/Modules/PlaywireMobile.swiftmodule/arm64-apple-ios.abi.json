@@ -9838,9 +9838,6 @@
                     "name": "Void",
                     "printedName": "()"
                   }
-                ],
-                "typeAttributes": [
-                  "noescape"
                 ]
               },
               {
@@ -9871,7 +9868,7 @@
             ],
             "declKind": "Func",
             "usr": "c:@M@PlaywireMobile@objc(pl)PMFloatingBannerAnimationHandler(im)performAnimationWithBlock:completion:",
-            "mangledName": "$s14PlaywireMobile32PMFloatingBannerAnimationHandlerP07performE05block10completionyyyXE_yycSgtF",
+            "mangledName": "$s14PlaywireMobile32PMFloatingBannerAnimationHandlerP07performE05block10completionyyyc_yycSgtF",
             "moduleName": "PlaywireMobile",
             "genericSig": "<τ_0_0 where τ_0_0 : PlaywireMobile.PMFloatingBannerAnimationHandler>",
             "sugared_genericSig": "<Self where Self : PlaywireMobile.PMFloatingBannerAnimationHandler>",
@@ -16083,8 +16080,36 @@
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/rendering\/floatingbanner\/PMFloatingBanner.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1369,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/rendering\/floatingbanner\/PMFloatingBanner.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2615,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/rendering\/floatingbanner\/PMFloatingBanner.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3277,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/rendering\/floatingbanner\/PMFloatingBanner.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4093,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/rendering\/floatingbanner\/PMFloatingBanner.swift",
       "kind": "StringLiteral",
-      "offset": 389,
+      "offset": 399,
       "length": 16,
       "value": "\"PlaywireMobile.PMFloatingBanner\""
     },
