@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/PlaywireMobile-Swift.h</key>
 		<data>
-		L9mgsxI+Xk5bk06AU3+peqkuLQM=
+		0M3PNeZrX4qiJxudPpZXBYiNsGg=
 		</data>
 		<key>Headers/PlaywireMobile.h</key>
 		<data>
@@ -18,15 +18,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		/6yi+IZiaZJCpG9CJIvdbdiueDE=
+		QDf87dLRpIS+vJMbsaG04n9U+0Q=
 		</data>
 		<key>Modules/PlaywireMobile.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		cTKlAej3AK/0Bp/v7a4jH4V7jjY=
+		850tBgeuyDa6dV8d9Mrun4X/8G4=
 		</data>
 		<key>Modules/PlaywireMobile.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		+1hqpgavsQm8ak1jGXy3sb0kAdo=
+		svmbxr8MTRV1AxQ+R9AlU5ihqY0=
 		</data>
 		<key>Modules/PlaywireMobile.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/PlaywireMobile.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		+1hqpgavsQm8ak1jGXy3sb0kAdo=
+		svmbxr8MTRV1AxQ+R9AlU5ihqY0=
 		</data>
 		<key>Modules/PlaywireMobile.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		AA3JQHjRU+OS0MVm3R9K+EwYc0g=
+		S20qFP8iQ8CHVUF6uzKA6le6wvA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -58,7 +58,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Kb1TdW5RaYHQFPvOO0vQOCwYgZqTzOO/3WFbIJdl60Y=
+			XsCraUE9qTDD0GKVObVH05XrH4LYzfqG88DFT4VKaWM=
 			</data>
 		</dict>
 		<key>Headers/PlaywireMobile.h</key>
@@ -72,14 +72,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			50qZ0za/yyJ8OioNvdrACBNmayLIxvo0+1GmmOyYTG8=
+			vVyMSrcDT4JbXbolP8t3608Zol6SCi9r+ifDf88tC8E=
 			</data>
 		</dict>
 		<key>Modules/PlaywireMobile.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wDSTdIchmdPTY7FfrIMH9BG7Tx64w3wzE8aVbP8nQdk=
+			Z8eBPCZJGs4rB6bzxn4WNj6c6gSFHDYUo/YKl/ZDuXc=
 			</data>
 		</dict>
 		<key>Modules/PlaywireMobile.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -93,14 +93,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wDSTdIchmdPTY7FfrIMH9BG7Tx64w3wzE8aVbP8nQdk=
+			Z8eBPCZJGs4rB6bzxn4WNj6c6gSFHDYUo/YKl/ZDuXc=
 			</data>
 		</dict>
 		<key>Modules/PlaywireMobile.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GUEGXj/tRW2YgqHWjeInBeZrYkFrqSacId1J5mPNflY=
+			pS+6eZNh3R2oX4ORul2x92JvzmKi/gtDo6Fif1Q6R40=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
