@@ -5374,6 +5374,56 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "frequencyCap",
+            "printedName": "frequencyCap",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PlaywireMobile@objc(cs)PMConfigUnitRefresh(py)frequencyCap",
+            "mangledName": "$s14PlaywireMobile19PMConfigUnitRefreshC12frequencyCapSivp",
+            "moduleName": "PlaywireMobile",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PlaywireMobile@objc(cs)PMConfigUnitRefresh(im)frequencyCap",
+                "mangledName": "$s14PlaywireMobile19PMConfigUnitRefreshC12frequencyCapSivg",
+                "moduleName": "PlaywireMobile",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -12700,6 +12750,43 @@
           },
           {
             "kind": "Var",
+            "name": "AdLoadingRefreshFrequencyCap",
+            "printedName": "AdLoadingRefreshFrequencyCap",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PlaywireMobile.PMNEventType.Type) -> PlaywireMobile.PMNEventType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PMNEventType",
+                    "printedName": "PlaywireMobile.PMNEventType",
+                    "usr": "s:14PlaywireMobile12PMNEventTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PlaywireMobile.PMNEventType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PMNEventType",
+                        "printedName": "PlaywireMobile.PMNEventType",
+                        "usr": "s:14PlaywireMobile12PMNEventTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:14PlaywireMobile12PMNEventTypeO28AdLoadingRefreshFrequencyCapyA2CmF",
+            "mangledName": "$s14PlaywireMobile12PMNEventTypeO28AdLoadingRefreshFrequencyCapyA2CmF",
+            "moduleName": "PlaywireMobile"
+          },
+          {
+            "kind": "Var",
             "name": "AdLoadingUser",
             "printedName": "AdLoadingUser",
             "children": [
@@ -14486,48 +14573,48 @@
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/PMConstant.swift",
       "kind": "StringLiteral",
       "offset": 860,
-      "length": 28,
-      "value": "\"intergi\/mobile-config-file\""
+      "length": 39,
+      "value": "\"intergi\/mobile-config-file\/refs\/heads\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/PMConstant.swift",
       "kind": "StringLiteral",
-      "offset": 933,
+      "offset": 944,
       "length": 15,
       "value": "\"PMConfig.json\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/PMConstant.swift",
       "kind": "StringLiteral",
-      "offset": 993,
+      "offset": 1004,
       "length": 8,
       "value": "\"config\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/PMConstant.swift",
       "kind": "StringLiteral",
-      "offset": 1049,
+      "offset": 1060,
       "length": 21,
       "value": "\"config.playwire.com\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/PMConstant.swift",
       "kind": "StringLiteral",
-      "offset": 1110,
+      "offset": 1121,
       "length": 35,
       "value": "\"phoenix-configs-dev.herokuapp.com\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/PMConstant.swift",
       "kind": "StringLiteral",
-      "offset": 1182,
+      "offset": 1193,
       "length": 6,
       "value": "\"apps\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/PMConstant.swift",
       "kind": "StringLiteral",
-      "offset": 1223,
+      "offset": 1234,
       "length": 20,
       "value": "\"mobile_config.json\""
     },
@@ -14899,6 +14986,13 @@
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/config\/models\/PMConfigUnit.swift",
       "kind": "IntegerLiteral",
       "offset": 2844,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/config\/models\/PMConfigUnit.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2904,
       "length": 1,
       "value": "0"
     },
@@ -15619,126 +15713,140 @@
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/ads\/PMAdLoader.swift",
       "kind": "StringLiteral",
-      "offset": 2513,
+      "offset": 2565,
       "length": 9,
       "value": "\"ad unit\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/ads\/PMAdLoader.swift",
       "kind": "IntegerLiteral",
-      "offset": 3081,
+      "offset": 3172,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/ads\/PMAdLoader.swift",
+      "kind": "StringLiteral",
+      "offset": 3308,
+      "length": 9,
+      "value": "\"ad unit\""
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/ads\/PMAdLoader.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3466,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/ads\/PMAdLoader.swift",
       "kind": "IntegerLiteral",
-      "offset": 3129,
+      "offset": 3514,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/ads\/PMAdLoader.swift",
       "kind": "IntegerLiteral",
-      "offset": 3133,
+      "offset": 3518,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/ads\/PMAdLoader.swift",
       "kind": "StringLiteral",
-      "offset": 3333,
+      "offset": 3718,
       "length": 9,
       "value": "\"ad unit\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/ads\/PMAdLoader.swift",
       "kind": "StringLiteral",
-      "offset": 3370,
+      "offset": 3755,
       "length": 6,
       "value": "\"rate\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/ads\/PMAdLoader.swift",
       "kind": "StringLiteral",
-      "offset": 4145,
+      "offset": 4530,
       "length": 9,
       "value": "\"ad unit\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/ads\/PMAdLoader.swift",
       "kind": "StringLiteral",
-      "offset": 4606,
+      "offset": 4991,
       "length": 9,
       "value": "\"ad unit\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/ads\/PMAdLoader.swift",
       "kind": "IntegerLiteral",
-      "offset": 4864,
+      "offset": 5249,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/ads\/PMAdLoader.swift",
       "kind": "StringLiteral",
-      "offset": 5444,
+      "offset": 6197,
       "length": 9,
       "value": "\"ad unit\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/ads\/PMAdLoader.swift",
       "kind": "IntegerLiteral",
-      "offset": 6068,
+      "offset": 6821,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/ads\/PMAdLoader.swift",
       "kind": "StringLiteral",
-      "offset": 6611,
+      "offset": 7364,
       "length": 9,
       "value": "\"ad unit\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/ads\/PMAdLoader.swift",
       "kind": "StringLiteral",
-      "offset": 6656,
+      "offset": 7409,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/ads\/PMAdLoader.swift",
       "kind": "StringLiteral",
-      "offset": 6684,
+      "offset": 7437,
       "length": 9,
       "value": "\"network\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/ads\/PMAdLoader.swift",
       "kind": "StringLiteral",
-      "offset": 7040,
+      "offset": 7793,
       "length": 9,
       "value": "\"ad unit\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/ads\/PMAdLoader.swift",
       "kind": "StringLiteral",
-      "offset": 7085,
+      "offset": 7838,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/ads\/PMAdLoader.swift",
       "kind": "StringLiteral",
-      "offset": 7113,
+      "offset": 7866,
       "length": 9,
       "value": "\"network\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/ads\/PMAdLoader.swift",
       "kind": "IntegerLiteral",
-      "offset": 7275,
+      "offset": 8028,
       "length": 1,
       "value": "1"
     },
@@ -15752,63 +15860,63 @@
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/ads\/PMAdLoader.swift",
       "kind": "IntegerLiteral",
-      "offset": 8121,
+      "offset": 8874,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/ads\/PMAdLoader.swift",
       "kind": "IntegerLiteral",
-      "offset": 8151,
+      "offset": 8904,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/ads\/PMAdLoader.swift",
       "kind": "FloatLiteral",
-      "offset": 9166,
+      "offset": 9919,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/ads\/PMAdLoader.swift",
       "kind": "IntegerLiteral",
-      "offset": 9320,
+      "offset": 10073,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/ads\/PMAdLoader.swift",
       "kind": "StringLiteral",
-      "offset": 9544,
+      "offset": 10297,
       "length": 9,
       "value": "\"ad unit\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/ads\/PMAdLoader.swift",
       "kind": "IntegerLiteral",
-      "offset": 10066,
+      "offset": 10819,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/ads\/PMAdLoader.swift",
       "kind": "FloatLiteral",
-      "offset": 10104,
+      "offset": 10857,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/ads\/PMAdLoader.swift",
       "kind": "StringLiteral",
-      "offset": 10282,
+      "offset": 11035,
       "length": 9,
       "value": "\"ad unit\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/ads\/PMAdLoader.swift",
       "kind": "StringLiteral",
-      "offset": 10505,
+      "offset": 11258,
       "length": 9,
       "value": "\"ad unit\""
     },
@@ -16390,335 +16498,349 @@
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
       "offset": 1992,
+      "length": 8,
+      "value": "20204030"
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2051,
       "length": 4,
       "value": "2090"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 2047,
+      "offset": 2106,
       "length": 6,
       "value": "209010"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 2104,
+      "offset": 2163,
       "length": 6,
       "value": "209020"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 2161,
+      "offset": 2220,
       "length": 6,
       "value": "209030"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 2218,
+      "offset": 2277,
       "length": 6,
       "value": "209040"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 2275,
+      "offset": 2334,
       "length": 4,
       "value": "2030"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 2330,
+      "offset": 2389,
       "length": 6,
       "value": "203010"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 2387,
+      "offset": 2446,
       "length": 6,
       "value": "203020"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 2444,
+      "offset": 2503,
       "length": 8,
       "value": "20302010"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 2503,
+      "offset": 2562,
       "length": 10,
       "value": "2030201010"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 2564,
+      "offset": 2623,
       "length": 8,
       "value": "20302020"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 2623,
+      "offset": 2682,
       "length": 10,
       "value": "2030202010"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 2684,
+      "offset": 2743,
       "length": 10,
       "value": "2030202020"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 2745,
+      "offset": 2804,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 2798,
+      "offset": 2857,
       "length": 4,
       "value": "3010"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 2853,
+      "offset": 2912,
       "length": 4,
       "value": "3020"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 2908,
+      "offset": 2967,
       "length": 6,
       "value": "302010"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 2965,
+      "offset": 3024,
       "length": 4,
       "value": "3090"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 3020,
+      "offset": 3079,
       "length": 6,
       "value": "309010"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 3077,
+      "offset": 3136,
       "length": 8,
       "value": "30901010"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 3136,
+      "offset": 3195,
       "length": 2,
       "value": "90"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "StringLiteral",
-      "offset": 4345,
+      "offset": 4404,
       "length": 23,
       "value": "\"Config is using cache\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "StringLiteral",
-      "offset": 4421,
+      "offset": 4480,
       "length": 22,
       "value": "\"Config Cache updated\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "StringLiteral",
-      "offset": 4496,
+      "offset": 4555,
       "length": 36,
       "value": "\"Config failed no network available\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "StringLiteral",
-      "offset": 4585,
+      "offset": 4644,
       "length": 27,
       "value": "\"Config failed bad request\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "StringLiteral",
-      "offset": 4665,
+      "offset": 4724,
       "length": 28,
       "value": "\"Config failed bad response\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "StringLiteral",
-      "offset": 4746,
+      "offset": 4805,
       "length": 25,
       "value": "\"Config validation error\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "StringLiteral",
-      "offset": 4824,
+      "offset": 4883,
       "length": 49,
       "value": "\"Network Adapter class could not be instantiated\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "StringLiteral",
-      "offset": 4926,
+      "offset": 4985,
       "length": 50,
       "value": "\"Attempt to load PlaywireMobileAds multiple times\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "StringLiteral",
-      "offset": 5029,
+      "offset": 5088,
       "length": 25,
       "value": "\"Initialization Metadata\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "StringLiteral",
-      "offset": 5107,
+      "offset": 5166,
       "length": 25,
       "value": "\"No network is available\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "StringLiteral",
-      "offset": 5185,
+      "offset": 5244,
       "length": 37,
       "value": "\"Ad Loader being used more than once\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "StringLiteral",
-      "offset": 5275,
+      "offset": 5334,
       "length": 35,
       "value": "\"Unit Name Configuration not found\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "StringLiteral",
-      "offset": 5363,
+      "offset": 5422,
       "length": 57,
       "value": "\"Trying to load an ad before SDK is properly initialized\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "StringLiteral",
-      "offset": 5473,
+      "offset": 5532,
       "length": 40,
       "value": "\"Trying to refresh an ad unit very soon\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "StringLiteral",
-      "offset": 5566,
+      "offset": 5625,
       "length": 36,
       "value": "\"Ad Unit has been filled by network\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "StringLiteral",
-      "offset": 5655,
+      "offset": 5714,
       "length": 40,
       "value": "\"Ad Unit failed to be filled by network\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "StringLiteral",
-      "offset": 5748,
+      "offset": 5807,
       "length": 45,
       "value": "\"Ad Unit failed being filled by all networks\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "StringLiteral",
-      "offset": 5846,
+      "offset": 5905,
       "length": 45,
       "value": "\"Ad Unit failed loading by user-defined rate\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "StringLiteral",
-      "offset": 5944,
+      "offset": 6003,
       "length": 62,
       "value": "\"Ad Unit stoped refreshing because max count has been reached\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "StringLiteral",
-      "offset": 6059,
+      "offset": 6118,
       "length": 70,
       "value": "\"Ad Unit failed refreshing by user because max count has been reached\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "StringLiteral",
-      "offset": 6182,
+      "offset": 6241,
+      "length": 44,
+      "value": "\"Ad Unit failed refreshing by frequency cap\""
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
+      "kind": "StringLiteral",
+      "offset": 6338,
       "length": 44,
       "value": "\"Ad Unit forced to use mock network by user\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "StringLiteral",
-      "offset": 6279,
+      "offset": 6435,
       "length": 47,
       "value": "\"View Controller is required to load a vast ad\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "StringLiteral",
-      "offset": 6379,
+      "offset": 6535,
       "length": 16,
       "value": "\"Vast ad filled\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "StringLiteral",
-      "offset": 6448,
+      "offset": 6604,
       "length": 20,
       "value": "\"Vast ad not filled\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "StringLiteral",
-      "offset": 6521,
+      "offset": 6677,
       "length": 30,
       "value": "\"Error while rendering a vast\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 6754,
+      "offset": 6910,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 6918,
+      "offset": 7074,
       "length": 3,
       "value": "100"
     },
@@ -16943,146 +17065,153 @@
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
       "offset": 1992,
+      "length": 8,
+      "value": "20204030"
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2051,
       "length": 4,
       "value": "2090"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 2047,
+      "offset": 2106,
       "length": 6,
       "value": "209010"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 2104,
+      "offset": 2163,
       "length": 6,
       "value": "209020"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 2161,
+      "offset": 2220,
       "length": 6,
       "value": "209030"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 2218,
+      "offset": 2277,
       "length": 6,
       "value": "209040"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 2275,
+      "offset": 2334,
       "length": 4,
       "value": "2030"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 2330,
+      "offset": 2389,
       "length": 6,
       "value": "203010"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 2387,
+      "offset": 2446,
       "length": 6,
       "value": "203020"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 2444,
+      "offset": 2503,
       "length": 8,
       "value": "20302010"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 2503,
+      "offset": 2562,
       "length": 10,
       "value": "2030201010"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 2564,
+      "offset": 2623,
       "length": 8,
       "value": "20302020"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 2623,
+      "offset": 2682,
       "length": 10,
       "value": "2030202010"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 2684,
+      "offset": 2743,
       "length": 10,
       "value": "2030202020"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 2745,
+      "offset": 2804,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 2798,
+      "offset": 2857,
       "length": 4,
       "value": "3010"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 2853,
+      "offset": 2912,
       "length": 4,
       "value": "3020"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 2908,
+      "offset": 2967,
       "length": 6,
       "value": "302010"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 2965,
+      "offset": 3024,
       "length": 4,
       "value": "3090"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 3020,
+      "offset": 3079,
       "length": 6,
       "value": "309010"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 3077,
+      "offset": 3136,
       "length": 8,
       "value": "30901010"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 3136,
+      "offset": 3195,
       "length": 2,
       "value": "90"
     },
@@ -17307,146 +17436,153 @@
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
       "offset": 1992,
+      "length": 8,
+      "value": "20204030"
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2051,
       "length": 4,
       "value": "2090"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 2047,
+      "offset": 2106,
       "length": 6,
       "value": "209010"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 2104,
+      "offset": 2163,
       "length": 6,
       "value": "209020"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 2161,
+      "offset": 2220,
       "length": 6,
       "value": "209030"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 2218,
+      "offset": 2277,
       "length": 6,
       "value": "209040"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 2275,
+      "offset": 2334,
       "length": 4,
       "value": "2030"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 2330,
+      "offset": 2389,
       "length": 6,
       "value": "203010"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 2387,
+      "offset": 2446,
       "length": 6,
       "value": "203020"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 2444,
+      "offset": 2503,
       "length": 8,
       "value": "20302010"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 2503,
+      "offset": 2562,
       "length": 10,
       "value": "2030201010"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 2564,
+      "offset": 2623,
       "length": 8,
       "value": "20302020"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 2623,
+      "offset": 2682,
       "length": 10,
       "value": "2030202010"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 2684,
+      "offset": 2743,
       "length": 10,
       "value": "2030202020"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 2745,
+      "offset": 2804,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 2798,
+      "offset": 2857,
       "length": 4,
       "value": "3010"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 2853,
+      "offset": 2912,
       "length": 4,
       "value": "3020"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 2908,
+      "offset": 2967,
       "length": 6,
       "value": "302010"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 2965,
+      "offset": 3024,
       "length": 4,
       "value": "3090"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 3020,
+      "offset": 3079,
       "length": 6,
       "value": "309010"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 3077,
+      "offset": 3136,
       "length": 8,
       "value": "30901010"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNEventType.swift",
       "kind": "IntegerLiteral",
-      "offset": 3136,
+      "offset": 3195,
       "length": 2,
       "value": "90"
     },

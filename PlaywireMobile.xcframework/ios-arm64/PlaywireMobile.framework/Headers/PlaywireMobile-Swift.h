@@ -582,6 +582,7 @@ SWIFT_CLASS("_TtC14PlaywireMobile19PMConfigUnitRefresh")
 @property (nonatomic, readonly) NSInteger autoMaxCount;
 @property (nonatomic, readonly) NSInteger manualTime;
 @property (nonatomic, readonly) NSInteger manualMaxCount;
+@property (nonatomic, readonly) NSInteger frequencyCap;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

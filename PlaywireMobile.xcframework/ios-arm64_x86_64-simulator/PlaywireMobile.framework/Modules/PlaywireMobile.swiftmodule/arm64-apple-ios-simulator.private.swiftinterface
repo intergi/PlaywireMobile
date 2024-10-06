@@ -170,6 +170,7 @@ extension PlaywireMobile.PMFullScreenAd {
   @objc final public let autoMaxCount: Swift.Int
   @objc final public let manualTime: Swift.Int
   @objc final public let manualMaxCount: Swift.Int
+  @objc final public let frequencyCap: Swift.Int
   @objc deinit
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -408,6 +409,7 @@ public enum PMNEventType : Swift.Int {
   case AdLoadingRefresh
   case AdLoadingRefreshAutoCountReached
   case AdLoadingRefreshManualCountReached
+  case AdLoadingRefreshFrequencyCap
   case AdLoadingUser
   case AdLoadingUserMultiple
   case AdLoadingUserBadUnitName
