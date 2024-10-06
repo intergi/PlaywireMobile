@@ -16203,14 +16203,28 @@
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/rendering\/floatingbanner\/PMFloatingBanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 3277,
+      "offset": 3276,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/rendering\/floatingbanner\/PMFloatingBanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 4093,
+      "offset": 3768,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/rendering\/floatingbanner\/PMFloatingBanner.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4090,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/rendering\/floatingbanner\/PMFloatingBanner.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4167,
       "length": 4,
       "value": "true"
     },
