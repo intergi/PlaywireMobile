@@ -18,11 +18,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		lvcPN0VwS0NrCMA1c3QXonB4fz8=
+		GJhdiKPMIXIqK+AT7DMUooIpVk0=
 		</data>
 		<key>Modules/PlaywireMobile.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		/jwJPG3inXQYrQbbDuF+C1F2bNk=
+		pZnLy1ekY0uH6VO1WufRt78NeNQ=
 		</data>
 		<key>Modules/PlaywireMobile.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Modules/PlaywireMobile.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		/jwJPG3inXQYrQbbDuF+C1F2bNk=
+		pZnLy1ekY0uH6VO1WufRt78NeNQ=
 		</data>
 		<key>Modules/PlaywireMobile.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -92,7 +92,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			33TQHMrMOxLHzXcIA1pfZn2SYMG7YlbPHtVVodIZFck=
+			SwFCDDFcPVL+4wCvOTQht8vyPmiRZycUuJ8PiqPPKdw=
 			</data>
 		</dict>
 		<key>Modules/PlaywireMobile.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -127,7 +127,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			33TQHMrMOxLHzXcIA1pfZn2SYMG7YlbPHtVVodIZFck=
+			SwFCDDFcPVL+4wCvOTQht8vyPmiRZycUuJ8PiqPPKdw=
 			</data>
 		</dict>
 		<key>Modules/PlaywireMobile.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
