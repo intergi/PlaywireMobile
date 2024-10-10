@@ -371,6 +371,8 @@ SWIFT_CLASS("_TtC14PlaywireMobile14PMAdPlayerView")
 @interface PMAdPlayerView : UIView
 @property (nonatomic, strong) id <PMAdPlayerViewDelegate> _Nullable delegate;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)appDidBecomeActive;
+- (void)appWillResignActive;
 - (void)traitCollectionDidChange:(UITraitCollection * _Nullable)previousTraitCollection;
 @property (nonatomic) BOOL isMuted;
 - (void)onMutePressed;
@@ -1104,6 +1106,8 @@ SWIFT_CLASS("_TtC14PlaywireMobile14PMAdPlayerView")
 @interface PMAdPlayerView : UIView
 @property (nonatomic, strong) id <PMAdPlayerViewDelegate> _Nullable delegate;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)appDidBecomeActive;
+- (void)appWillResignActive;
 - (void)traitCollectionDidChange:(UITraitCollection * _Nullable)previousTraitCollection;
 @property (nonatomic) BOOL isMuted;
 - (void)onMutePressed;
