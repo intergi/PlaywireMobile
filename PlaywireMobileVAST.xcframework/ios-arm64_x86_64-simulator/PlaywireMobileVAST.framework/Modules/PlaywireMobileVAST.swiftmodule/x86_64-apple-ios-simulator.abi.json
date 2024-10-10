@@ -965,42 +965,42 @@
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastAdPlayerView.swift",
       "kind": "StringLiteral",
-      "offset": 562,
+      "offset": 571,
       "length": 39,
       "value": "\"init(coder:) has not been implemented\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastAdPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 735,
+      "offset": 744,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastAdPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 763,
+      "offset": 772,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastAdPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1132,
+      "offset": 1145,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastAdPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1158,
+      "offset": 1171,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastAdPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1186,
+      "offset": 1199,
       "length": 5,
       "value": "false"
     },
@@ -1042,35 +1042,35 @@
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastAdPlayerView.swift",
       "kind": "StringLiteral",
-      "offset": 2605,
+      "offset": 2739,
       "length": 6,
       "value": "\"vast\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastAdPlayerView.swift",
       "kind": "StringLiteral",
-      "offset": 2629,
+      "offset": 2763,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastAdPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2971,
+      "offset": 3105,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastAdPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3222,
+      "offset": 3356,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobileVAST\/PMVastAdPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3226,
+      "offset": 3360,
       "length": 1,
       "value": "1"
     },
