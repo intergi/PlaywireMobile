@@ -392,12 +392,10 @@ SWIFT_PROTOCOL("_TtP14PlaywireMobile22PMAdPlayerViewDelegate_")
 - (void)closePressedWithAdPlayerView:(PMAdPlayerView * _Nonnull)adPlayerView;
 @end
 
-@protocol PMBannerAd;
 @protocol PMAdViewPresenterDelegate;
 
 SWIFT_CLASS("_TtC14PlaywireMobile17PMAdViewPresenter")
 @interface PMAdViewPresenter : NSObject
-@property (nonatomic, readonly, strong) id <PMBannerAd> _Nullable banner;
 @property (nonatomic, weak) id <PMAdViewPresenterDelegate> _Nullable delegate;
 - (nonnull instancetype)initWithAdUnitName:(NSString * _Nonnull)adUnitName controller:(UIViewController * _Nonnull)controller;
 - (nonnull instancetype)initWithBannerLoader:(PMBannerAdLoader * _Nonnull)bannerLoader OBJC_DESIGNATED_INITIALIZER;
@@ -407,6 +405,7 @@ SWIFT_CLASS("_TtC14PlaywireMobile17PMAdViewPresenter")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@protocol PMBannerAd;
 
 SWIFT_PROTOCOL("_TtP14PlaywireMobile25PMAdViewPresenterDelegate_")
 @protocol PMAdViewPresenterDelegate
@@ -432,7 +431,7 @@ SWIFT_CLASS("_TtC14PlaywireMobile18PMAdsConfiguration")
 
 SWIFT_PROTOCOL("_TtP14PlaywireMobile10PMBannerAd_")
 @protocol PMBannerAd <PMAd>
-@property (nonatomic, readonly, strong) UIView * _Nonnull adView;
+- (UIView * _Nonnull)createUIView SWIFT_WARN_UNUSED_RESULT;
 - (void)willStartContextChange;
 - (void)didEndContextChange;
 @end

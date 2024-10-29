@@ -6,6 +6,16 @@
     "children": [
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PlaywireMobile",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -7173,9 +7183,9 @@
         "printedName": "PMBannerAd",
         "children": [
           {
-            "kind": "Var",
-            "name": "adView",
-            "printedName": "adView",
+            "kind": "Function",
+            "name": "createUIView",
+            "printedName": "createUIView()",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -7184,41 +7194,18 @@
                 "usr": "c:objc(cs)UIView"
               }
             ],
-            "declKind": "Var",
-            "usr": "c:@M@PlaywireMobile@objc(pl)PMBannerAd(py)adView",
-            "mangledName": "$s14PlaywireMobile10PMBannerAdP6adViewSo6UIViewCvp",
+            "declKind": "Func",
+            "usr": "c:@M@PlaywireMobile@objc(pl)PMBannerAd(im)createUIView",
+            "mangledName": "$s14PlaywireMobile10PMBannerAdP12createUIViewSo0F0CyF",
             "moduleName": "PlaywireMobile",
+            "genericSig": "<τ_0_0 where τ_0_0 : PlaywireMobile.PMBannerAd>",
+            "sugared_genericSig": "<Self where Self : PlaywireMobile.PMBannerAd>",
             "protocolReq": true,
             "declAttributes": [
               "ObjC"
             ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIView",
-                    "printedName": "UIKit.UIView",
-                    "usr": "c:objc(cs)UIView"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@PlaywireMobile@objc(pl)PMBannerAd(im)adView",
-                "mangledName": "$s14PlaywireMobile10PMBannerAdP6adViewSo6UIViewCvg",
-                "moduleName": "PlaywireMobile",
-                "genericSig": "<τ_0_0 where τ_0_0 : PlaywireMobile.PMBannerAd>",
-                "sugared_genericSig": "<Self where Self : PlaywireMobile.PMBannerAd>",
-                "protocolReq": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "get"
-              }
-            ]
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
@@ -9405,72 +9392,6 @@
         "name": "PMAdViewPresenter",
         "printedName": "PMAdViewPresenter",
         "children": [
-          {
-            "kind": "Var",
-            "name": "banner",
-            "printedName": "banner",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "PlaywireMobile.PMBannerAd?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "PMBannerAd",
-                    "printedName": "PlaywireMobile.PMBannerAd",
-                    "usr": "c:@M@PlaywireMobile@objc(pl)PMBannerAd"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@PlaywireMobile@objc(cs)PMAdViewPresenter(py)banner",
-            "mangledName": "$s14PlaywireMobile17PMAdViewPresenterC6bannerAA10PMBannerAd_pSgvp",
-            "moduleName": "PlaywireMobile",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "SetterAccess",
-              "AccessControl",
-              "RawDocComment",
-              "ObjC"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "PlaywireMobile.PMBannerAd?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "PMBannerAd",
-                        "printedName": "PlaywireMobile.PMBannerAd",
-                        "usr": "c:@M@PlaywireMobile@objc(pl)PMBannerAd"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@PlaywireMobile@objc(cs)PMAdViewPresenter(im)banner",
-                "mangledName": "$s14PlaywireMobile17PMAdViewPresenterC6bannerAA10PMBannerAd_pSgvg",
-                "moduleName": "PlaywireMobile",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
           {
             "kind": "Var",
             "name": "delegate",
@@ -14091,6 +14012,20 @@
   },
   "ConstValues": [
     {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/SDKInititalizer.swift",
+      "kind": "Array",
+      "offset": 589,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/SDKInititalizer.swift",
+      "kind": "Array",
+      "offset": 877,
+      "length": 2,
+      "value": "[]"
+    },
+    {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/rendering\/adplayerview\/CountdownCloseButton.swift",
       "kind": "IntegerLiteral",
       "offset": 207,
@@ -14372,80 +14307,101 @@
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/PlaywireMobileAds.swift",
+      "kind": "BooleanLiteral",
+      "offset": 573,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/PlaywireMobileAds.swift",
       "kind": "Dictionary",
-      "offset": 864,
+      "offset": 829,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/PlaywireMobileAds.swift",
       "kind": "BooleanLiteral",
-      "offset": 1966,
+      "offset": 1925,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/PlaywireMobileAds.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1985,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/PlaywireMobileAds.swift",
       "kind": "StringLiteral",
-      "offset": 2100,
+      "offset": 2048,
       "length": 3,
       "value": "\":\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/PlaywireMobileAds.swift",
       "kind": "IntegerLiteral",
-      "offset": 2151,
+      "offset": 2099,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/PlaywireMobileAds.swift",
       "kind": "IntegerLiteral",
-      "offset": 2174,
+      "offset": 2122,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/PlaywireMobileAds.swift",
       "kind": "StringLiteral",
-      "offset": 2180,
+      "offset": 2128,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/PlaywireMobileAds.swift",
       "kind": "IntegerLiteral",
-      "offset": 2233,
+      "offset": 2181,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/PlaywireMobileAds.swift",
       "kind": "IntegerLiteral",
-      "offset": 2256,
+      "offset": 2204,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/PlaywireMobileAds.swift",
       "kind": "BooleanLiteral",
-      "offset": 2662,
+      "offset": 2554,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/PlaywireMobileAds.swift",
+      "kind": "Dictionary",
+      "offset": 2962,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/PlaywireMobileAds.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3433,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/PlaywireMobileAds.swift",
       "kind": "BooleanLiteral",
-      "offset": 3144,
+      "offset": 3704,
       "length": 4,
       "value": "true"
-    },
-    {
-      "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/PlaywireMobileAds.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3523,
-      "length": 5,
-      "value": "false"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/notifier\/PMNotifier.swift",
@@ -14520,7 +14476,7 @@
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/network\/mock\/PMMockBanner.swift",
       "kind": "StringLiteral",
-      "offset": 618,
+      "offset": 622,
       "length": 8,
       "value": "\"banner\""
     },
@@ -15255,301 +15211,301 @@
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/rendering\/adplayerview\/PMAdPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5342,
+      "offset": 5181,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/rendering\/adplayerview\/PMAdPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5391,
+      "offset": 5230,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/rendering\/adplayerview\/PMAdPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5499,
+      "offset": 5338,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/rendering\/adplayerview\/PMAdPlayerView.swift",
       "kind": "StringLiteral",
-      "offset": 5548,
+      "offset": 5387,
       "length": 17,
       "value": "\"volume_low_icon\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/rendering\/adplayerview\/PMAdPlayerView.swift",
       "kind": "StringLiteral",
-      "offset": 5770,
+      "offset": 5609,
       "length": 18,
       "value": "\"volume_mute_icon\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/rendering\/adplayerview\/PMAdPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 6057,
+      "offset": 5896,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/rendering\/adplayerview\/PMAdPlayerView.swift",
       "kind": "StringLiteral",
-      "offset": 6106,
+      "offset": 5945,
       "length": 9,
       "value": "\"ad_icon\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/rendering\/adplayerview\/PMAdPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 6478,
+      "offset": 6317,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/rendering\/adplayerview\/PMAdPlayerView.swift",
       "kind": "StringLiteral",
-      "offset": 6540,
+      "offset": 6379,
       "length": 18,
       "value": "\"full_screen_icon\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/rendering\/adplayerview\/PMAdPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 6843,
+      "offset": 6682,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/rendering\/adplayerview\/PMAdPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6909,
+      "offset": 6748,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/rendering\/adplayerview\/PMAdPlayerView.swift",
       "kind": "StringLiteral",
-      "offset": 6943,
+      "offset": 6782,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/rendering\/adplayerview\/PMAdPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 7160,
+      "offset": 6999,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/rendering\/adplayerview\/PMAdPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 7197,
+      "offset": 7036,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/rendering\/adplayerview\/PMAdPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 7464,
+      "offset": 7303,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/rendering\/adplayerview\/PMAdPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 10662,
+      "offset": 10501,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/rendering\/adplayerview\/PMAdPlayerView.swift",
       "kind": "FloatLiteral",
-      "offset": 17502,
+      "offset": 17341,
       "length": 4,
       "value": "0.25"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/rendering\/adplayerview\/PMAdPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 17518,
+      "offset": 17357,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/rendering\/adplayerview\/PMAdPlayerView.swift",
       "kind": "FloatLiteral",
-      "offset": 17660,
+      "offset": 17499,
       "length": 4,
       "value": "0.25"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/rendering\/adplayerview\/PMAdPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 17676,
+      "offset": 17515,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/rendering\/adplayerview\/PMAdPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 18767,
+      "offset": 18606,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/rendering\/adplayerview\/PMAdPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 19905,
+      "offset": 19744,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/rendering\/adplayerview\/PMAdPlayerView.swift",
       "kind": "FloatLiteral",
-      "offset": 20104,
+      "offset": 19943,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/rendering\/adplayerview\/PMAdPlayerView.swift",
       "kind": "FloatLiteral",
-      "offset": 20220,
+      "offset": 20059,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/rendering\/adplayerview\/PMAdPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 20738,
+      "offset": 20577,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/rendering\/adplayerview\/PMAdPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 21112,
+      "offset": 20951,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/rendering\/adplayerview\/PMAdPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 21408,
+      "offset": 21247,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/rendering\/adplayerview\/PMAdPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 21502,
+      "offset": 21341,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/rendering\/adplayerview\/PMAdPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 21970,
+      "offset": 21809,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/rendering\/adplayerview\/PMAdPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 22418,
+      "offset": 22257,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/rendering\/adplayerview\/PMAdPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 22680,
+      "offset": 22519,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/rendering\/adplayerview\/PMAdPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 22707,
+      "offset": 22546,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/rendering\/adplayerview\/PMAdPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 22795,
+      "offset": 22634,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/rendering\/adplayerview\/PMAdPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 23298,
+      "offset": 23137,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/rendering\/adplayerview\/PMAdPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 23348,
+      "offset": 23187,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/rendering\/adplayerview\/PMAdPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 24397,
+      "offset": 24109,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/rendering\/adplayerview\/PMAdPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 24541,
+      "offset": 24253,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/rendering\/adplayerview\/PMAdPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 24962,
+      "offset": 24674,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/rendering\/adplayerview\/PMAdPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 25094,
+      "offset": 24806,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/rendering\/adplayerview\/PMAdPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 25138,
+      "offset": 24850,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/rendering\/adplayerview\/PMAdPlayerView.swift",
       "kind": "Array",
-      "offset": 26055,
+      "offset": 25767,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/rendering\/adplayerview\/PMAdPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 26095,
+      "offset": 25807,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/rendering\/adplayerview\/PMAdPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 26459,
+      "offset": 26171,
       "length": 5,
       "value": "false"
     },
@@ -15948,63 +15904,63 @@
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/ads\/PMAdLoader.swift",
       "kind": "FloatLiteral",
-      "offset": 9919,
+      "offset": 9909,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/ads\/PMAdLoader.swift",
       "kind": "IntegerLiteral",
-      "offset": 10073,
+      "offset": 10063,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/ads\/PMAdLoader.swift",
       "kind": "StringLiteral",
-      "offset": 10297,
+      "offset": 10287,
       "length": 9,
       "value": "\"ad unit\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/ads\/PMAdLoader.swift",
       "kind": "IntegerLiteral",
-      "offset": 10819,
+      "offset": 10809,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/ads\/PMAdLoader.swift",
       "kind": "FloatLiteral",
-      "offset": 10857,
+      "offset": 10847,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/ads\/PMAdLoader.swift",
       "kind": "StringLiteral",
-      "offset": 11035,
+      "offset": 11025,
       "length": 9,
       "value": "\"ad unit\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/ads\/PMAdLoader.swift",
       "kind": "StringLiteral",
-      "offset": 11258,
+      "offset": 11248,
       "length": 9,
       "value": "\"ad unit\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/config\/PMConfigLoader.swift",
       "kind": "StringLiteral",
-      "offset": 3019,
+      "offset": 3017,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/config\/PMConfigLoader.swift",
       "kind": "StringLiteral",
-      "offset": 3070,
+      "offset": 3068,
       "length": 2,
       "value": "\"\""
     },
@@ -16046,35 +16002,35 @@
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/rendering\/PMAdViewPresenter.swift",
       "kind": "BooleanLiteral",
-      "offset": 843,
+      "offset": 1073,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/rendering\/PMAdViewPresenter.swift",
       "kind": "BooleanLiteral",
-      "offset": 3027,
+      "offset": 3412,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/rendering\/PMAdViewPresenter.swift",
       "kind": "BooleanLiteral",
-      "offset": 3206,
+      "offset": 3591,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/rendering\/PMAdViewPresenter.swift",
       "kind": "BooleanLiteral",
-      "offset": 3756,
+      "offset": 4158,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/rendering\/PMAdViewPresenter.swift",
       "kind": "StringLiteral",
-      "offset": 565,
+      "offset": 806,
       "length": 17,
       "value": "\"PlaywireMobile.PMAdViewPresenter\""
     },
@@ -16291,14 +16247,14 @@
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/rendering\/floatingbanner\/PMFloatingBanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 4090,
+      "offset": 4087,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/PlaywireMobile\/rendering\/floatingbanner\/PMFloatingBanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 4167,
+      "offset": 4164,
       "length": 4,
       "value": "true"
     },
