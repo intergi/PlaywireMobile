@@ -236,7 +236,7 @@ extension PlaywireMobile.PMFullScreenAd {
   @objc func bannerAdFinishedPlaying(banner: any PlaywireMobile.PMBannerAd)
 }
 @objc public protocol PMBannerAd : PlaywireMobile.PMAd {
-  @objc var adView: UIKit.UIView { get }
+  @objc func createUIView() -> UIKit.UIView
   @objc func willStartContextChange()
   @objc func didEndContextChange()
 }
@@ -323,9 +323,6 @@ public protocol PMNetworkAdapter {
   @objc func didEndPresentingAd(presenter: PlaywireMobile.PMAdViewPresenter, willRefresh: Swift.Bool)
 }
 @objc @objcMembers public class PMAdViewPresenter : ObjectiveC.NSObject {
-  @objc public var banner: (any PlaywireMobile.PMBannerAd)? {
-    get
-  }
   @objc weak public var delegate: (any PlaywireMobile.PMAdViewPresenterDelegate)?
   @objc convenience public init(adUnitName: Swift.String, controller: UIKit.UIViewController)
   @objc public init(bannerLoader: PlaywireMobile.PMBannerAdLoader)
