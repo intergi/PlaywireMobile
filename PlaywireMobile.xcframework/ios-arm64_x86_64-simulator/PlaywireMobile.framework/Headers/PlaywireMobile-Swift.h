@@ -726,6 +726,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PlaywireMobi
 
 
 
+
+
 #endif
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
@@ -1458,6 +1460,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PlaywireMobi
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 - (void)initializeWithPublisherId:(NSString * _Nonnull)publisherId appId:(NSString * _Nonnull)appId configuration:(PMAdsConfiguration * _Nonnull)configuration completionHandler:(void (^ _Nonnull)(BOOL))completionHandler;
 @end
+
+
 
 
 

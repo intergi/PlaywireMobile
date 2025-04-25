@@ -14517,6 +14517,20 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PlaywireMobile"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "PlaywireMobile"
+      },
+      {
+        "kind": "Import",
         "name": "DeveloperToolsSupport",
         "printedName": "DeveloperToolsSupport",
         "declKind": "Import",
@@ -15739,35 +15753,35 @@
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/assemble\/PlaywireMobile\/derived_data\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PlaywireMobile\/IntermediateBuildFilesPath\/PlaywireMobile.build\/Release-iphonesimulator\/PlaywireMobile.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 690,
+      "offset": 726,
       "length": 9,
       "value": "\"ad_icon\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/assemble\/PlaywireMobile\/derived_data\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PlaywireMobile\/IntermediateBuildFilesPath\/PlaywireMobile.build\/Release-iphonesimulator\/PlaywireMobile.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 850,
+      "offset": 864,
       "length": 12,
       "value": "\"close_icon\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/assemble\/PlaywireMobile\/derived_data\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PlaywireMobile\/IntermediateBuildFilesPath\/PlaywireMobile.build\/Release-iphonesimulator\/PlaywireMobile.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 1024,
+      "offset": 1016,
       "length": 18,
       "value": "\"full_screen_icon\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/assemble\/PlaywireMobile\/derived_data\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PlaywireMobile\/IntermediateBuildFilesPath\/PlaywireMobile.build\/Release-iphonesimulator\/PlaywireMobile.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 1202,
+      "offset": 1172,
       "length": 17,
       "value": "\"volume_low_icon\""
     },
     {
       "filePath": "\/Users\/silviojaureguibehere\/playwire\/repos\/playwire-mobile-ios\/assemble\/PlaywireMobile\/derived_data\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PlaywireMobile\/IntermediateBuildFilesPath\/PlaywireMobile.build\/Release-iphonesimulator\/PlaywireMobile.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 1381,
+      "offset": 1329,
       "length": 18,
       "value": "\"volume_mute_icon\""
     }
