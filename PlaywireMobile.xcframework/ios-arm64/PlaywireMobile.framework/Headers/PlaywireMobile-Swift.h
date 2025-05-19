@@ -341,6 +341,7 @@ SWIFT_CLASS("_TtC14PlaywireMobile10PMAdLoader")
 
 @class NSString;
 @class UIViewController;
+@class PMTargeting;
 @class PMBannerAdLoader;
 @class PMInterstitialAdLoader;
 
@@ -350,6 +351,7 @@ SWIFT_CLASS("_TtC14PlaywireMobile17PMAdLoaderBuilder")
 - (PMAdLoaderBuilder * _Nonnull)withViewController:(UIViewController * _Nonnull)viewController;
 - (PMAdLoaderBuilder * _Nonnull)withSuccessRate:(double)successRate;
 - (PMAdLoaderBuilder * _Nonnull)withMock:(BOOL)mock;
+- (PMAdLoaderBuilder * _Nonnull)withTargeting:(PMTargeting * _Nonnull)targeting;
 - (PMBannerAdLoader * _Nonnull)buildBannerAdLoader SWIFT_WARN_UNUSED_RESULT;
 - (PMInterstitialAdLoader * _Nonnull)buildInterstitialAdLoader SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -361,6 +363,7 @@ SWIFT_CLASS("_TtC14PlaywireMobile23PMAdLoaderConfiguration")
 @interface PMAdLoaderConfiguration : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nonnull adUnitName;
 @property (nonatomic, readonly, weak) UIViewController * _Nullable viewController;
+@property (nonatomic, readonly, strong) PMTargeting * _Nullable targeting;
 @property (nonatomic, readonly) double successRate;
 @property (nonatomic, readonly) BOOL mock;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -502,6 +505,7 @@ SWIFT_CLASS("_TtC14PlaywireMobile11PMConfigApp")
 @interface PMConfigApp : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nullable storeUrl;
 @property (nonatomic, readonly, copy) NSString * _Nullable publisherUrl;
+@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nullable categories;
 @end
 
 
@@ -706,6 +710,20 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PMNotifier *
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 - (void)startConsoleLogger;
+@end
+
+
+SWIFT_CLASS("_TtC14PlaywireMobile11PMTargeting")
+@interface PMTargeting : NSObject
+@property (nonatomic, readonly, copy) NSDictionary<NSString *, NSString *> * _Nonnull targeting;
+- (void)clear;
+- (void)add:(NSDictionary<NSString *, NSString *> * _Nullable)targets;
+- (void)remove:(NSArray<NSString *> * _Nullable)keys;
+- (void)setClientTag:(NSString * _Nonnull)clientTag at:(NSInteger)index;
+- (void)removeClientTagAt:(NSInteger)index;
+- (void)setClientTags:(NSArray<NSString *> * _Nonnull)clientTags;
+- (void)setAppCategories:(NSArray<NSString *> * _Nullable)categories;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
