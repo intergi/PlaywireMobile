@@ -264,6 +264,9 @@ public protocol PMNetworkAdapter {
   @objc weak public var viewController: UIKit.UIViewController? {
     get
   }
+  @objc public var targeting: PlaywireMobile.PMTargeting? {
+    get
+  }
   @objc public var successRate: Swift.Double {
     get
   }
@@ -280,6 +283,8 @@ public protocol PMNetworkAdapter {
   public func with(successRate: Swift.Double) -> PlaywireMobile.PMAdLoaderBuilder
   @objc @discardableResult
   public func with(mock: Swift.Bool) -> PlaywireMobile.PMAdLoaderBuilder
+  @objc @discardableResult
+  public func with(targeting: PlaywireMobile.PMTargeting) -> PlaywireMobile.PMAdLoaderBuilder
   @objc public func buildBannerAdLoader() -> PlaywireMobile.PMBannerAdLoader
   @objc public func buildInterstitialAdLoader() -> PlaywireMobile.PMInterstitialAdLoader
   @objc deinit
@@ -292,6 +297,7 @@ public protocol PMNetworkAdapter {
   public var configUnit: PlaywireMobile.PMConfigUnit? {
     get
   }
+  public var targeting: PlaywireMobile.PMTargeting?
   open func adImpressed(ad: any PlaywireMobile.PMAd)
   @objc deinit
 }
@@ -331,6 +337,20 @@ public protocol PMNetworkAdapter {
     @objc set
   }
   @objc public func cleanup()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class PMTargeting : ObjectiveC.NSObject {
+  @objc public var targeting: [Swift.String : Swift.String] {
+    @objc get
+  }
+  @objc public func clear()
+  @objc public func add(_ targets: [Swift.String : Swift.String]?)
+  @objc public func remove(_ keys: [Swift.String]?)
+  @objc public func setClientTag(_ clientTag: Swift.String, at index: Swift.Int)
+  @objc public func removeClientTag(at index: Swift.Int)
+  @objc public func setClientTags(_ clientTags: [Swift.String])
+  @objc public func setAppCategories(_ categories: [Swift.String]?)
+  @objc override dynamic public init()
   @objc deinit
 }
 @objc public protocol PMFloatingBannerAnimationHandler {
@@ -374,6 +394,7 @@ public enum PMConfigNetworkType : Swift.String, Swift.Decodable {
   @objc final public let storeUrl: Swift.String?
   final public let childProtection: Swift.Bool?
   @objc final public let publisherUrl: Swift.String?
+  @objc final public let categories: [Swift.String]?
   @objc deinit
   public init(from decoder: any Swift.Decoder) throws
 }
