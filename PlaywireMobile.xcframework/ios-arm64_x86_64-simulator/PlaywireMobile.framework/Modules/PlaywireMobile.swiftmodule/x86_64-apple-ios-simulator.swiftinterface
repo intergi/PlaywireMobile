@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
-// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name PlaywireMobile
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name PlaywireMobile
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
 import AVFoundation
 import DeveloperToolsSupport
 import Foundation
@@ -32,9 +32,13 @@ public typealias PMNAction = (_ event: PlaywireMobile.PMNEvent, _ data: Playwire
   public func startConsoleLogger(event: PlaywireMobile.PMNEvent)
   @discardableResult
   public func addListener(_ listener: Swift.AnyObject, filter: @escaping PlaywireMobile.PMNFilter, action: @escaping PlaywireMobile.PMNAction) -> PlaywireMobile.PMNListenerToken
+  #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   public func addListener(_ listener: Swift.AnyObject, event: PlaywireMobile.PMNEvent? = nil, action: @escaping PlaywireMobile.PMNAction) -> PlaywireMobile.PMNListenerToken
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func notify(event: PlaywireMobile.PMNEvent, data: [Swift.String : Any]? = nil)
+  #endif
   @objc deinit
 }
 @objc public enum FloatingViewCorner : Swift.Int {
@@ -42,7 +46,9 @@ public typealias PMNAction = (_ event: PlaywireMobile.PMNEvent, _ data: Playwire
   case topRight
   case bottomLeft
   case bottomRight
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -60,7 +66,9 @@ public typealias PMNAction = (_ event: PlaywireMobile.PMNEvent, _ data: Playwire
 }
 @objc @_Concurrency.MainActor @preconcurrency open class PMFullScreenAdViewController : UIKit.UIViewController, PlaywireMobile.PMAdPlayerViewDelegate {
   @_Concurrency.MainActor @preconcurrency public init(fullScreenAd: any PlaywireMobile.PMFullScreenAd, adPlayerView: PlaywireMobile.PMAdPlayerView)
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
   @_Concurrency.MainActor @preconcurrency @objc public func closePressed(adPlayerView: PlaywireMobile.PMAdPlayerView)
   @_Concurrency.MainActor @preconcurrency open func createAdView(ad: any PlaywireMobile.PMAd) -> PlaywireMobile.PMAdPlayerView
   @objc deinit
@@ -76,13 +84,19 @@ public typealias PMNAction = (_ event: PlaywireMobile.PMNEvent, _ data: Playwire
 @objc public protocol PMAd {
   @objc var adLoader: PlaywireMobile.PMAdLoader { get }
   @objc var network: any PlaywireMobile.PMNetwork { get }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc var delegate: (any PlaywireMobile.PMAdDelegate)? { get set }
+  #endif
   @objc var isVideo: Swift.Bool { get }
   @objc func cleanup()
 }
 extension PlaywireMobile.PMAd {
+  #if compiler(>=5.3) && $NonescapableTypes
   public func asFullScreenAd() -> (any PlaywireMobile.PMFullScreenAd)?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func asInterstitialAd() -> (any PlaywireMobile.PMInterstitialAd)?
+  #endif
   public func notifyAdImpressed()
   public func notifyAdClicked()
 }
@@ -90,7 +104,9 @@ public enum PMNSeverity : Swift.Int {
   case Information
   case Warning
   case Error
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -100,9 +116,15 @@ public enum PMNSeverity : Swift.Int {
   final public let code: Swift.Int?
   final public let severity: PlaywireMobile.PMNSeverity?
   @objc final public let description: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(code: Swift.Int? = nil, severity: PlaywireMobile.PMNSeverity? = nil, description: Swift.String? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   convenience public init(type: PlaywireMobile.PMNEventType, severity: PlaywireMobile.PMNSeverity? = nil, description: Swift.String? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func matches(_ event: PlaywireMobile.PMNEvent?) -> Swift.Bool
+  #endif
   @objc deinit
 }
 @objc public protocol PMFullScreenAdDelegate : PlaywireMobile.PMAdDelegate {
@@ -133,7 +155,9 @@ extension PlaywireMobile.PMFullScreenAd {
   case Interstitial
   case Banner
   public init(from decoder: any Swift.Decoder) throws
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -206,7 +230,9 @@ extension PlaywireMobile.PMFullScreenAd {
     get
     set
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  #endif
   @_Concurrency.MainActor @preconcurrency public init(ad: any PlaywireMobile.PMAd, layout: PlaywireMobile.PMAdPlayerView.Layout)
   @objc deinit
   @objc @_Concurrency.MainActor @preconcurrency open func appDidBecomeActive()
@@ -215,7 +241,9 @@ extension PlaywireMobile.PMFullScreenAd {
   @_Concurrency.MainActor @preconcurrency open func setupConstraints()
   @_Concurrency.MainActor @preconcurrency open func activateConstraints()
   @_Concurrency.MainActor @preconcurrency open func setupHandlers()
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func traitCollectionDidChange(_ previousTraitCollection: UIKit.UITraitCollection?)
+  #endif
   @objc @_Concurrency.MainActor @preconcurrency open var isMuted: Swift.Bool {
     @objc get
     @objc set(value)
@@ -246,7 +274,9 @@ extension PlaywireMobile.PMBannerAd {
 public protocol PMNetworkAdapter {
   init()
   var initialized: Swift.Bool { get }
+  #if compiler(>=5.3) && $NonescapableTypes
   func initialize(config: PlaywireMobile.PMConfigNetwork, onComplete: ((_ result: Any?) -> Swift.Void)?)
+  #endif
   func create() -> any PlaywireMobile.PMNetwork
   func supportsMode(mode: PlaywireMobile.PMConfigUnitMode) -> Swift.Bool
 }
@@ -302,11 +332,15 @@ public protocol PMNetworkAdapter {
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers final public class PMInterstitialAdLoader : PlaywireMobile.PMAdLoader {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func load(onAdResult: @escaping (_ interstitial: (any PlaywireMobile.PMInterstitialAd)?) -> Swift.Void)
+  #endif
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers final public class PMBannerAdLoader : PlaywireMobile.PMAdLoader {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc final public func load(onAdResult: @escaping (_ banner: (any PlaywireMobile.PMBannerAd)?) -> Swift.Void)
+  #endif
   @objc final public func refresh()
   @objc override final public func adImpressed(ad: any PlaywireMobile.PMAd)
   @objc deinit
@@ -316,13 +350,21 @@ public protocol PMNetworkAdapter {
 @objc public protocol PMInterstitialAd : PlaywireMobile.PMFullScreenAd {
 }
 @objc public protocol PMNetwork {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc func load(config: PlaywireMobile.PMConfig, configUnit: PlaywireMobile.PMConfigUnit, configUnitNetwork: PlaywireMobile.PMConfigUnitNetwork, loaderConfiguration: PlaywireMobile.PMAdLoaderConfiguration?, onComplete: @escaping () -> Swift.Void)
+  #endif
   @objc func isSuccess() -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc func asInterstitial(loader: PlaywireMobile.PMAdLoader) -> (any PlaywireMobile.PMInterstitialAd)?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc func asBanner(loader: PlaywireMobile.PMAdLoader) -> (any PlaywireMobile.PMBannerAd)?
+  #endif
 }
 @objc public protocol PMAdViewPresenterDelegate {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc func didChangeAdPresenterBanner(presenter: PlaywireMobile.PMAdViewPresenter, oldBanner: (any PlaywireMobile.PMBannerAd)?, newBanner: (any PlaywireMobile.PMBannerAd)?)
+  #endif
 }
 @objc public protocol PMAdViewPresenterViewHolder {
   @objc func willStartPresentingAd(presenter: PlaywireMobile.PMAdViewPresenter, refresh: Swift.Bool)
@@ -332,10 +374,12 @@ public protocol PMNetworkAdapter {
   @objc weak public var delegate: (any PlaywireMobile.PMAdViewPresenterDelegate)?
   @objc convenience public init(adUnitName: Swift.String, controller: UIKit.UIViewController)
   @objc public init(bannerLoader: PlaywireMobile.PMBannerAdLoader)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public var bannerHolder: UIKit.UIView? {
     @objc get
     @objc set
   }
+  #endif
   @objc public func cleanup()
   @objc deinit
 }
@@ -344,35 +388,49 @@ public protocol PMNetworkAdapter {
     @objc get
   }
   @objc public func clear()
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func add(_ targets: [Swift.String : Swift.String]?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func remove(_ keys: [Swift.String]?)
+  #endif
   @objc public func setClientTag(_ clientTag: Swift.String, at index: Swift.Int)
   @objc public func removeClientTag(at index: Swift.Int)
   @objc public func setClientTags(_ clientTags: [Swift.String])
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func setAppCategories(_ categories: [Swift.String]?)
+  #endif
   @objc override dynamic public init()
   @objc deinit
 }
 @objc public protocol PMFloatingBannerAnimationHandler {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc func performAnimation(block: @escaping () -> Swift.Void, completion: (() -> Swift.Void)?)
+  #endif
 }
 @objc @objcMembers public class PMFloatingBanner : ObjectiveC.NSObject, PlaywireMobile.PMAdViewPresenterDelegate {
   @objc weak public var animationHandler: (any PlaywireMobile.PMFloatingBannerAnimationHandler)?
   @objc public var preferredCorner: PlaywireMobile.FloatingViewCorner
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public var inlineView: UIKit.UIView? {
     @objc get
     @objc set
   }
+  #endif
   @objc public init(presenter: PlaywireMobile.PMAdViewPresenter, floatingView: PlaywireMobile.PMFloatingView)
   @objc deinit
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func didChangeAdPresenterBanner(presenter: PlaywireMobile.PMAdViewPresenter, oldBanner: (any PlaywireMobile.PMBannerAd)?, newBanner: (any PlaywireMobile.PMBannerAd)?)
+  #endif
   @objc public func cleanup()
 }
 public enum PMConfigNetworkType : Swift.String, Swift.Decodable {
   case Mock
   case Vast
   case VastGam
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -462,7 +520,9 @@ public enum PMNEventType : Swift.Int {
     get
   }
   public func path() -> [PlaywireMobile.PMNEventType]
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get

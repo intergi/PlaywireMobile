@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/PlaywireMobileVAST-Swift.h</key>
 		<data>
-		V3XqCN/nwohVDL85Fgrqa2gOv+Y=
+		w3wB+2mjMW4g17c8szt4pfKeF1s=
 		</data>
 		<key>Headers/PlaywireMobileVAST.h</key>
 		<data>
@@ -14,27 +14,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		LTtmhwt1eWVuZn3l3ZF1SE+gAo0=
+		8Vw0yTP/G9sfWKnfNYYTQu4lhuc=
 		</data>
 		<key>Modules/PlaywireMobileVAST.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		D9oNSQq6J/gnwaWu3ftlRCS7ueQ=
+		hODg31nX2ESndzuHGzSjsCnOQg4=
 		</data>
 		<key>Modules/PlaywireMobileVAST.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		o6etkJpvx+yOP4xZ3uKEIcJOPEg=
+		BJw0eMCf4nR5UfDS39tSbILOQ0s=
 		</data>
 		<key>Modules/PlaywireMobileVAST.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		0Qi3fGdVCt/h68sBVGbIlIwmZ2g=
+		bgZJI3oucceo8N6BfEy8thjNB00=
 		</data>
 		<key>Modules/PlaywireMobileVAST.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		o6etkJpvx+yOP4xZ3uKEIcJOPEg=
+		BJw0eMCf4nR5UfDS39tSbILOQ0s=
 		</data>
 		<key>Modules/PlaywireMobileVAST.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		iJwAsfkCK9geB/24lbm5JM6lHRU=
+		MnzGOuIF0/0/QZVEMCsvgDdmlig=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -47,7 +47,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QpCZtVCWCA2dpGT+0hDri2DPtfgG0C1mjtxYgvjVjYU=
+			0Qa1o4MjG+2hIA2+wass8ZFOXkofVJHwhnwvnjaMWu8=
 			</data>
 		</dict>
 		<key>Headers/PlaywireMobileVAST.h</key>
@@ -61,35 +61,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cx5lhSGY9S+4mRpBWtfPbZAfKtL9YfS1+zA4k5oXGzk=
+			9aRHDEfozF6P4UqGvdBAJTsbqdQjIxrjiWVOR0iAvwY=
 			</data>
 		</dict>
 		<key>Modules/PlaywireMobileVAST.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			McW0P5DSkYNJBKoNO5bA1/HS0V2Kgc68N/3pS+txrH8=
+			nWOBIWponQwG0laFKJi+R/VwRPfQS8yjpdNv7EtlLBA=
 			</data>
 		</dict>
 		<key>Modules/PlaywireMobileVAST.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OqfO0H4fiqaArBgRAEEbuVk15gFUtIzMEbnaZzTy4/4=
+			r16EQ+foUYziKDgSG9TdtTBaM3wslbRZAtTciRQv3mA=
 			</data>
 		</dict>
 		<key>Modules/PlaywireMobileVAST.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			McW0P5DSkYNJBKoNO5bA1/HS0V2Kgc68N/3pS+txrH8=
+			nWOBIWponQwG0laFKJi+R/VwRPfQS8yjpdNv7EtlLBA=
 			</data>
 		</dict>
 		<key>Modules/PlaywireMobileVAST.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CLtc2ORgjhLnD15jJF50eKGKEBPof1sgnUq9oC8fFp0=
+			CbfFqXyb3pM5R5b2/6m2Lw7ZvpaK8yJA07w9i7q95mU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
